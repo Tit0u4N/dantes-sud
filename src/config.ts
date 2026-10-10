@@ -25,10 +25,9 @@ export const proof = {
 
 /** Partner sites. Empty url = no link shown. */
 export const partners = {
-	jekko: { url: 'https://www.jekko.it', logo: '' },
-	socage: { url: 'https://www.socage.com', logo: '' },
+	jekko: { url: 'https://www.jekko.it', logo: '/images/logo-jekko.svg' },
+	socage: { url: 'https://www.socage.com', logo: '/images/logo-socage.webp' },
 	cormach: { url: 'https://www.cormach.com', logo: '/images/logo-cormach.webp' },
 	cela: { url: 'https://www.cela.it', logo: '/images/logo-cela.webp' },
-	deal: { url: '', logo: '' }, // DEAL Levage : lien et logo à récupérer
 	cornut: { url: '', logo: '' },
 };

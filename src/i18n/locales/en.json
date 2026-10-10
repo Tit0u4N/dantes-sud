@@ -35,23 +35,23 @@
 	"meta": {
 		"home": {
 			"title": "Lifting & Aerial Platform Maintenance, PACA | DANTÈS",
-			"description": "JEKKO, SOCAGE and Cormach maintenance agent. Repair of mini cranes, aerial platforms and forklifts, on site or in our workshop, South of France."
+			"description": "JEKKO, SOCAGE and CORMACH maintenance agent. Repair of mini cranes, aerial platforms and forklifts, on site or in our workshop, South of France."
 		},
 		"lifting": {
-			"title": "JEKKO & Cormach Repair, South of France | DANTÈS",
-			"description": "Servicing, repair and refurbishment of JEKKO mini cranes, Cormach loader cranes and truck-mounted cranes. On site or in our workshop across PACA."
+			"title": "JEKKO & CORMACH Repair, South of France | DANTÈS",
+			"description": "Servicing, repair and refurbishment of JEKKO mini cranes, CORMACH loader cranes and truck-mounted cranes. On site or in our workshop across PACA."
 		},
 		"elevation": {
 			"title": "SOCAGE & CELA Platform Repair, PACA | DANTÈS",
-			"description": "Maintenance of truck-mounted platforms and spider lifts from SOCAGE, CELA and Multitel. Manufacturer-trained technicians, on-site service in PACA."
+			"description": "Maintenance of truck-mounted platforms and spider lifts from SOCAGE, CELA and MULTITEL. Manufacturer-trained technicians, on-site service in PACA."
 		},
 		"handling": {
 			"title": "Forklift Repair, All Makes, Alpes-Maritimes | DANTÈS",
 			"description": "Repair and servicing of forklifts of all makes in the Alpes-Maritimes and across PACA. Custom material handling projects."
 		},
 		"partners": {
-			"title": "Partners JEKKO, SOCAGE, Cormach, CELA | DANTÈS",
-			"description": "JEKKO, SOCAGE and Cormach maintenance agent, partner of CELA and DEAL Levage. Technicians trained at each manufacturer."
+			"title": "Partners JEKKO, SOCAGE, CORMACH, CELA | DANTÈS",
+			"description": "JEKKO, SOCAGE and CORMACH maintenance agent, partner of CELA. Technicians trained at each manufacturer."
 		},
 		"news": {
 			"title": "Lifting & Platform News, South of France | DANTÈS",
@@ -66,26 +66,20 @@
 	},
 	"home": {
 		"h1": "Maintenance and repair of lifting, aerial platform and material handling equipment in the South of France",
-		"subtitle": "JEKKO, SOCAGE and Cormach maintenance agent. On-site service or in our Carros workshop, across the Alpes-Maritimes, Var, Bouches-du-Rhône and Alpes-de-Haute-Provence.",
+		"subtitle": "JEKKO, SOCAGE and CORMACH maintenance agent. On-site service or in our Carros workshop, across the Alpes-Maritimes, Var, Bouches-du-Rhône and Alpes-de-Haute-Provence.",
 		"heroAlt": "Spider crane and platform working on a job site overlooking Marseille",
-		"aboutTitle": "On site or in the workshop, we come to you",
+		"aboutTitle": "On site or in the workshop, we travel to you",
 		"about": [
-			"With 3 technicians and 3 fully equipped workshop vans, we come to you, wherever the machine is. Hilltop village, city-centre job site, remote location: distance and access are never a problem for us.",
-			"Every job is carried out with the same standards and professional conscience, from a small repair to a major refurbishment. Our priority: the machine must be safe for those who will use it after we leave.",
+			"With 3 technicians and 3 fully equipped workshop vans, we work wherever the machine is located: hilltop village, city-centre job site or remote location. Distance and access are not obstacles.",
+			"Every job is carried out with the same standards and professional rigour, from a minor repair to a complete refurbishment. Our priority: the machine must be safe for those who will use it after we leave.",
 			"Our technicians are trained directly at our partner manufacturers. We stay up to date with French VGP regulations and take care of your periodic inspections and returns to service."
-		],
-		"stats": [
-			{ "value": "3", "label": "manufacturer-trained technicians" },
-			{ "value": "3", "label": "equipped workshop vans" },
-			{ "value": "4", "label": "départements covered (06, 83, 13, 04)" },
-			{ "value": "5 t", "label": "vehicle lift in our Carros workshop" }
 		],
 		"tradesTitle": "Our 3 trades: lifting, aerial platforms, material handling",
 		"trades": [
 			{
 				"key": "lifting",
 				"title": "Lifting",
-				"text": "JEKKO mini crawler cranes, Cormach loader cranes, truck-mounted cranes: we service, repair and refurbish.",
+				"text": "JEKKO mini crawler cranes, CORMACH loader cranes, truck-mounted cranes: servicing, breakdown repair and refurbishment.",
 				"image": "/images/jekko-spx1040-reparation-mini-grue-paca.webp",
 				"alt": "JEKKO SPX1040 mini crane lifting between two buildings, JEKKO repair in the South of France"
 			},
@@ -99,12 +93,13 @@
 			{
 				"key": "handling",
 				"title": "Material handling",
-				"text": "Forklifts of all makes and custom projects with DEAL Levage in Marseille.",
-				"image": "/images/fourgon-atelier-dantes-jekko-tlm-carros.webp",
-				"alt": "DANTÈS workshop van open with its tools next to a mini crane"
+				"text": "Forklifts of all makes and custom material handling projects.",
+				"image": "/images/chariot-elevateur-manutention-paca.webp",
+				"alt": "Forklift in a material handling operation"
 			}
 		],
-		"reactivityTitle": "Responsiveness: a workshop van that comes to the machine",
+		"reactivityTitle": "Responsiveness: a workshop van that travels to the machine",
+		"processImageAlt": "DANTÈS workshop van on a job next to a deployed loader crane",
 		"processTitle": "How an intervention works",
 		"steps": [
 			{ "title": "First contact", "text": "You call us or send a request through our website." },
@@ -122,9 +117,9 @@
 			{ "code": "13", "name": "Bouches-du-Rhône" },
 			{ "code": "04", "name": "Alpes-de-Haute-Provence" }
 		],
-		"brandsTitle": "The brands we work on",
-		"brandsText": "JEKKO, SOCAGE and Cormach maintenance agent, trained at each manufacturer.",
-		"brands": ["JEKKO", "SOCAGE", "Cormach", "CELA"],
+		"brandsTitle": "The brands we service",
+		"brandsText": "JEKKO, SOCAGE and CORMACH maintenance agent, trained at each manufacturer.",
+		"brands": ["JEKKO", "SOCAGE", "CORMACH", "CELA"],
 		"proofTitle": "They trust us",
 		"reviewsLink": "Read our Google reviews",
 		"instaTitle": "Our job sites in pictures",
@@ -133,12 +128,14 @@
 		"ctaText": "Call us or describe the fault: we prepare the job before we leave."
 	},
 	"vgp": {
-		"title": "Periodic inspections (VGP) and returns to service: we handle it",
-		"text": "Periodic inspections (VGP) and returns to service: we handle it. We schedule the inspection with Bureau Veritas, prepare the machine beforehand, and if the inspection raises a reservation, we clear it straight away. One contact, a compliant machine, a report signed by a recognised body: the best guarantee for you and your operators. And between two inspections, if something goes wrong, we are here."
+		"title": "Periodic inspections (VGP) and returns to service: handled by us",
+		"text": "We take charge of your periodic inspections (VGP) and returns to service. We schedule the inspection with BUREAU VERITAS, prepare the machine beforehand and promptly resolve any reservation raised during the inspection. A single point of contact, a compliant machine, a report signed by a recognised body: the best guarantee for you and your operators. Between two inspections, we remain available in the event of an incident."
 	},
 	"trades": {
 		"lifting": {
-			"h1": "Lifting: JEKKO and Cormach repair in the South of France",
+			"h1": "Lifting: JEKKO and CORMACH repair in the South of France",
+			"heroImage": "/images/mini-grue-jekko-sur-chenilles-stabilisee-paca.webp",
+			"heroAlt": "JEKKO tracked mini crane with outriggers deployed in front of an industrial building",
 			"lead": "Mini crawler crane, truck-mounted loader crane or crane arm: we service, repair and refurbish all lifting equipment, on site with our workshop vans or in our Carros workshop. Hydraulics, electrics, combustion and electric engines, welding: we work on the machine as a whole.",
 			"sections": [
 				{
@@ -146,7 +143,7 @@
 					"h2": "JEKKO repair and maintenance in PACA: mini cranes",
 					"badge": "Approved maintenance agent",
 					"paras": [
-						"Italian manufacturer specialised in mini crawler cranes, JEKKO covers the whole range: from the small SPB209 (990 kg) to the JF series articulated crawler cranes such as the JF545 (15.5 t). In between, the SPX telescopic mini cranes (SPX312, SPX424, SPX429, SPX527, SPX532, SPX1040, SPX1275) are the reference for lifting indoors, in city centres and anywhere nothing else fits.",
+						"Italian manufacturer specialised in mini crawler cranes, JEKKO covers the whole range: from the small SPB209 (990 kg) to the JF series articulated crawler cranes such as the JF545 (15.5 t). In between, the SPX telescopic mini cranes (SPX312, SPX424, SPX429, SPX527, SPX532, SPX1040, SPX1275) are the reference for lifting indoors, in city centres and any location with restricted access.",
 						"DANTÈS is a JEKKO maintenance agent. Our technicians were trained at the manufacturer and we work on the whole range, from routine servicing to full refurbishment."
 					],
 					"image": "/images/jekko-mini-grue-levage-chantier-monaco.webp",
@@ -155,29 +152,29 @@
 				},
 				{
 					"id": "cormach",
-					"h2": "Cormach repair in PACA: loader cranes and crane arms",
+					"h2": "CORMACH repair in PACA: loader cranes and crane arms",
 					"badge": "Approved maintenance agent",
 					"paras": [
-						"Italian manufacturer of truck-mounted loader cranes, Cormach makes cranes of all sizes, from compact models for light trucks up to 80 t capacity cranes in the 575000 series. We work the brand with Carrosserie Cornut, which brings its experience of Cormach-equipped trucks. DANTÈS is a Cormach maintenance agent and our technicians were trained there."
+						"Italian manufacturer of truck-mounted loader cranes, CORMACH makes cranes of all sizes, from compact models for light trucks up to 80 t capacity cranes in the 575000 series. We work the brand with Carrosserie CORNUT, which brings its experience of CORMACH-equipped trucks. DANTÈS is a CORMACH maintenance agent and our technicians were trained there."
 					],
 					"image": "/images/cormach-grue-auxiliaire-camion.webp",
-					"alt": "Cormach loader crane mounted on a truck, Cormach loader crane maintenance",
+					"alt": "CORMACH loader crane mounted on a truck, CORMACH loader crane maintenance",
 					"partner": "cormach"
 				},
 				{
 					"id": "also",
-					"h2": "Truck-mounted crane repair in the Alpes-Maritimes: Fassi, Palfinger, Hoeflon, Spidercrane",
+					"h2": "Truck-mounted crane repair in the Alpes-Maritimes: FASSI, PALFINGER, HIAB and all makes",
 					"paras": [
-						"We also work on truck-mounted cranes and loader crane arms of all makes (Fassi, Palfinger…), and on Hoeflon and Spidercrane spider mini cranes. Fassi repair in PACA, on-site breakdown service for spider cranes: same standards as on our partner brands."
+						"Beyond our partner brands, we repair and service truck-mounted cranes and loader cranes of all makes: FASSI, PALFINGER, HIAB and others. Hydraulics, electrics, outriggers, load limiter: our technicians work on site anywhere in PACA or in our Carros workshop, to the same standards as on JEKKO and CORMACH."
 					],
-					"image": "/images/fourgon-atelier-dantes-jekko-tlm-carros.webp",
-					"alt": "DANTÈS workshop van open next to a mini crane under repair"
+					"image": "/images/reparation-mini-grue-jekko-spx1275-atelier-dantes-carros.webp",
+					"alt": "JEKKO SPX1275 mini crane stabilised at the workshop site, with the DANTÈS van behind"
 				},
 				{
 					"id": "sale",
 					"h2": "Buy a used JEKKO in France: new and second-hand",
 					"paras": [
-						"Sales go through us: JEKKO mini cranes and Cormach cranes, new or used. Available machines are posted in our news section."
+						"We handle sales of JEKKO mini cranes and CORMACH cranes, new or used. Available machines are posted in our news section."
 					],
 					"link": "news"
 				}
@@ -187,14 +184,16 @@
 		},
 		"elevation": {
 			"h1": "Aerial platforms: SOCAGE and CELA repair in the South of France",
-			"lead": "Truck-mounted platform, spider lift or telescopic platform: we service, repair and refurbish your work-at-height machines, on site or in the workshop. Our technicians are trained directly at the manufacturers, to work fast and right on machines that carry people.",
+			"heroImage": "/images/camions-nacelles-alignes-elevation-paca.webp",
+			"heroAlt": "Row of truck-mounted platforms with their booms raised under a clear sky",
+			"lead": "Truck-mounted platform, spider lift or telescopic platform: we service, repair and refurbish your work-at-height machines, on site or in the workshop. Our technicians are trained directly at the manufacturers, to work quickly and accurately on machines that carry people.",
 			"sections": [
 				{
 					"id": "socage",
 					"h2": "SOCAGE repair in PACA: truck-mounted platforms and spider lifts",
 					"badge": "Approved maintenance agent",
 					"paras": [
-						"Based near Modena in Italy, SOCAGE has built truck-mounted platforms for over 40 years and sells them worldwide. The range is huge: platforms on vans and 3.5 t chassis for the city, platforms on trucks up to the very high reach of the Forste series, and tracked spider lifts.",
+						"Based near Modena in Italy, SOCAGE has built truck-mounted platforms for over 40 years and sells them worldwide. The range is very extensive: platforms on vans and 3.5 t chassis for the city, platforms on trucks up to the very high reach of the Forste series, and tracked spider lifts.",
 						"DANTÈS is a SOCAGE maintenance agent and our technicians were trained at the manufacturer in Italy. We work on the whole range: hydraulics, on-board electronics, stabilisation, basket."
 					],
 					"image": "/images/socage-forste-27d-camion-nacelle.webp",
@@ -205,8 +204,8 @@
 					"id": "cela",
 					"h2": "CELA platform repair: DT trucks, Spyder spider lifts, rescue platforms",
 					"paras": [
-						"Founded in 1965 near Brescia, CELA designs platforms you will not find anywhere else: DT range truck-mounted platforms (25 to 60 m), able to work below ground level, with a removable basket that can be replaced by a winch, and Spyder tracked spider lifts. The brand also equips fire services with its rescue platforms.",
-						"Our technicians were trained at CELA on these specific machines, which lets us work where few repairers know how to."
+						"Founded in 1965 near Brescia, CELA designs highly specialised platforms: DT range truck-mounted platforms (25 to 60 m), able to work below ground level, with a removable basket that can be replaced by a winch, and Spyder tracked spider lifts. The brand also equips fire services with its rescue platforms.",
+						"Our technicians were trained at CELA on these specific machines, which allows us to work where few repairers are qualified."
 					],
 					"image": "/images/cela-dt30-spyder-nacelle-araignee.webp",
 					"alt": "CELA DT30 Spyder spider lift used by firefighters",
@@ -214,9 +213,9 @@
 				},
 				{
 					"id": "also",
-					"h2": "Multitel, Haulotte, JLG, Skyjack maintenance: truck-mounted and telescopic platforms",
+					"h2": "Platform maintenance, all makes: truck-mounted, telescopic, articulated and scissor lifts",
 					"paras": [
-						"We also work on Multitel truck-mounted platforms and on Haulotte, JLG and Skyjack platforms. Truck-mounted platform repair in the Alpes-Maritimes, telescopic platform breakdown service in the 06 and across the region: on site or in the workshop."
+						"Beyond SOCAGE and CELA, we work on all types of platforms and all makes: MULTITEL truck-mounted platforms, HAULOTTE, JLG, SKYJACK and others. Telescopic, articulated, scissor, spider or truck-mounted, recent or older machine: we return it to service, on site anywhere in PACA or in our Carros workshop."
 					],
 					"image": "/images/nacelle-araignee-depannage-sur-site-fourgon-atelier.webp",
 					"alt": "JLG spider lift being repaired on site, DANTÈS workshop van behind"
@@ -225,7 +224,7 @@
 					"id": "telecom",
 					"h2": "Telecom platform maintenance in PACA",
 					"paras": [
-						"Telecom operators and their subcontractors work at height, often on hard-to-reach sites, with platforms that cannot stay out of service. We maintain and repair these machines on site: hydraulics, electrics, stabilisation, basket. The goal: a safe platform, available when the crew needs it."
+						"Telecom operators and their subcontractors work at height, often on hard-to-reach sites, with platforms that cannot stay out of service. We maintain and repair these machines on site: hydraulics, electrics, stabilisation, basket. Our objective: a safe platform, available whenever the crew needs it."
 					],
 					"draft": true
 				},
@@ -233,7 +232,7 @@
 					"id": "cinema",
 					"h2": "Film and TV shoot platforms: repair and maintenance",
 					"paras": [
-						"On a shoot, a broken machine stops a whole crew. We service and repair the platforms used by film and audiovisual production companies, checking safety components before the shoot, with a fast response if a fault appears during the day."
+						"On a shoot, a machine breakdown halts an entire crew. We service and repair the platforms used by film and audiovisual production companies, checking safety components before the shoot, with a rapid response if a fault appears during the day."
 					],
 					"draft": true
 				},
@@ -251,6 +250,8 @@
 		},
 		"handling": {
 			"h1": "Material handling: forklift repair, all makes",
+			"heroImage": "/images/manutention-levage-chariot-telescopique-grue-camion-paca.webp",
+			"heroAlt": "Truck-mounted crane lifting a telehandler during a material handling operation",
 			"lead": "Forklift, stacker, electric pallet truck or more specific machine: we repair and service material handling equipment of all makes. Engine, hydraulic, electrical, mast or brake faults: we adapt to each machine and situation, on site or in our Carros workshop.",
 			"sections": [
 				{
@@ -263,18 +264,10 @@
 					"alt": "DANTÈS workshop van working on a site, on-site breakdown service"
 				},
 				{
-					"id": "deal",
-					"h2": "Custom material handling in Marseille with DEAL Levage",
-					"paras": [
-						"For lifting and handling operations that are out of the ordinary, we work with DEAL Levage in Marseille. Together, we build custom solutions: heavy handling, specific lifting, design and delivery of projects nobody else wants to take on. A custom lifting project in PACA? Talk to us."
-					],
-					"partner": "deal"
-				},
-				{
 					"id": "sale",
 					"h2": "A machine to replace?",
 					"paras": [
-						"Tell us what you need: we advise you and look with you for the right machine, new or used."
+						"Tell us about your requirements: we will advise you and help you find the right machine, new or used."
 					],
 					"draft": true
 				}
@@ -306,9 +299,9 @@
 			},
 			{
 				"id": "cormach",
-				"name": "Cormach, with Carrosserie Cornut",
+				"name": "CORMACH, with Carrosserie CORNUT",
 				"badge": "Approved maintenance agent",
-				"text": "Italian manufacturer of truck-mounted loader cranes, from compact models up to 80 t cranes in the 575000 series. We work the brand with Carrosserie Cornut, which knows Cormach-equipped trucks well.",
+				"text": "Italian manufacturer of truck-mounted loader cranes, from compact models up to 80 t cranes in the 575000 series. We work the brand with Carrosserie CORNUT, which knows CORMACH-equipped trucks well.",
 				"does": "Servicing, repair and refurbishment of loader cranes and crane arms. Technicians trained at the manufacturer.",
 				"page": "lifting"
 			},
@@ -319,14 +312,6 @@
 				"text": "Founded in 1965 near Brescia, CELA designs DT truck-mounted platforms (25 to 60 m) able to work below ground level, Spyder spider lifts and rescue platforms for fire services.",
 				"does": "Work on these specific machines, where few repairers can. Technicians trained at CELA.",
 				"page": "elevation"
-			},
-			{
-				"id": "deal",
-				"name": "DEAL Levage",
-				"badge": "Custom projects partner",
-				"text": "Lifting and heavy handling specialist in Marseille.",
-				"does": "Building custom solutions: heavy handling, specific lifting, design and delivery of projects nobody else wants to take on.",
-				"page": "handling"
 			}
 		],
 		"ctaTitle": "A machine from one of these brands?",

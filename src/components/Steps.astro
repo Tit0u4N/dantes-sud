@@ -8,14 +8,17 @@ interface Step {
 interface Props {
 	title: string;
 	steps: Step[];
+	image?: string;
+	imageAlt?: string;
 }
-const { title, steps } = Astro.props;
+const { title, steps, image, imageAlt = '' } = Astro.props;
 ---
 
 <section class="bg-paper">
 	<div class="wrap py-16 md:py-20">
 		<h2 class="display text-4xl md:text-5xl">{title}</h2>
-		<ol class="mt-10 max-w-3xl">
+		<div class={image ? 'mt-10 grid gap-10 lg:grid-cols-[1fr_28rem] lg:items-start xl:grid-cols-[1fr_32rem]' : 'mt-10'}>
+		<ol class="max-w-3xl">
 			{
 				steps.map((s, i) => (
 					<li class="relative grid grid-cols-[3.5rem_1fr] gap-5 pb-9 last:pb-0">
@@ -31,5 +34,15 @@ const { title, steps } = Astro.props;
 				))
 			}
 		</ol>
+		{
+			image && (
+				<div class="mx-auto w-full max-w-md lg:max-w-none lg:sticky lg:top-28">
+					<div class="border-4 border-steel">
+						<img src={image} alt={imageAlt} width="737" height="920" class="aspect-[4/5] w-full object-cover" loading="lazy" />
+					</div>
+				</div>
+			)
+		}
+		</div>
 	</div>
 </section>

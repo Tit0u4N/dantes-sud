@@ -35,23 +35,23 @@
 	"meta": {
 		"home": {
 			"title": "Maintenance levage et nacelles PACA | DANTÈS Carros",
-			"description": "Agent de maintenance JEKKO, SOCAGE et Cormach. Réparation de mini-grues, nacelles et chariots sur site ou en atelier dans le 06, 83, 13 et 04."
+			"description": "Agent de maintenance JEKKO, SOCAGE et CORMACH. Réparation de mini-grues, nacelles et chariots sur site ou en atelier dans le 06, 83, 13 et 04."
 		},
 		"lifting": {
-			"title": "Réparation JEKKO et Cormach PACA | DANTÈS",
-			"description": "Entretien, dépannage et remise en état de mini-grues JEKKO, grues auxiliaires Cormach et camions grues. Sur site ou en atelier, partout en PACA."
+			"title": "Réparation JEKKO et CORMACH PACA | DANTÈS",
+			"description": "Entretien, dépannage et remise en état de mini-grues JEKKO, grues auxiliaires CORMACH et camions grues. Sur site ou en atelier, partout en PACA."
 		},
 		"elevation": {
 			"title": "Réparation nacelles SOCAGE et CELA PACA | DANTÈS",
-			"description": "Maintenance de camions nacelles et nacelles araignées SOCAGE, CELA, Multitel. Techniciens formés constructeur, intervention sur site en PACA."
+			"description": "Maintenance de camions nacelles et nacelles araignées SOCAGE, CELA, MULTITEL. Techniciens formés constructeur, intervention sur site en PACA."
 		},
 		"handling": {
 			"title": "Réparation chariot élévateur toutes marques 06 | DANTÈS",
 			"description": "Réparation et entretien de chariots élévateurs toutes marques dans les Alpes-Maritimes et en PACA. Projets de manutention sur mesure."
 		},
 		"partners": {
-			"title": "Partenaires JEKKO, SOCAGE, Cormach, CELA | DANTÈS",
-			"description": "Agent de maintenance JEKKO, SOCAGE et Cormach, partenaire CELA et DEAL Levage. Des techniciens formés chez chaque constructeur."
+			"title": "Partenaires JEKKO, SOCAGE, CORMACH, CELA | DANTÈS",
+			"description": "Agent de maintenance JEKKO, SOCAGE et CORMACH, partenaire CELA. Techniciens formés chez chaque constructeur."
 		},
 		"news": {
 			"title": "Actualités levage et nacelles en PACA | DANTÈS",
@@ -66,26 +66,20 @@
 	},
 	"home": {
 		"h1": "Maintenance et réparation d'engins de levage, d'élévation et de manutention en PACA",
-		"subtitle": "Agent de maintenance JEKKO, SOCAGE et Cormach. Intervention sur site ou dans notre atelier de Carros, dans les Alpes-Maritimes, le Var, les Bouches-du-Rhône et les Alpes-de-Haute-Provence.",
+		"subtitle": "Agent de maintenance JEKKO, SOCAGE et CORMACH. Intervention sur site ou dans notre atelier de Carros, dans les Alpes-Maritimes, le Var, les Bouches-du-Rhône et les Alpes-de-Haute-Provence.",
 		"heroAlt": "Mini-grue araignée et nacelle en intervention sur un chantier avec vue sur Marseille",
-		"aboutTitle": "Sur site ou à l'atelier, on vient à vous",
+		"aboutTitle": "Sur site ou à l'atelier, nous nous déplaçons chez vous",
 		"about": [
-			"Avec 3 techniciens et 3 fourgons atelier entièrement équipés, on vient à vous, où que soit la machine. Village perché de l'arrière-pays, chantier en centre-ville, site isolé : la distance et l'accès ne sont jamais un problème pour nous.",
-			"Chaque intervention est menée avec la même exigence et la même conscience professionnelle, du petit dépannage au gros chantier de remise en état. Notre priorité : que la machine soit sûre pour ceux qui vont l'utiliser après notre passage.",
-			"Nos techniciens sont formés directement chez les constructeurs partenaires. On reste en permanence à jour sur la réglementation VGP et on prend en charge vos vérifications périodiques et vos remises en service."
-		],
-		"stats": [
-			{ "value": "3", "label": "techniciens formés constructeur" },
-			{ "value": "3", "label": "fourgons atelier équipés" },
-			{ "value": "4", "label": "départements couverts (06, 83, 13, 04)" },
-			{ "value": "5 t", "label": "pont élévateur dans notre atelier de Carros" }
+			"Avec 3 techniciens et 3 fourgons atelier entièrement équipés, nous intervenons où que se trouve la machine : village de l'arrière-pays, chantier en centre-ville ou site isolé. La distance et l'accès ne sont pas un obstacle.",
+			"Chaque intervention est menée avec la même exigence et la même rigueur professionnelle, du dépannage ponctuel à la remise en état complète. Notre priorité : que la machine soit sûre pour ceux qui vont l'utiliser après notre passage.",
+			"Nos techniciens sont formés directement chez les constructeurs partenaires. Nous restons à jour sur la réglementation VGP et prenons en charge vos vérifications périodiques et vos remises en service."
 		],
 		"tradesTitle": "Nos 3 métiers : levage, élévation, manutention",
 		"trades": [
 			{
 				"key": "lifting",
 				"title": "Levage",
-				"text": "Mini-grues sur chenilles JEKKO, grues auxiliaires Cormach, camions grues : on entretient, on dépanne et on remet en état.",
+				"text": "Mini-grues sur chenilles JEKKO, grues auxiliaires CORMACH, camions grues : entretien, dépannage et remise en état.",
 				"image": "/images/jekko-spx1040-reparation-mini-grue-paca.webp",
 				"alt": "Mini-grue JEKKO SPX1040 en levage entre deux bâtiments, réparation JEKKO en PACA"
 			},
@@ -99,12 +93,13 @@
 			{
 				"key": "handling",
 				"title": "Manutention",
-				"text": "Chariots élévateurs toutes marques et projets sur mesure avec DEAL Levage à Marseille.",
-				"image": "/images/fourgon-atelier-dantes-jekko-tlm-carros.webp",
-				"alt": "Fourgon atelier DANTÈS ouvert avec son outillage à côté d'une mini-grue"
+				"text": "Chariots élévateurs toutes marques et projets de manutention sur mesure.",
+				"image": "/images/chariot-elevateur-manutention-paca.webp",
+				"alt": "Chariot élévateur en opération de manutention"
 			}
 		],
-		"reactivityTitle": "Réactivité : un fourgon atelier qui vient à la machine",
+		"reactivityTitle": "Réactivité : un fourgon atelier qui se déplace jusqu'à la machine",
+		"processImageAlt": "Fourgon atelier DANTÈS en intervention à côté d'une grue auxiliaire déployée",
 		"processTitle": "Comment se déroule une intervention",
 		"steps": [
 			{ "title": "Contact initial", "text": "Vous nous appelez ou soumettez une demande via notre site." },
@@ -122,9 +117,9 @@
 			{ "code": "13", "name": "Bouches-du-Rhône" },
 			{ "code": "04", "name": "Alpes-de-Haute-Provence" }
 		],
-		"brandsTitle": "Les marques qu'on traite",
-		"brandsText": "Agent de maintenance JEKKO, SOCAGE et Cormach, formé chez chaque constructeur.",
-		"brands": ["JEKKO", "SOCAGE", "Cormach", "CELA"],
+		"brandsTitle": "Les marques que nous prenons en charge",
+		"brandsText": "Agent de maintenance JEKKO, SOCAGE et CORMACH, formé chez chaque constructeur.",
+		"brands": ["JEKKO", "SOCAGE", "CORMACH", "CELA"],
 		"proofTitle": "Ils nous font confiance",
 		"reviewsLink": "Lire les avis Google",
 		"instaTitle": "Nos chantiers en images",
@@ -133,21 +128,23 @@
 		"ctaText": "Appelez-nous ou décrivez la panne : nous préparons l'intervention avant de partir."
 	},
 	"vgp": {
-		"title": "VGP et remises en service, on s'en occupe",
-		"text": "VGP et remises en service, on s'en occupe. On planifie le contrôle avec Bureau Veritas, on prépare la machine en amont, et si le contrôle fait ressortir une réserve, on la lève dans la foulée. Un seul interlocuteur, une machine conforme, un rapport signé par un organisme reconnu : c'est la meilleure garantie pour vous et pour vos opérateurs. Et entre deux contrôles, en cas de pépin, on est là."
+		"title": "VGP et remises en service : nous nous en chargeons",
+		"text": "Nous prenons en charge vos VGP et vos remises en service. Nous planifions le contrôle avec BUREAU VERITAS, préparons la machine en amont et levons sans délai toute réserve émise lors du contrôle. Un interlocuteur unique, une machine conforme, un rapport signé par un organisme reconnu : la meilleure garantie pour vous et pour vos opérateurs. Entre deux contrôles, nous restons disponibles en cas d'incident."
 	},
 	"trades": {
 		"lifting": {
-			"h1": "Levage : réparation JEKKO et Cormach en PACA",
-			"lead": "Mini-grue sur chenilles, grue auxiliaire sur camion ou bras de grue : on entretient, on dépanne et on remet en état tout le matériel de levage, sur site avec nos fourgons atelier ou dans notre atelier de Carros. Hydraulique, électricité, moteurs thermiques et électriques, soudure : on traite la machine dans son ensemble.",
+			"h1": "Levage : réparation JEKKO et CORMACH en PACA",
+			"heroImage": "/images/mini-grue-jekko-sur-chenilles-stabilisee-paca.webp",
+			"heroAlt": "Mini-grue JEKKO sur chenilles, stabilisateurs déployés, devant un bâtiment industriel",
+			"lead": "Mini-grue sur chenilles, grue auxiliaire sur camion ou bras de grue : nous entretenons, dépannons et remettons en état tout le matériel de levage, sur site avec nos fourgons atelier ou dans notre atelier de Carros. Hydraulique, électricité, moteurs thermiques et électriques, soudure : nous traitons la machine dans son ensemble.",
 			"sections": [
 				{
 					"id": "jekko",
 					"h2": "Réparation et maintenance JEKKO en PACA : les mini-grues",
 					"badge": "Agent de maintenance agréé",
 					"paras": [
-						"Constructeur italien spécialiste des mini-grues sur chenilles, JEKKO couvre toute la gamme : de la petite SPB209 (990 kg) aux grues articulées sur chenilles de la série JF comme la JF545 (15,5 t). Entre les deux, les mini-grues télescopiques SPX (SPX312, SPX424, SPX429, SPX527, SPX532, SPX1040, SPX1275) sont la référence pour lever en intérieur, en centre-ville et partout où rien d'autre ne passe.",
-						"DANTÈS est agent de maintenance JEKKO. Nos techniciens ont été formés chez le constructeur et on intervient sur toute la gamme, de l'entretien courant à la remise en état complète."
+						"Constructeur italien spécialiste des mini-grues sur chenilles, JEKKO couvre toute la gamme : de la petite SPB209 (990 kg) aux grues articulées sur chenilles de la série JF comme la JF545 (15,5 t). Entre les deux, les mini-grues télescopiques SPX (SPX312, SPX424, SPX429, SPX527, SPX532, SPX1040, SPX1275) sont la référence pour lever en intérieur, en centre-ville et dans tous les lieux d'accès restreint.",
+						"DANTÈS est agent de maintenance JEKKO. Nos techniciens ont été formés chez le constructeur et interviennent sur toute la gamme, de l'entretien courant à la remise en état complète."
 					],
 					"image": "/images/jekko-mini-grue-levage-chantier-monaco.webp",
 					"alt": "Mini-grue JEKKO en levage sur un chantier à Monaco, maintenance JEKKO Alpes-Maritimes",
@@ -155,47 +152,49 @@
 				},
 				{
 					"id": "cormach",
-					"h2": "Réparation Cormach en PACA : grues auxiliaires et bras de grue",
+					"h2": "Réparation CORMACH en PACA : grues auxiliaires et bras de grue",
 					"badge": "Agent de maintenance agréé",
 					"paras": [
-						"Constructeur italien de grues auxiliaires pour camions, Cormach fabrique des grues de toutes tailles, des modèles compacts pour porteurs légers jusqu'aux grues de 80 t de capacité de la série 575000. On travaille la marque avec la Carrosserie Cornut, qui apporte son expérience des camions équipés Cormach. DANTÈS est agent de maintenance Cormach et nos techniciens y ont été formés."
+						"Constructeur italien de grues auxiliaires pour camions, CORMACH fabrique des grues de toutes tailles, des modèles compacts pour porteurs légers jusqu'aux grues de 80 t de capacité de la série 575000. Nous travaillons cette marque avec la Carrosserie CORNUT, qui apporte son expérience des camions équipés CORMACH. DANTÈS est agent de maintenance CORMACH et nos techniciens y ont été formés."
 					],
 					"image": "/images/cormach-grue-auxiliaire-camion.webp",
-					"alt": "Grue auxiliaire Cormach montée sur camion, maintenance grue auxiliaire Cormach",
+					"alt": "Grue auxiliaire CORMACH montée sur camion, maintenance grue auxiliaire CORMACH",
 					"partner": "cormach"
 				},
 				{
 					"id": "also",
-					"h2": "Réparation camion grue en Alpes-Maritimes : Fassi, Palfinger, Hoeflon, Spidercrane",
+					"h2": "Réparation camion grue en Alpes-Maritimes : FASSI, PALFINGER, HIAB et toutes marques",
 					"paras": [
-						"On intervient aussi sur les camions grues et les bras de grue auxiliaires toutes marques (Fassi, Palfinger…), et sur les mini-grues araignées Hoeflon et Spidercrane. Réparation Fassi en PACA, dépannage de mini-grue araignée sur site : même exigence que sur nos marques partenaires."
+						"Au-delà de nos marques partenaires, nous réparons et entretenons les camions grues et les grues auxiliaires de toutes marques : FASSI, PALFINGER, HIAB et les autres. Hydraulique, électricité, stabilisateurs, limiteur de charge : nos techniciens interviennent sur site partout en PACA ou dans notre atelier de Carros, avec la même exigence que sur JEKKO et CORMACH."
 					],
-					"image": "/images/fourgon-atelier-dantes-jekko-tlm-carros.webp",
-					"alt": "Fourgon atelier DANTÈS ouvert à côté d'une mini-grue en réparation"
+					"image": "/images/reparation-mini-grue-jekko-spx1275-atelier-dantes-carros.webp",
+					"alt": "Mini-grue JEKKO SPX1275 stabilisée sur le site de l'atelier, avec le fourgon DANTÈS à l'arrière"
 				},
 				{
 					"id": "sale",
 					"h2": "Achat JEKKO occasion en France : neuf et occasion",
 					"paras": [
-						"La vente passe par nous : mini-grues JEKKO et grues Cormach, neuves ou d'occasion. Les machines disponibles sont publiées dans nos actualités."
+						"Nous assurons la vente de mini-grues JEKKO et de grues CORMACH, neuves ou d'occasion. Les machines disponibles sont publiées dans nos actualités."
 					],
 					"link": "news"
 				}
 			],
 			"ctaTitle": "Une mini-grue ou une grue auxiliaire à l'arrêt ?",
-			"ctaText": "Appelez-nous : on prépare l'intervention avant de partir."
+			"ctaText": "Appelez-nous : nous préparons l'intervention avant de nous déplacer."
 		},
 		"elevation": {
 			"h1": "Élévation : réparation de nacelles SOCAGE et CELA en PACA",
-			"lead": "Camion nacelle, nacelle araignée ou nacelle télescopique : on assure l'entretien, le dépannage et la remise en état de vos machines de travail en hauteur, sur site ou en atelier. Nos techniciens sont formés directement chez les constructeurs, pour intervenir vite et juste sur des machines qui transportent des personnes.",
+			"heroImage": "/images/camions-nacelles-alignes-elevation-paca.webp",
+			"heroAlt": "Camions nacelles alignés avec leurs bras déployés sous un ciel dégagé",
+			"lead": "Camion nacelle, nacelle araignée ou nacelle télescopique : nous assurons l'entretien, le dépannage et la remise en état de vos machines de travail en hauteur, sur site ou en atelier. Nos techniciens sont formés directement chez les constructeurs, pour intervenir rapidement et avec précision sur des machines qui transportent des personnes.",
 			"sections": [
 				{
 					"id": "socage",
 					"h2": "Réparation SOCAGE en PACA : camions nacelles et nacelles araignées",
 					"badge": "Agent de maintenance agréé",
 					"paras": [
-						"Installé près de Modène en Italie, SOCAGE construit des nacelles sur camion depuis plus de 40 ans et les vend dans le monde entier. La gamme est énorme : nacelles sur fourgon et sur châssis 3,5 t pour la ville, nacelles sur porteurs jusqu'aux très grandes hauteurs de la série Forste, et nacelles araignées sur chenilles.",
-						"DANTÈS est agent de maintenance SOCAGE et nos techniciens ont été formés chez le constructeur en Italie. On intervient sur toute la gamme : hydraulique, électronique de bord, stabilisation, panier."
+						"Installé près de Modène en Italie, SOCAGE construit des nacelles sur camion depuis plus de 40 ans et les vend dans le monde entier. La gamme est très étendue : nacelles sur fourgon et sur châssis 3,5 t pour la ville, nacelles sur porteurs jusqu'aux très grandes hauteurs de la série Forste, et nacelles araignées sur chenilles.",
+						"DANTÈS est agent de maintenance SOCAGE et nos techniciens ont été formés chez le constructeur en Italie. Nous intervenons sur toute la gamme : hydraulique, électronique de bord, stabilisation, panier."
 					],
 					"image": "/images/socage-forste-27d-camion-nacelle.webp",
 					"alt": "Camion nacelle SOCAGE Forste 27D déployé, maintenance nacelle SOCAGE",
@@ -205,8 +204,8 @@
 					"id": "cela",
 					"h2": "Réparation nacelle CELA : camions DT, araignées Spyder, plateformes de secours",
 					"paras": [
-						"Fondé en 1965 près de Brescia, CELA conçoit des nacelles qu'on ne trouve nulle part ailleurs : nacelles sur camion de la gamme DT (de 25 à 60 m), capables de travailler sous le niveau du sol, avec panier amovible remplaçable par un treuil, et nacelles araignées Spyder sur chenilles. La marque équipe aussi les pompiers avec ses plateformes de secours.",
-						"Nos techniciens ont été formés chez CELA sur ces machines spécifiques, ce qui nous permet d'intervenir là où peu de réparateurs savent le faire."
+						"Fondé en 1965 près de Brescia, CELA conçoit des nacelles d'une conception unique : nacelles sur camion de la gamme DT (de 25 à 60 m), capables de travailler sous le niveau du sol, avec panier amovible remplaçable par un treuil, et nacelles araignées Spyder sur chenilles. La marque équipe aussi les pompiers avec ses plateformes de secours.",
+						"Nos techniciens ont été formés chez CELA sur ces machines spécifiques, ce qui nous permet d'intervenir là où peu de réparateurs sont qualifiés."
 					],
 					"image": "/images/cela-dt30-spyder-nacelle-araignee.webp",
 					"alt": "Nacelle araignée CELA DT30 Spyder utilisée par des sapeurs-pompiers",
@@ -214,9 +213,9 @@
 				},
 				{
 					"id": "also",
-					"h2": "Maintenance Multitel, Haulotte, JLG, Skyjack : camion nacelle et nacelle télescopique",
+					"h2": "Maintenance de nacelles toutes marques : camion nacelle, nacelle télescopique, articulée, ciseaux",
 					"paras": [
-						"On intervient aussi sur les camions nacelles Multitel, les nacelles Haulotte, JLG et Skyjack. Réparation camion nacelle en Alpes-Maritimes, dépannage de nacelle télescopique dans le 06 et dans toute la région : sur site ou en atelier."
+						"Au-delà de SOCAGE et CELA, nous intervenons sur tous les types de nacelles et sur toutes les marques : camions nacelles MULTITEL, nacelles HAULOTTE, JLG, SKYJACK et les autres. Télescopique, articulée, ciseaux, araignée ou sur camion, machine récente ou plus ancienne : nous la remettons en service, sur site partout en PACA ou dans notre atelier de Carros."
 					],
 					"image": "/images/nacelle-araignee-depannage-sur-site-fourgon-atelier.webp",
 					"alt": "Nacelle araignée JLG en dépannage sur site, fourgon atelier DANTÈS à l'arrière"
@@ -225,7 +224,7 @@
 					"id": "telecom",
 					"h2": "Nacelle télécom : maintenance en PACA",
 					"paras": [
-						"Les opérateurs télécom et leurs sous-traitants travaillent en hauteur, souvent sur des sites difficiles d'accès, avec des nacelles qui ne peuvent pas rester à l'arrêt. On assure la maintenance et le dépannage de ces machines sur site : hydraulique, électrique, stabilisation, panier. Le but : une nacelle sûre, et disponible quand l'équipe en a besoin."
+						"Les opérateurs télécom et leurs sous-traitants travaillent en hauteur, souvent sur des sites difficiles d'accès, avec des nacelles qui ne peuvent pas rester à l'arrêt. Nous assurons la maintenance et le dépannage de ces machines sur site : hydraulique, électrique, stabilisation, panier. Notre objectif : une nacelle sûre et disponible dès que l'équipe en a besoin."
 					],
 					"draft": true
 				},
@@ -233,7 +232,7 @@
 					"id": "cinema",
 					"h2": "Nacelle cinéma et tournage : réparation et maintenance",
 					"paras": [
-						"Sur un tournage, une machine en panne bloque toute une équipe. On entretient et on répare les nacelles utilisées par les boîtes de production cinéma et audiovisuel, avec le contrôle des organes de sécurité avant le tournage, et une intervention rapide si un défaut apparaît en cours de journée."
+						"Sur un tournage, une machine en panne immobilise toute une équipe. Nous entretenons et réparons les nacelles utilisées par les sociétés de production cinématographique et audiovisuelle, avec contrôle des organes de sécurité avant le tournage et intervention rapide en cas de défaut en cours de journée."
 					],
 					"draft": true
 				},
@@ -241,7 +240,7 @@
 					"id": "sale",
 					"h2": "Vente de nacelles SOCAGE et CELA : neuf et occasion",
 					"paras": [
-						"Nacelles SOCAGE et CELA, neuves ou d'occasion : on vous conseille sur la machine adaptée à votre usage. Les machines disponibles sont publiées dans nos actualités."
+						"Nacelles SOCAGE et CELA, neuves ou d'occasion : nous vous conseillons sur la machine adaptée à votre usage. Les machines disponibles sont publiées dans nos actualités."
 					],
 					"link": "news"
 				}
@@ -251,42 +250,36 @@
 		},
 		"handling": {
 			"h1": "Manutention : réparation de chariots élévateurs toutes marques",
-			"lead": "Chariot élévateur, gerbeur, transpalette électrique ou engin plus spécifique : on répare et on entretient le matériel de manutention de toutes marques. Panne moteur, hydraulique, électrique, mât, freinage : on s'adapte à chaque machine et à chaque situation, sur site ou dans notre atelier de Carros.",
+			"heroImage": "/images/manutention-levage-chariot-telescopique-grue-camion-paca.webp",
+			"heroAlt": "Camion grue soulevant un chariot télescopique lors d'une opération de manutention",
+			"lead": "Chariot élévateur, gerbeur, transpalette électrique ou engin plus spécifique : nous réparons et entretenons le matériel de manutention de toutes marques. Panne moteur, hydraulique, électrique, mât, freinage : nous nous adaptons à chaque machine et à chaque situation, sur site ou dans notre atelier de Carros.",
 			"sections": [
 				{
 					"id": "repair",
 					"h2": "Dépannage chariot élévateur à Nice et en PACA",
 					"paras": [
-						"Thermique ou électrique, récent ou ancien : nos fourgons atelier viennent à la machine, de Nice à Marseille. Si elle doit être prise en charge à l'atelier, notre pont élévateur 5 t à Carros permet de la traiter."
+						"Thermique ou électrique, récent ou ancien : nos fourgons atelier se déplacent jusqu'à la machine, de Nice à Marseille. Si elle doit être prise en charge à l'atelier, notre pont élévateur 5 t à Carros nous permet de la traiter."
 					],
 					"image": "/images/fourgon-atelier-dantes-mini-grue-araignee.webp",
 					"alt": "Fourgon atelier DANTÈS en intervention sur un site, dépannage sur site"
 				},
 				{
-					"id": "deal",
-					"h2": "Manutention sur mesure à Marseille avec DEAL Levage",
-					"paras": [
-						"Pour les opérations de levage et de manutention qui sortent de l'ordinaire, on collabore avec DEAL Levage à Marseille. Ensemble, on monte des solutions sur mesure : manutention lourde, levage spécifique, étude et réalisation de projets que personne ne veut prendre. Un projet de levage sur mesure en PACA ? Parlez-nous-en."
-					],
-					"partner": "deal"
-				},
-				{
 					"id": "sale",
 					"h2": "Une machine à remplacer ?",
 					"paras": [
-						"Parlez-nous de votre besoin : on vous conseille et on cherche avec vous la machine adaptée, neuve ou d'occasion."
+						"Présentez-nous votre besoin : nous vous conseillons et recherchons avec vous la machine adaptée, neuve ou d'occasion."
 					],
 					"draft": true
 				}
 			],
 			"ctaTitle": "Un chariot en panne ?",
-			"ctaText": "Appelez-nous ou décrivez la panne : on s'adapte à chaque machine."
+			"ctaText": "Appelez-nous ou décrivez la panne : nous nous adaptons à chaque machine."
 		}
 	},
 	"partners": {
 		"h1": "Nos partenaires",
-		"lead": "Les constructeurs et partenaires avec lesquels on travaille, et ce qu'on fait avec chacun. Techniciens formés chez chaque constructeur.",
-		"does": "Ce qu'on fait avec eux",
+		"lead": "Les constructeurs et partenaires avec lesquels nous travaillons, et la nature de notre collaboration avec chacun. Techniciens formés chez chaque constructeur.",
+		"does": "Notre intervention",
 		"items": [
 			{
 				"id": "jekko",
@@ -306,9 +299,9 @@
 			},
 			{
 				"id": "cormach",
-				"name": "Cormach, avec la Carrosserie Cornut",
+				"name": "CORMACH, avec la Carrosserie CORNUT",
 				"badge": "Agent de maintenance agréé",
-				"text": "Constructeur italien de grues auxiliaires pour camions, des modèles compacts jusqu'aux grues de 80 t de la série 575000. On travaille la marque avec la Carrosserie Cornut, qui connaît bien les camions équipés Cormach.",
+				"text": "Constructeur italien de grues auxiliaires pour camions, des modèles compacts jusqu'aux grues de 80 t de la série 575000. Nous travaillons cette marque avec la Carrosserie CORNUT, qui connaît bien les camions équipés CORMACH.",
 				"does": "Entretien, dépannage et remise en état de grues auxiliaires et de bras de grue. Techniciens formés chez le constructeur.",
 				"page": "lifting"
 			},
@@ -317,16 +310,8 @@
 				"name": "CELA",
 				"badge": "Partenaire constructeur",
 				"text": "Fondé en 1965 près de Brescia, CELA conçoit des nacelles sur camion DT (25 à 60 m), capables de travailler sous le niveau du sol, des nacelles araignées Spyder et des plateformes de secours pour les pompiers.",
-				"does": "Intervention sur ces machines spécifiques, là où peu de réparateurs savent le faire. Techniciens formés chez CELA.",
+				"does": "Intervention sur ces machines spécifiques, là où peu de réparateurs sont qualifiés. Techniciens formés chez CELA.",
 				"page": "elevation"
-			},
-			{
-				"id": "deal",
-				"name": "DEAL Levage",
-				"badge": "Partenaire projets sur mesure",
-				"text": "Spécialiste du levage et de la manutention lourde à Marseille.",
-				"does": "Montage de solutions sur mesure : manutention lourde, levage spécifique, étude et réalisation de projets que personne ne veut prendre.",
-				"page": "handling"
 			}
 		],
 		"ctaTitle": "Une machine d'une de ces marques ?",
@@ -334,8 +319,8 @@
 	},
 	"news": {
 		"h1": "Nos actualités",
-		"lead": "Chantiers, interventions, machines vendues, formations suivies chez les constructeurs : ce qu'on fait sur le terrain, de Nice à Marseille.",
-		"empty": "Les premières actualités arrivent. En attendant, une panne ou une question : appelez-nous.",
+		"lead": "Chantiers, interventions, machines vendues, formations suivies chez les constructeurs : nos interventions sur le terrain, de Nice à Marseille.",
+		"empty": "Les premières actualités seront bientôt publiées. Pour toute panne ou question, appelez-nous.",
 		"types": {
 			"intervention": "Intervention",
 			"occasion": "Machine d'occasion",
@@ -348,7 +333,7 @@
 	},
 	"contact": {
 		"h1": "Contact et devis",
-		"lead": "Une panne, un devis, une VGP ? Appelez-nous ou remplissez le formulaire : on vous répond vite.",
+		"lead": "Une panne, un devis, une VGP ? Appelez-nous ou remplissez le formulaire : nous vous répondons rapidement.",
 		"coordsTitle": "Nous trouver",
 		"mapTitle": "Plan d'accès à l'atelier de Carros",
 		"zonesTitle": "Zone d'intervention",

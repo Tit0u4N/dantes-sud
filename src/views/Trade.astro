@@ -23,11 +23,13 @@ interface Section {
 }
 const { locale, kind } = Astro.props;
 const t = useTranslations(locale);
+const heroKey = `trades.${kind}.heroImage`;
+const heroImage = t(heroKey) === heroKey ? undefined : t(heroKey);
 const sections = data<Section[]>(t, `trades.${kind}.sections`);
 ---
 
 <Layout locale={locale} pageKey={kind} title={t(`meta.${kind}.title`)} description={t(`meta.${kind}.description`)}>
-	<PageHero title={t(`trades.${kind}.h1`)} lead={t(`trades.${kind}.lead`)}>
+	<PageHero title={t(`trades.${kind}.h1`)} lead={t(`trades.${kind}.lead`)} image={heroImage} imageAlt={heroImage ? t(`trades.${kind}.heroAlt`) : undefined}>
 		<div class="mt-8 flex flex-wrap gap-3">
 			<a href={pathFor('contact', locale)} class="btn btn-accent">{t('ui.quote')}</a>
 		</div>

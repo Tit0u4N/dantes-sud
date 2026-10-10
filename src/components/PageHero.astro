@@ -2,11 +2,21 @@
 interface Props {
 	title: string;
 	lead?: string;
+	image?: string;
+	imageAlt?: string;
 }
-const { title, lead } = Astro.props;
+const { title, lead, image, imageAlt = '' } = Astro.props;
 ---
 
-<section class="blueprint text-white">
+<section class={`text-white ${image ? 'relative isolate overflow-hidden bg-ink' : 'blueprint'}`}>
+	{
+		image && (
+			<>
+				<img src={image} alt={imageAlt} width="1920" height="887" class="absolute inset-0 -z-20 h-full w-full object-cover object-[40%_50%]" fetchpriority="high" />
+				<div class="absolute inset-0 -z-10 bg-gradient-to-r from-ink/95 via-ink/70 to-ink/20"></div>
+			</>
+		)
+	}
 	<div class="wrap py-16 md:py-24">
 		<h1 class="display max-w-4xl text-5xl text-balance md:text-7xl">{title}</h1>
 		{lead && <p class="mt-6 max-w-[62ch] text-lg text-white/85 md:text-xl">{lead}</p>}

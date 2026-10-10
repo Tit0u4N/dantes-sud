@@ -5,7 +5,7 @@ import Steps from '../components/Steps.astro';
 import Vgp from '../components/Vgp.astro';
 import { useTranslations, data, type Locale } from '../i18n';
 import { pathFor, type PageKey } from '../i18n/routes';
-import { company, social, proof } from '../config';
+import { company, social, proof, partners } from '../config';
 
 interface Props {
 	locale: Locale;
@@ -13,11 +13,10 @@ interface Props {
 const { locale } = Astro.props;
 const t = useTranslations(locale);
 const about = data<string[]>(t, 'home.about');
-const stats = data<{ value: string; label: string }[]>(t, 'home.stats');
 const trades = data<{ key: PageKey; title: string; text: string; image: string; alt: string }[]>(t, 'home.trades');
 const steps = data<{ title: string; text: string }[]>(t, 'home.steps');
 const zones = data<{ code: string; name: string }[]>(t, 'home.zones');
-const brands = data<string[]>(t, 'home.brands');
+const brands = data<string[]>(t, 'home.brands').map((name) => ({ name, logo: partners[name.toLowerCase() as keyof typeof partners]?.logo }));
 ---
 
 <Layout locale={locale} pageKey="home" localBusiness title={t('meta.home.title')} description={t('meta.home.description')}>
@@ -43,17 +42,21 @@ const brands = data<string[]>(t, 'home.brands');
 		</div>
 	</section>
 
-	<section class="bg-steel text-white" aria-label={t('home.aboutTitle')}>
-		<ul class="wrap grid grid-cols-2 gap-px py-10 md:grid-cols-4">
-			{
-				stats.map((s) => (
-					<li class="border-l-4 border-accent px-4 py-2">
-						<span class="display block text-6xl md:text-7xl">{s.value}</span>
-						<span class="mt-1 block text-sm text-white/85">{s.label}</span>
-					</li>
-				))
-			}
-		</ul>
+	<section class="bg-ink-2 text-white">
+		<div class="wrap py-14 md:py-20">
+			<h2 class="display text-4xl md:text-5xl">{t('home.zoneTitle')}</h2>
+			<p class="mt-3 max-w-[55ch] text-white/75">{t('home.zoneText')}</p>
+			<ul class="mt-10 grid grid-cols-2 gap-6 md:grid-cols-4">
+				{
+					zones.map((z) => (
+						<li class="border-t-4 border-accent pt-3">
+							<span class="display block text-7xl text-white md:text-8xl">{z.code}</span>
+							<span class="mt-1 block font-semibold text-white/80">{z.name}</span>
+						</li>
+					))
+				}
+			</ul>
+		</div>
 	</section>
 
 	<section class="wrap py-14 md:py-20">
@@ -82,24 +85,7 @@ const brands = data<string[]>(t, 'home.brands');
 
 	<Vgp locale={locale} />
 
-	<Steps title={t('home.processTitle')} steps={steps} />
-
-	<section class="bg-ink-2 text-white">
-		<div class="wrap py-14 md:py-20">
-			<h2 class="display text-4xl md:text-5xl">{t('home.zoneTitle')}</h2>
-			<p class="mt-3 max-w-[55ch] text-white/75">{t('home.zoneText')}</p>
-			<ul class="mt-10 grid grid-cols-2 gap-6 md:grid-cols-4">
-				{
-					zones.map((z) => (
-						<li class="border-t-4 border-accent pt-3">
-							<span class="display block text-7xl text-white md:text-8xl">{z.code}</span>
-							<span class="mt-1 block font-semibold text-white/80">{z.name}</span>
-						</li>
-					))
-				}
-			</ul>
-		</div>
-	</section>
+	<Steps title={t('home.processTitle')} steps={steps} image="/images/fourgon-dantes-grue-intervention-marseille.webp" imageAlt={t('home.processImageAlt')} />
 
 	<section class="wrap py-14 md:py-20">
 		<div class="grid gap-8 md:grid-cols-[1fr_1.4fr] md:items-center">
@@ -111,7 +97,9 @@ const brands = data<string[]>(t, 'home.brands');
 				{
 					brands.map((b) => (
 						<li class="display border-2 border-line text-4xl text-steel">
-							<a href={`${pathFor('partners', locale)}`} class="flex h-24 items-center justify-center hover:bg-paper">{b}</a>
+							<a href={pathFor('partners', locale)} class="flex h-24 items-center justify-center px-6 hover:bg-paper" aria-label={b.name}>
+								{b.logo ? <img src={b.logo} alt={b.name} height="56" class="max-h-14 w-auto max-w-full object-contain" loading="lazy" /> : b.name}
+							</a>
 						</li>
 					))
 				}
