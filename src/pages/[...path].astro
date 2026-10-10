@@ -5,6 +5,7 @@ import Partners from '../views/Partners.astro';
 import News from '../views/News.astro';
 import Contact from '../views/Contact.astro';
 import Thanks from '../views/Thanks.astro';
+import Legal from '../views/Legal.astro';
 import { locales } from '../i18n';
 import { pageKeys, routeParam } from '../i18n/routes';
 
@@ -23,3 +24,4 @@ const { key, locale } = Astro.props;
 {key === 'news' && <News locale={locale} />}
 {key === 'contact' && <Contact locale={locale} />}
 {key === 'thanks' && <Thanks locale={locale} />}
+{(key === 'legal' || key === 'privacy') && <Legal locale={locale} kind={key} />}

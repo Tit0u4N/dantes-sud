@@ -15,7 +15,7 @@ const articles = await getArticles(locale);
 const fmt = new Intl.DateTimeFormat(locale === 'fr' ? 'fr-FR' : 'en-GB', { dateStyle: 'long' });
 ---
 
-<Layout locale={locale} pageKey="news" title={t('meta.news.title')} description={t('meta.news.description')}>
+<Layout locale={locale} pageKey="news" noindex={articles.length === 0} title={t('meta.news.title')} description={t('meta.news.description')}>
 	<PageHero title={t('news.h1')} lead={t('news.lead')} />
 	<section class="wrap py-14 md:py-20">
 		{

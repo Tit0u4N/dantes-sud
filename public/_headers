@@ -1,0 +1,3 @@
+# Préprod : ne pas indexer la copie workers.dev
+https://dantes-sud.titouan-lacombe-fabre.workers.dev/*
+  X-Robots-Tag: noindex

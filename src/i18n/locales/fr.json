@@ -10,7 +10,7 @@
 		"mainNav": "Navigation principale",
 		"followUs": "Suivez-nous",
 		"moreAbout": "Voir le détail",
-		"visitSite": "Site du partenaire",
+		"visitSite": "Site officiel {{name}}",
 		"readMore": "Lire l'article"
 	},
 	"nav": {
@@ -26,11 +26,14 @@
 	"footer": {
 		"contact": "Coordonnées",
 		"hours": "Horaires",
-		"hoursTodo": "Horaires à confirmer",
+		"hoursWeek": "Lundi – vendredi : 7h30 – 18h00",
+		"hoursWeekend": "Samedi – dimanche : fermé",
 		"areas": "Zones d'intervention",
 		"pages": "Le site",
 		"rights": "Tous droits réservés.",
-		"depts": ["Alpes-Maritimes (06)", "Alpes-de-Haute-Provence (04)", "Var (83)", "Bouches-du-Rhône (13)"]
+		"legal": "Mentions légales",
+		"privacy": "Confidentialité",
+		"depts": ["Alpes-Maritimes (06)", "Alpes-de-Haute-Provence (04)", "Var (83)", "Bouches-du-Rhône (13)", "Monaco (MC)"]
 	},
 	"meta": {
 		"home": {
@@ -39,11 +42,11 @@
 		},
 		"lifting": {
 			"title": "Réparation JEKKO et CORMACH PACA | DANTÈS",
-			"description": "Entretien, dépannage et remise en état de mini-grues JEKKO, grues auxiliaires CORMACH et camions grues. Sur site ou en atelier, partout en PACA."
+			"description": "Entretien, dépannage et remise en état de mini-grues JEKKO, grues auxiliaires CORMACH et camions grues. Sur site ou en atelier dans le 06, 83, 13, 04 et à Monaco."
 		},
 		"elevation": {
 			"title": "Réparation nacelles SOCAGE et CELA PACA | DANTÈS",
-			"description": "Maintenance de camions nacelles et nacelles araignées SOCAGE, CELA, MULTITEL. Techniciens formés constructeur, intervention sur site en PACA."
+			"description": "Maintenance de camions nacelles et nacelles araignées SOCAGE, CELA, MULTITEL. Techniciens formés chez les constructeurs, intervention sur site en PACA."
 		},
 		"handling": {
 			"title": "Réparation chariot élévateur toutes marques 06 | DANTÈS",
@@ -51,7 +54,7 @@
 		},
 		"partners": {
 			"title": "Partenaires JEKKO, SOCAGE, CORMACH, CELA | DANTÈS",
-			"description": "Agent de maintenance JEKKO, SOCAGE et CORMACH, partenaire CELA. Techniciens formés chez chaque constructeur."
+			"description": "Agent de maintenance JEKKO, SOCAGE et CORMACH, partenaire CELA. Techniciens formés chez chaque constructeur : découvrez notre collaboration avec chacun."
 		},
 		"news": {
 			"title": "Actualités levage et nacelles en PACA | DANTÈS",
@@ -61,6 +64,8 @@
 			"title": "Contact et devis | DANTÈS Carros (06)",
 			"description": "Une panne, un devis, une VGP ? Appelez DANTÈS au 07 65 80 59 14. Atelier à Carros, intervention dans le 06, 83, 13 et 04."
 		},
+		"legal": { "title": "Mentions légales | DANTÈS", "description": "Mentions légales du site dantes-sud.fr : éditeur, SIRET, directeur de la publication et hébergeur." },
+		"privacy": { "title": "Politique de confidentialité | DANTÈS", "description": "Comment DANTÈS utilise les données saisies dans le formulaire de contact, et vos droits RGPD." },
 		"thanks": { "title": "Message envoyé | DANTÈS", "description": "Votre demande a bien été transmise à DANTÈS." },
 		"notFound": { "title": "Page introuvable | DANTÈS", "description": "Cette page n'existe pas ou a été déplacée." }
 	},
@@ -109,13 +114,14 @@
 			{ "title": "Rapport complet", "text": "Vous recevez un compte-rendu avec descriptif des actions réalisées, état du matériel, recommandations d'entretien futur." },
 			{ "title": "Suivi post-intervention", "text": "Option de contrat de maintenance périodique pour anticiper les pannes et optimiser la durée de vie de vos équipements." }
 		],
-		"zoneTitle": "4 départements couverts depuis Carros",
+		"zoneTitle": "4 départements et Monaco couverts depuis Carros",
 		"zoneText": "Alpes-Maritimes, Var, Bouches-du-Rhône, Alpes-de-Haute-Provence : de Nice à Marseille, de Monaco à Digne-les-Bains.",
 		"zones": [
 			{ "code": "06", "name": "Alpes-Maritimes" },
 			{ "code": "83", "name": "Var" },
 			{ "code": "13", "name": "Bouches-du-Rhône" },
-			{ "code": "04", "name": "Alpes-de-Haute-Provence" }
+			{ "code": "04", "name": "Alpes-de-Haute-Provence" },
+			{ "code": "MC", "name": "Monaco" }
 		],
 		"brandsTitle": "Les marques que nous prenons en charge",
 		"brandsText": "Agent de maintenance JEKKO, SOCAGE et CORMACH, formé chez chaque constructeur.",
@@ -165,7 +171,7 @@
 					"id": "also",
 					"h2": "Réparation camion grue en Alpes-Maritimes : FASSI, PALFINGER, HIAB et toutes marques",
 					"paras": [
-						"Au-delà de nos marques partenaires, nous réparons et entretenons les camions grues et les grues auxiliaires de toutes marques : FASSI, PALFINGER, HIAB et les autres. Hydraulique, électricité, stabilisateurs, limiteur de charge : nos techniciens interviennent sur site partout en PACA ou dans notre atelier de Carros, avec la même exigence que sur JEKKO et CORMACH."
+						"Au-delà de nos marques partenaires, nous réparons et entretenons les camions grues et les grues auxiliaires de toutes marques : FASSI, PALFINGER, HIAB et les autres. Hydraulique, électricité, stabilisateurs, limiteur de charge : nos techniciens interviennent sur site dans le 06, 83, 13, 04 et à Monaco ou dans notre atelier de Carros, avec la même exigence que sur JEKKO et CORMACH."
 					],
 					"image": "/images/reparation-mini-grue-jekko-spx1275-atelier-dantes-carros.webp",
 					"alt": "Mini-grue JEKKO SPX1275 stabilisée sur le site de l'atelier, avec le fourgon DANTÈS à l'arrière"
@@ -174,7 +180,7 @@
 					"id": "sale",
 					"h2": "Achat JEKKO occasion en France : neuf et occasion",
 					"paras": [
-						"Nous assurons la vente de mini-grues JEKKO et de grues CORMACH, neuves ou d'occasion. Les machines disponibles sont publiées dans nos actualités."
+						"Nous assurons la vente de mini-grues JEKKO et de grues CORMACH, neuves ou d'occasion. Contactez-nous pour connaître les machines disponibles."
 					],
 					"link": "news"
 				}
@@ -215,7 +221,7 @@
 					"id": "also",
 					"h2": "Maintenance de nacelles toutes marques : camion nacelle, nacelle télescopique, articulée, ciseaux",
 					"paras": [
-						"Au-delà de SOCAGE et CELA, nous intervenons sur tous les types de nacelles et sur toutes les marques : camions nacelles MULTITEL, nacelles HAULOTTE, JLG, SKYJACK et les autres. Télescopique, articulée, ciseaux, araignée ou sur camion, machine récente ou plus ancienne : nous la remettons en service, sur site partout en PACA ou dans notre atelier de Carros."
+						"Au-delà de SOCAGE et CELA, nous intervenons sur tous les types de nacelles et sur toutes les marques : camions nacelles MULTITEL, nacelles HAULOTTE, JLG, SKYJACK et les autres. Télescopique, articulée, ciseaux, araignée ou sur camion, machine récente ou plus ancienne : nous la remettons en service, sur site dans le 06, 83, 13, 04 et à Monaco ou dans notre atelier de Carros."
 					],
 					"image": "/images/nacelle-araignee-depannage-sur-site-fourgon-atelier.webp",
 					"alt": "Nacelle araignée JLG en dépannage sur site, fourgon atelier DANTÈS à l'arrière"
@@ -240,7 +246,7 @@
 					"id": "sale",
 					"h2": "Vente de nacelles SOCAGE et CELA : neuf et occasion",
 					"paras": [
-						"Nacelles SOCAGE et CELA, neuves ou d'occasion : nous vous conseillons sur la machine adaptée à votre usage. Les machines disponibles sont publiées dans nos actualités."
+						"Nacelles SOCAGE et CELA, neuves ou d'occasion : nous vous conseillons sur la machine adaptée à votre usage. Contactez-nous pour connaître les machines disponibles."
 					],
 					"link": "news"
 				}
@@ -274,10 +280,11 @@
 			],
 			"ctaTitle": "Un chariot en panne ?",
 			"ctaText": "Appelez-nous ou décrivez la panne : nous nous adaptons à chaque machine."
-		}
+		},
+		"relatedTitle": "Nos autres métiers et nos partenaires"
 	},
 	"partners": {
-		"h1": "Nos partenaires",
+		"h1": "Nos partenaires constructeurs : JEKKO, SOCAGE, CORMACH, CELA",
 		"lead": "Les constructeurs et partenaires avec lesquels nous travaillons, et la nature de notre collaboration avec chacun. Techniciens formés chez chaque constructeur.",
 		"does": "Notre intervention",
 		"items": [
@@ -318,7 +325,7 @@
 		"ctaText": "Appelez-nous ou décrivez la panne."
 	},
 	"news": {
-		"h1": "Nos actualités",
+		"h1": "Nos actualités : chantiers et machines en PACA",
 		"lead": "Chantiers, interventions, machines vendues, formations suivies chez les constructeurs : nos interventions sur le terrain, de Nice à Marseille.",
 		"empty": "Les premières actualités seront bientôt publiées. Pour toute panne ou question, appelez-nous.",
 		"types": {
@@ -336,18 +343,115 @@
 		"lead": "Une panne, un devis, une VGP ? Appelez-nous ou remplissez le formulaire : nous vous répondons rapidement.",
 		"coordsTitle": "Nous trouver",
 		"mapTitle": "Plan d'accès à l'atelier de Carros",
+		"mapShow": "Afficher la carte",
+		"mapNote": "Le chargement de la carte dépose des cookies Google.",
+		"mapOpen": "Ouvrir dans Google Maps",
 		"zonesTitle": "Zone d'intervention",
 		"form": {
 			"name": "Nom",
 			"phone": "Téléphone",
 			"company": "Société",
+			"email": "E-mail",
 			"machine": "Marque et modèle de la machine",
 			"city": "Ville d'intervention",
 			"message": "Votre message",
 			"photo": "Joindre une photo",
 			"optional": "facultatif",
 			"send": "Envoyer la demande",
-			"gdpr": "Les informations saisies servent uniquement à répondre à votre demande."
+			"gdpr": "Les informations saisies servent uniquement à répondre à votre demande.",
+			"gdprLink": "Politique de confidentialité"
+		}
+	},
+	"legalPages": {
+		"facts": {
+			"name": "Raison sociale",
+			"capital": "Capital social",
+			"address": "Siège social",
+			"siret": "SIRET",
+			"rcs": "RCS",
+			"vat": "TVA intracommunautaire",
+			"phone": "Téléphone",
+			"email": "E-mail",
+			"publisher": "Directeur de la publication",
+			"host": "Hébergeur"
+		},
+		"legal": {
+			"h1": "Mentions légales",
+			"lead": "Informations légales sur l'éditeur et l'hébergeur du site dantes-sud.fr.",
+			"sections": [
+				{
+					"h2": "Propriété intellectuelle",
+					"paras": [
+						"Les textes, photographies, logos et marques présents sur ce site sont la propriété de DANTÈS ou de leurs titulaires respectifs (JEKKO, SOCAGE, CORMACH, CELA). Toute reproduction sans autorisation écrite est interdite.",
+						"Les marques des constructeurs sont citées pour décrire les machines que nous entretenons et réparons ; elles restent la propriété de leurs détenteurs."
+					]
+				},
+				{
+					"h2": "Responsabilité",
+					"paras": [
+						"DANTÈS s'efforce de fournir des informations exactes et à jour, sans garantie d'exhaustivité. Les informations du site ne constituent pas une offre contractuelle : tout devis est établi après étude de la machine.",
+						"Les liens vers des sites tiers (constructeurs, réseaux sociaux, Google) sont fournis à titre d'information ; DANTÈS n'est pas responsable de leur contenu."
+					]
+				},
+				{
+					"h2": "Données personnelles et cookies",
+					"paras": [
+						"Le traitement des données saisies dans le formulaire de contact est décrit dans la politique de confidentialité. Ce site n'utilise pas de cookie publicitaire ni de mesure d'audience ; la carte Google Maps n'est chargée qu'après votre clic."
+					]
+				},
+				{
+					"h2": "Droit applicable",
+					"paras": [
+						"Le site est soumis au droit français. En cas de litige, les tribunaux français sont compétents."
+					]
+				}
+			]
+		},
+		"privacy": {
+			"h1": "Politique de confidentialité",
+			"lead": "Quelles données nous collectons via le formulaire, pourquoi, et comment exercer vos droits.",
+			"sections": [
+				{
+					"h2": "Responsable du traitement",
+					"paras": [
+						"Le responsable du traitement est la société DANTES, 15e rue, 1re avenue, 06510 Carros. Contact : contact@dantes-sud.fr, 07 65 80 59 14."
+					]
+				},
+				{
+					"h2": "Données collectées et finalité",
+					"paras": [
+						"Le formulaire de contact collecte : nom, téléphone, société (facultatif), e-mail (facultatif), marque et modèle de la machine, ville d'intervention, message et photo (facultative).",
+						"Ces données servent uniquement à répondre à votre demande de renseignement ou de devis. Elles ne sont ni vendues ni utilisées à des fins commerciales sans votre accord."
+					]
+				},
+				{
+					"h2": "Base légale et durée de conservation",
+					"paras": [
+						"Le traitement repose sur l'exécution de mesures précontractuelles (votre demande de devis) et sur notre intérêt légitime à répondre aux sollicitations professionnelles.",
+						"Les données sont conservées 3 ans après le dernier échange, puis supprimées."
+					]
+				},
+				{
+					"h2": "Destinataires",
+					"paras": [
+						"Les données sont accessibles au personnel de DANTÈS habilité et, pour l'acheminement des messages, à nos prestataires techniques (hébergement et messagerie). Elles ne sont pas transférées à des tiers à d'autres fins."
+					]
+				},
+				{
+					"h2": "Vos droits",
+					"paras": [
+						"Vous disposez d'un droit d'accès, de rectification, d'effacement, d'opposition, de limitation et de portabilité de vos données. Pour l'exercer, écrivez à contact@dantes-sud.fr.",
+						"Vous pouvez aussi introduire une réclamation auprès de la CNIL (cnil.fr)."
+					]
+				},
+				{
+					"h2": "Cookies et services tiers",
+					"paras": [
+						"Le site ne dépose aucun cookie de suivi. La carte d'accès est fournie par Google Maps et ne se charge qu'après votre clic sur « Afficher la carte » : Google peut alors déposer des cookies et traiter votre adresse IP selon sa propre politique.",
+						"Les polices de caractères sont chargées depuis Google Fonts."
+					]
+				}
+			]
 		}
 	},
 	"thanks": {

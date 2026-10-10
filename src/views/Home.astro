@@ -19,7 +19,7 @@ const zones = data<{ code: string; name: string }[]>(t, 'home.zones');
 const brands = data<string[]>(t, 'home.brands').map((name) => ({ name, logo: partners[name.toLowerCase() as keyof typeof partners]?.logo }));
 ---
 
-<Layout locale={locale} pageKey="home" localBusiness title={t('meta.home.title')} description={t('meta.home.description')}>
+<Layout locale={locale} pageKey="home" ogImage="/images/og/home.jpg" localBusiness title={t('meta.home.title')} description={t('meta.home.description')}>
 	<section class="relative isolate overflow-hidden bg-ink text-white">
 		<img src="/images/maintenance-levage-paca-chantier-marseille.webp" alt={t('home.heroAlt')} width="1500" height="2000" class="absolute inset-0 -z-20 h-full w-full object-cover object-[50%_60%]" fetchpriority="high" />
 		<div class="absolute inset-0 -z-10 bg-gradient-to-r from-ink/95 via-ink/70 to-ink/20"></div>
@@ -46,11 +46,11 @@ const brands = data<string[]>(t, 'home.brands').map((name) => ({ name, logo: par
 		<div class="wrap py-14 md:py-20">
 			<h2 class="display text-4xl md:text-5xl">{t('home.zoneTitle')}</h2>
 			<p class="mt-3 max-w-[55ch] text-white/75">{t('home.zoneText')}</p>
-			<ul class="mt-10 grid grid-cols-2 gap-6 md:grid-cols-4">
+			<ul class="mt-10 grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-5">
 				{
 					zones.map((z) => (
 						<li class="border-t-4 border-accent pt-3">
-							<span class="display block text-7xl text-white md:text-8xl">{z.code}</span>
+							<span class="display block text-6xl text-white md:text-7xl">{z.code}</span>
 							<span class="mt-1 block font-semibold text-white/80">{z.name}</span>
 						</li>
 					))

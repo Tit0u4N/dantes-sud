@@ -3,6 +3,7 @@ import { locales } from '../i18n';
 import { pageKeys, pathFor, articlePath } from '../i18n/routes';
 import { getArticles } from '../i18n/news';
 
+
 /** Sitemap with both languages and hreflang alternates. The thank-you page is left out. */
 export const GET: APIRoute = async ({ site }) => {
 	const abs = (p: string) => new URL(p, site).href;
@@ -11,14 +12,15 @@ export const GET: APIRoute = async ({ site }) => {
 			.filter(Boolean)
 			.map(([l, p]) => `<xhtml:link rel="alternate" hreflang="${l}" href="${abs(p as string)}"/>`)
 			.join('');
+	const fr = await getArticles('fr');
+	const en = await getArticles('en');
+	const hidden = ['thanks', ...(fr.length + en.length === 0 ? ['news'] : [])];
 	const urls: string[] = [];
-	for (const key of pageKeys.filter((k) => k !== 'thanks')) {
+	for (const key of pageKeys.filter((k) => !hidden.includes(k))) {
 		for (const l of locales) {
 			urls.push(`<url><loc>${abs(pathFor(key, l))}</loc>${alt(pathFor(key, 'fr'), pathFor(key, 'en'))}</url>`);
 		}
 	}
-	const fr = await getArticles('fr');
-	const en = await getArticles('en');
 	for (const [l, list, otherList] of [['fr', fr, en], ['en', en, fr]] as const) {
 		for (const { slug, entry } of list) {
 			const twin = otherList.some((a) => a.slug === slug);

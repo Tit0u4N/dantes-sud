@@ -10,6 +10,8 @@ export const pages = {
 	news: { fr: 'actualites', en: 'news' },
 	contact: { fr: 'contact', en: 'contact' },
 	thanks: { fr: 'merci', en: 'thank-you' },
+	legal: { fr: 'mentions-legales', en: 'legal-notice' },
+	privacy: { fr: 'confidentialite', en: 'privacy-policy' },
 } as const;
 
 export type PageKey = keyof typeof pages;
@@ -21,7 +23,7 @@ export const menuKeys = ['home', 'lifting', 'elevation', 'handling', 'partners',
 export function pathFor(key: PageKey, locale: Locale): string {
 	const slug = pages[key][locale];
 	if (locale === 'fr') return `/${slug}`;
-	return slug ? `/en/${slug}` : '/en/';
+	return slug ? `/en/${slug}` : '/en';
 }
 
 /** Public URL of a news article. */

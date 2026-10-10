@@ -1,0 +1,10 @@
+/maintenance-sur-site       /             301
+/restauration-en-atelier    /levage       301
+/vente-neuf-ou-occasion     /partenaires  301
+/contactus                  /contact      301
+/en/on-site-maintenance     /en           301
+/en/workshop-refurbishment  /en/lifting   301
+/en/new-used-equipment      /en/partners  301
+/en_GB/contactus            /en/contact   301
+/en_GB                      /en           301
+/en_GB/*                    /en           301

@@ -7,14 +7,32 @@ export const company = {
 	street: '15e rue, 1re avenue',
 	postalCode: '06510',
 	city: 'Carros',
-	geo: { lat: 43.7936, lng: 7.1863 },
+	// Coordonnées de la fiche Google Business « Dantès, 15ème Rue ».
+	geo: { lat: 43.8023076, lng: 7.1955513 },
+	// Requête carte : fait pointer Google sur la fiche entreprise.
+	mapQuery: 'Dantès, 15ème Rue, 06510 Carros',
 };
+
+/** Mentions légales (source : SIRENE). Capital vide = ligne masquée, à confirmer. */
+export const legal = {
+	name: 'DANTES',
+	form: 'SARL',
+	capital: '',
+	siret: '913 965 737 00038',
+	rcs: 'RCS Grasse 913 965 737',
+	vat: 'FR66913965737',
+	publisher: 'Clément Lacombe-Fabre',
+	host: 'Cloudflare, Inc., 101 Townsend St, San Francisco, CA 94107, États-Unis',
+};
+
+/** Horaires d'ouverture (lun–ven). Sam–dim fermé. */
+export const hours = { days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], opens: '07:30', closes: '18:00' };
 
 /** Empty string = not provided yet: the matching icon / block stays hidden. */
 export const social = {
 	linkedin: 'https://www.linkedin.com/company/dantes/',
 	instagram: 'https://www.instagram.com/dantes_sud06/',
-	gbp: '', // URL fiche Google Business Profile (à fournir)
+	gbp: 'https://share.google/OI4JEnTlMrGNkRknA', // fiche Google Business Profile
 };
 
 /** Optional proof blocks, hidden while empty. */

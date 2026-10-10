@@ -10,7 +10,7 @@
 		"mainNav": "Main navigation",
 		"followUs": "Follow us",
 		"moreAbout": "See details",
-		"visitSite": "Partner website",
+		"visitSite": "Official {{name}} website",
 		"readMore": "Read the article"
 	},
 	"nav": {
@@ -26,11 +26,14 @@
 	"footer": {
 		"contact": "Contact details",
 		"hours": "Opening hours",
-		"hoursTodo": "Hours to be confirmed",
+		"hoursWeek": "Monday – Friday: 7:30 am – 6:00 pm",
+		"hoursWeekend": "Saturday – Sunday: closed",
 		"areas": "Service areas",
 		"pages": "Site",
 		"rights": "All rights reserved.",
-		"depts": ["Alpes-Maritimes (06)", "Alpes-de-Haute-Provence (04)", "Var (83)", "Bouches-du-Rhône (13)"]
+		"legal": "Legal notice",
+		"privacy": "Privacy policy",
+		"depts": ["Alpes-Maritimes (06)", "Alpes-de-Haute-Provence (04)", "Var (83)", "Bouches-du-Rhône (13)", "Monaco (MC)"]
 	},
 	"meta": {
 		"home": {
@@ -39,7 +42,7 @@
 		},
 		"lifting": {
 			"title": "JEKKO & CORMACH Repair, South of France | DANTÈS",
-			"description": "Servicing, repair and refurbishment of JEKKO mini cranes, CORMACH loader cranes and truck-mounted cranes. On site or in our workshop across PACA."
+			"description": "Servicing, repair and refurbishment of JEKKO mini cranes, CORMACH loader cranes and truck-mounted cranes. On site or in our workshop in 06, 83, 13, 04 and Monaco."
 		},
 		"elevation": {
 			"title": "SOCAGE & CELA Platform Repair, PACA | DANTÈS",
@@ -51,7 +54,7 @@
 		},
 		"partners": {
 			"title": "Partners JEKKO, SOCAGE, CORMACH, CELA | DANTÈS",
-			"description": "JEKKO, SOCAGE and CORMACH maintenance agent, partner of CELA. Technicians trained at each manufacturer."
+			"description": "JEKKO, SOCAGE and CORMACH maintenance agent, partner of CELA. Technicians trained at each manufacturer: see how we work with each one."
 		},
 		"news": {
 			"title": "Lifting & Platform News, South of France | DANTÈS",
@@ -61,12 +64,14 @@
 			"title": "Contact & Quotes | DANTÈS Carros (06)",
 			"description": "A breakdown, a quote, a periodic inspection? Call DANTÈS on +33 7 65 80 59 14. Workshop in Carros, on-site service in 06, 83, 13 and 04."
 		},
+		"legal": { "title": "Legal notice | DANTÈS", "description": "Legal notice for dantes-sud.fr: publisher, SIRET, publication director and host." },
+		"privacy": { "title": "Privacy policy | DANTÈS", "description": "How DANTÈS uses the data entered in the contact form, and your GDPR rights." },
 		"thanks": { "title": "Message sent | DANTÈS", "description": "Your request has been sent to DANTÈS." },
 		"notFound": { "title": "Page not found | DANTÈS", "description": "This page does not exist or has moved." }
 	},
 	"home": {
 		"h1": "Maintenance and repair of lifting, aerial platform and material handling equipment in the South of France",
-		"subtitle": "JEKKO, SOCAGE and CORMACH maintenance agent. On-site service or in our Carros workshop, across the Alpes-Maritimes, Var, Bouches-du-Rhône and Alpes-de-Haute-Provence.",
+		"subtitle": "JEKKO, SOCAGE and CORMACH maintenance agent. On-site service or in our Carros workshop, across the Alpes-Maritimes, Var, Bouches-du-Rhône and Alpes-de-Haute-Provence (the PACA region, South-East France) and Monaco.",
 		"heroAlt": "Spider crane and platform working on a job site overlooking Marseille",
 		"aboutTitle": "On site or in the workshop, we travel to you",
 		"about": [
@@ -109,13 +114,14 @@
 			{ "title": "Full report", "text": "You receive a report describing the work done, the condition of the equipment and recommendations for future maintenance." },
 			{ "title": "Post-intervention follow-up", "text": "Optional periodic maintenance contract to anticipate breakdowns and extend the life of your equipment." }
 		],
-		"zoneTitle": "4 départements covered from Carros",
+		"zoneTitle": "4 French départements and Monaco, covered from Carros",
 		"zoneText": "Alpes-Maritimes, Var, Bouches-du-Rhône, Alpes-de-Haute-Provence: from Nice to Marseille, from Monaco to Digne-les-Bains.",
 		"zones": [
 			{ "code": "06", "name": "Alpes-Maritimes" },
 			{ "code": "83", "name": "Var" },
 			{ "code": "13", "name": "Bouches-du-Rhône" },
-			{ "code": "04", "name": "Alpes-de-Haute-Provence" }
+			{ "code": "04", "name": "Alpes-de-Haute-Provence" },
+			{ "code": "MC", "name": "Monaco" }
 		],
 		"brandsTitle": "The brands we service",
 		"brandsText": "JEKKO, SOCAGE and CORMACH maintenance agent, trained at each manufacturer.",
@@ -128,7 +134,7 @@
 		"ctaText": "Call us or describe the fault: we prepare the job before we leave."
 	},
 	"vgp": {
-		"title": "Periodic inspections (VGP) and returns to service: handled by us",
+		"title": "Statutory periodic inspections (VGP) and returns to service: we take care of them",
 		"text": "We take charge of your periodic inspections (VGP) and returns to service. We schedule the inspection with BUREAU VERITAS, prepare the machine beforehand and promptly resolve any reservation raised during the inspection. A single point of contact, a compliant machine, a report signed by a recognised body: the best guarantee for you and your operators. Between two inspections, we remain available in the event of an incident."
 	},
 	"trades": {
@@ -136,7 +142,7 @@
 			"h1": "Lifting: JEKKO and CORMACH repair in the South of France",
 			"heroImage": "/images/mini-grue-jekko-sur-chenilles-stabilisee-paca.webp",
 			"heroAlt": "JEKKO tracked mini crane with outriggers deployed in front of an industrial building",
-			"lead": "Mini crawler crane, truck-mounted loader crane or crane arm: we service, repair and refurbish all lifting equipment, on site with our workshop vans or in our Carros workshop. Hydraulics, electrics, combustion and electric engines, welding: we work on the machine as a whole.",
+			"lead": "Mini crawler crane, truck-mounted loader crane or crane arm: we service, repair and refurbish all lifting equipment, on site with our workshop vans or in our Carros workshop. Hydraulics, electrics, internal-combustion and electric engines, welding: we work on the machine as a whole.",
 			"sections": [
 				{
 					"id": "jekko",
@@ -155,7 +161,7 @@
 					"h2": "CORMACH repair in PACA: loader cranes and crane arms",
 					"badge": "Approved maintenance agent",
 					"paras": [
-						"Italian manufacturer of truck-mounted loader cranes, CORMACH makes cranes of all sizes, from compact models for light trucks up to 80 t capacity cranes in the 575000 series. We work the brand with Carrosserie CORNUT, which brings its experience of CORMACH-equipped trucks. DANTÈS is a CORMACH maintenance agent and our technicians were trained there."
+						"Italian manufacturer of truck-mounted loader cranes, CORMACH makes cranes of all sizes, from compact models for light trucks up to 80 t capacity cranes in the 575000 series. We service this brand together with Carrosserie CORNUT, which brings its experience of CORMACH-equipped trucks. DANTÈS is a CORMACH maintenance agent and our technicians were trained there."
 					],
 					"image": "/images/cormach-grue-auxiliaire-camion.webp",
 					"alt": "CORMACH loader crane mounted on a truck, CORMACH loader crane maintenance",
@@ -165,7 +171,7 @@
 					"id": "also",
 					"h2": "Truck-mounted crane repair in the Alpes-Maritimes: FASSI, PALFINGER, HIAB and all makes",
 					"paras": [
-						"Beyond our partner brands, we repair and service truck-mounted cranes and loader cranes of all makes: FASSI, PALFINGER, HIAB and others. Hydraulics, electrics, outriggers, load limiter: our technicians work on site anywhere in PACA or in our Carros workshop, to the same standards as on JEKKO and CORMACH."
+						"Beyond our partner brands, we repair and service truck-mounted cranes and loader cranes of all makes: FASSI, PALFINGER, HIAB and others. Hydraulics, electrics, outriggers, load limiter: our technicians work on site in 06, 83, 13, 04 and Monaco or in our Carros workshop, to the same standards as on JEKKO and CORMACH."
 					],
 					"image": "/images/reparation-mini-grue-jekko-spx1275-atelier-dantes-carros.webp",
 					"alt": "JEKKO SPX1275 mini crane stabilised at the workshop site, with the DANTÈS van behind"
@@ -174,7 +180,7 @@
 					"id": "sale",
 					"h2": "Buy a used JEKKO in France: new and second-hand",
 					"paras": [
-						"We handle sales of JEKKO mini cranes and CORMACH cranes, new or used. Available machines are posted in our news section."
+						"We handle sales of JEKKO mini cranes and CORMACH cranes, new or used. Contact us to find out which machines are available."
 					],
 					"link": "news"
 				}
@@ -215,7 +221,7 @@
 					"id": "also",
 					"h2": "Platform maintenance, all makes: truck-mounted, telescopic, articulated and scissor lifts",
 					"paras": [
-						"Beyond SOCAGE and CELA, we work on all types of platforms and all makes: MULTITEL truck-mounted platforms, HAULOTTE, JLG, SKYJACK and others. Telescopic, articulated, scissor, spider or truck-mounted, recent or older machine: we return it to service, on site anywhere in PACA or in our Carros workshop."
+						"Beyond SOCAGE and CELA, we work on all types of platforms and all makes: MULTITEL truck-mounted platforms, HAULOTTE, JLG, SKYJACK and others. Telescopic, articulated, scissor, spider or truck-mounted, recent or older machine: we return it to service, on site in 06, 83, 13, 04 and Monaco or in our Carros workshop."
 					],
 					"image": "/images/nacelle-araignee-depannage-sur-site-fourgon-atelier.webp",
 					"alt": "JLG spider lift being repaired on site, DANTÈS workshop van behind"
@@ -240,7 +246,7 @@
 					"id": "sale",
 					"h2": "SOCAGE and CELA platforms for sale: new and used",
 					"paras": [
-						"SOCAGE and CELA platforms, new or used: we advise you on the machine suited to your use. Available machines are posted in our news section."
+						"SOCAGE and CELA platforms, new or used: we advise you on the machine suited to your use. Contact us to find out which machines are available."
 					],
 					"link": "news"
 				}
@@ -258,7 +264,7 @@
 					"id": "repair",
 					"h2": "Forklift breakdown service in Nice and across PACA",
 					"paras": [
-						"Combustion or electric, recent or old: our workshop vans come to the machine, from Nice to Marseille. If it has to come to the workshop, our 5 t vehicle lift in Carros lets us handle it."
+						"Internal-combustion or electric, recent or old: our workshop vans come to the machine, from Nice to Marseille. If it has to come to the workshop, our 5 t vehicle lift in Carros lets us handle it."
 					],
 					"image": "/images/fourgon-atelier-dantes-mini-grue-araignee.webp",
 					"alt": "DANTÈS workshop van working on a site, on-site breakdown service"
@@ -274,10 +280,11 @@
 			],
 			"ctaTitle": "A forklift out of service?",
 			"ctaText": "Call us or describe the fault: we adapt to each machine."
-		}
+		},
+		"relatedTitle": "Our other trades and our partners"
 	},
 	"partners": {
-		"h1": "Our partners",
+		"h1": "Our manufacturer partners: JEKKO, SOCAGE, CORMACH, CELA",
 		"lead": "The manufacturers and partners we work with, and what we do with each of them. Technicians trained at each manufacturer.",
 		"does": "What we do with them",
 		"items": [
@@ -301,7 +308,7 @@
 				"id": "cormach",
 				"name": "CORMACH, with Carrosserie CORNUT",
 				"badge": "Approved maintenance agent",
-				"text": "Italian manufacturer of truck-mounted loader cranes, from compact models up to 80 t cranes in the 575000 series. We work the brand with Carrosserie CORNUT, which knows CORMACH-equipped trucks well.",
+				"text": "Italian manufacturer of truck-mounted loader cranes, from compact models up to 80 t cranes in the 575000 series. We service this brand together with Carrosserie CORNUT, which knows CORMACH-equipped trucks well.",
 				"does": "Servicing, repair and refurbishment of loader cranes and crane arms. Technicians trained at the manufacturer.",
 				"page": "lifting"
 			},
@@ -318,7 +325,7 @@
 		"ctaText": "Call us or describe the fault."
 	},
 	"news": {
-		"h1": "News",
+		"h1": "News: job sites and machines in the South of France",
 		"lead": "Job sites, repairs, machines sold, training at manufacturers: what we do in the field, from Nice to Marseille.",
 		"empty": "Our first news items are coming. In the meantime, for a breakdown or a question: call us.",
 		"types": {
@@ -336,18 +343,115 @@
 		"lead": "A breakdown, a quote, a periodic inspection? Call us or fill in the form: we answer quickly.",
 		"coordsTitle": "Find us",
 		"mapTitle": "Map to the Carros workshop",
+		"mapShow": "Show the map",
+		"mapNote": "Loading the map sets Google cookies.",
+		"mapOpen": "Open in Google Maps",
 		"zonesTitle": "Service area",
 		"form": {
 			"name": "Name",
 			"phone": "Phone",
 			"company": "Company",
+			"email": "E-mail",
 			"machine": "Machine make and model",
 			"city": "Job location (city)",
 			"message": "Your message",
 			"photo": "Attach a photo",
 			"optional": "optional",
 			"send": "Send request",
-			"gdpr": "The information you enter is used only to answer your request."
+			"gdpr": "The information you enter is used only to answer your request.",
+			"gdprLink": "Privacy policy"
+		}
+	},
+	"legalPages": {
+		"facts": {
+			"name": "Company name",
+			"capital": "Share capital",
+			"address": "Registered office",
+			"siret": "SIRET",
+			"rcs": "Trade register",
+			"vat": "VAT number",
+			"phone": "Phone",
+			"email": "E-mail",
+			"publisher": "Publication director",
+			"host": "Host"
+		},
+		"legal": {
+			"h1": "Legal notice",
+			"lead": "Legal information about the publisher and host of dantes-sud.fr.",
+			"sections": [
+				{
+					"h2": "Intellectual property",
+					"paras": [
+						"The texts, photographs, logos and trademarks on this site belong to DANTÈS or to their respective owners (JEKKO, SOCAGE, CORMACH, CELA). Any reproduction without written permission is prohibited.",
+						"Manufacturer brands are mentioned to describe the machines we service and repair; they remain the property of their owners."
+					]
+				},
+				{
+					"h2": "Liability",
+					"paras": [
+						"DANTÈS strives to provide accurate and up-to-date information, without guaranteeing that it is exhaustive. Site content is not a contractual offer: every quote is prepared after assessing the machine.",
+						"Links to third-party sites (manufacturers, social networks, Google) are provided for information; DANTÈS is not responsible for their content."
+					]
+				},
+				{
+					"h2": "Personal data and cookies",
+					"paras": [
+						"The processing of data entered in the contact form is described in the privacy policy. This site uses no advertising cookies or audience measurement; the Google Maps map loads only after you click."
+					]
+				},
+				{
+					"h2": "Governing law",
+					"paras": [
+						"This site is governed by French law. French courts have jurisdiction in the event of a dispute."
+					]
+				}
+			]
+		},
+		"privacy": {
+			"h1": "Privacy policy",
+			"lead": "What data we collect through the form, why, and how to exercise your rights.",
+			"sections": [
+				{
+					"h2": "Data controller",
+					"paras": [
+						"The data controller is DANTES, 15e rue, 1re avenue, 06510 Carros, France. Contact: contact@dantes-sud.fr, +33 7 65 80 59 14."
+					]
+				},
+				{
+					"h2": "Data collected and purpose",
+					"paras": [
+						"The contact form collects: name, phone, company (optional), e-mail (optional), machine make and model, job location, message and photo (optional).",
+						"This data is used only to answer your enquiry or quote request. It is not sold or used for marketing without your consent."
+					]
+				},
+				{
+					"h2": "Legal basis and retention",
+					"paras": [
+						"Processing is based on pre-contractual measures (your quote request) and on our legitimate interest in answering business enquiries.",
+						"Data is kept for 3 years after the last exchange, then deleted."
+					]
+				},
+				{
+					"h2": "Recipients",
+					"paras": [
+						"Data is accessible to authorised DANTÈS staff and, for message delivery, to our technical providers (hosting and e-mail). It is not passed to third parties for other purposes."
+					]
+				},
+				{
+					"h2": "Your rights",
+					"paras": [
+						"You have the right to access, rectify, erase, object to, restrict and port your data. To exercise them, write to contact@dantes-sud.fr.",
+						"You may also lodge a complaint with the French data protection authority, the CNIL (cnil.fr)."
+					]
+				},
+				{
+					"h2": "Cookies and third-party services",
+					"paras": [
+						"The site sets no tracking cookies. The location map is provided by Google Maps and loads only after you click “Show the map”: Google may then set cookies and process your IP address under its own policy.",
+						"Fonts are loaded from Google Fonts."
+					]
+				}
+			]
 		}
 	},
 	"thanks": {

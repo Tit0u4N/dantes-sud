@@ -6,6 +6,7 @@ import Vgp from '../components/Vgp.astro';
 import { useTranslations, data, type Locale } from '../i18n';
 import { pathFor, type PageKey } from '../i18n/routes';
 import { partners } from '../config';
+import { getArticles } from '../i18n/news';
 
 interface Props {
 	locale: Locale;
@@ -25,10 +26,20 @@ const { locale, kind } = Astro.props;
 const t = useTranslations(locale);
 const heroKey = `trades.${kind}.heroImage`;
 const heroImage = t(heroKey) === heroKey ? undefined : t(heroKey);
+const hasNews = (await getArticles(locale)).length > 0;
 const sections = data<Section[]>(t, `trades.${kind}.sections`);
+const related = (['lifting', 'elevation', 'handling', 'partners'] as PageKey[]).filter((k) => k !== kind);
+const jsonLd = {
+	'@context': 'https://schema.org',
+	'@type': 'Service',
+	name: t(`trades.${kind}.h1`),
+	description: t(`meta.${kind}.description`),
+	provider: { '@id': new URL('/#business', Astro.site).href },
+	areaServed: ['Alpes-Maritimes', 'Var', 'Bouches-du-Rhône', 'Alpes-de-Haute-Provence', 'Monaco'],
+};
 ---
 
-<Layout locale={locale} pageKey={kind} title={t(`meta.${kind}.title`)} description={t(`meta.${kind}.description`)}>
+<Layout locale={locale} pageKey={kind} ogImage={`/images/og/${kind}.jpg`} extraJsonLd={[jsonLd]} title={t(`meta.${kind}.title`)} description={t(`meta.${kind}.description`)}>
 	<PageHero title={t(`trades.${kind}.h1`)} lead={t(`trades.${kind}.lead`)} image={heroImage} imageAlt={heroImage ? t(`trades.${kind}.heroAlt`) : undefined}>
 		<div class="mt-8 flex flex-wrap gap-3">
 			<a href={pathFor('contact', locale)} class="btn btn-accent">{t('ui.quote')}</a>
@@ -50,10 +61,10 @@ const sections = data<Section[]>(t, `trades.${kind}.sections`);
 							<div class="mt-6 flex flex-wrap gap-x-6 gap-y-2">
 								{p?.url && (
 									<a href={p.url} target="_blank" rel="noopener noreferrer" class="font-bold text-steel underline decoration-2 underline-offset-4 hover:text-steel-deep">
-										{t('ui.visitSite')}
+										{t('ui.visitSite', { name: s.partner!.toUpperCase() })}
 									</a>
 								)}
-								{s.link && (
+								{s.link && (s.link !== 'news' || hasNews) && (
 									<a href={pathFor(s.link, locale)} class="font-bold text-steel underline decoration-2 underline-offset-4 hover:text-steel-deep">
 										{t(`nav.${s.link}`)}
 									</a>
@@ -68,5 +79,17 @@ const sections = data<Section[]>(t, `trades.${kind}.sections`);
 	}
 
 	<Vgp locale={locale} />
+	<section class="wrap py-14">
+		<h2 class="display text-3xl text-steel md:text-4xl">{t('trades.relatedTitle')}</h2>
+		<ul class="mt-6 flex flex-wrap gap-x-8 gap-y-3">
+			{
+				related.map((k) => (
+					<li>
+						<a href={pathFor(k, locale)} class="font-bold text-steel underline decoration-2 underline-offset-4 hover:text-steel-deep">{t(`nav.${k}`)}</a>
+					</li>
+				))
+			}
+		</ul>
+	</section>
 	<CtaBand locale={locale} title={t(`trades.${kind}.ctaTitle`)} text={t(`trades.${kind}.ctaText`)} />
 </Layout>

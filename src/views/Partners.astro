@@ -34,7 +34,7 @@ const agent = ['jekko', 'socage', 'cormach'];
 							<h2 class="mt-4 text-2xl font-bold">{p.name}</h2>
 							<p class={`mt-2 inline-block self-start px-3 py-1 text-sm font-bold ${agent.includes(p.id) ? 'bg-steel text-white' : 'bg-sky text-steel-deep'}`}>{p.badge}</p>
 							<p class="mt-4 text-ink/85">{p.text}</p>
-							<h3 class="mt-5 font-bold">{t('partners.does')}</h3>
+							<p class="mt-5 font-bold">{t('partners.does')}</p>
 							<p class="mt-1 flex-1 text-ink/85">{p.does}</p>
 							<div class="mt-6 flex flex-wrap gap-x-6 gap-y-2">
 								<a href={pathFor(p.page, locale)} class="font-bold text-steel underline decoration-2 underline-offset-4 hover:text-steel-deep">
@@ -42,7 +42,7 @@ const agent = ['jekko', 'socage', 'cormach'];
 								</a>
 								{cfg.url && (
 									<a href={cfg.url} target="_blank" rel="noopener noreferrer" class="font-bold text-steel underline decoration-2 underline-offset-4 hover:text-steel-deep">
-										{t('ui.visitSite')}
+										{t('ui.visitSite', { name: p.id.toUpperCase() })}
 									</a>
 								)}
 							</div>

@@ -1,0 +1,57 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHero from '../components/PageHero.astro';
+import { useTranslations, data, type Locale } from '../i18n';
+import { company, legal } from '../config';
+
+interface Props {
+	locale: Locale;
+	kind: 'legal' | 'privacy';
+}
+const { locale, kind } = Astro.props;
+const t = useTranslations(locale);
+const sections = data<{ h2: string; paras: string[] }[]>(t, `legalPages.${kind}.sections`);
+const facts =
+	kind === 'legal'
+		? [
+				[t('legalPages.facts.name'), `${legal.name} (${legal.form})`],
+				legal.capital && [t('legalPages.facts.capital'), legal.capital],
+				[t('legalPages.facts.address'), `${company.street}, ${company.postalCode} ${company.city}`],
+				[t('legalPages.facts.siret'), legal.siret],
+				[t('legalPages.facts.rcs'), legal.rcs],
+				[t('legalPages.facts.vat'), legal.vat],
+				[t('legalPages.facts.phone'), company.phone],
+				[t('legalPages.facts.email'), company.email],
+				[t('legalPages.facts.publisher'), legal.publisher],
+				[t('legalPages.facts.host'), legal.host],
+			].filter(Boolean) as string[][]
+		: [];
+---
+
+<Layout locale={locale} pageKey={kind} title={t(`meta.${kind}.title`)} description={t(`meta.${kind}.description`)}>
+	<PageHero title={t(`legalPages.${kind}.h1`)} lead={t(`legalPages.${kind}.lead`)} />
+	<section class="wrap max-w-4xl py-14 md:py-20">
+		{
+			facts.length > 0 && (
+				<dl class="grid gap-x-8 gap-y-3 border-b-2 border-line pb-10 sm:grid-cols-[14rem_1fr]">
+					{facts.map(([k, v]) => (
+						<>
+							<dt class="font-bold">{k}</dt>
+							<dd class="text-ink/85">{v}</dd>
+						</>
+					))}
+				</dl>
+			)
+		}
+		{
+			sections.map((s) => (
+				<div class="mt-10">
+					<h2 class="display text-3xl text-steel">{s.h2}</h2>
+					<div class="mt-4 space-y-3 text-ink/85">
+						{s.paras.map((p) => <p class="max-w-[68ch]">{p}</p>)}
+					</div>
+				</div>
+			))
+		}
+	</section>
+</Layout>

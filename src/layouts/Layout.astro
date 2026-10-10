@@ -4,7 +4,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { type Locale } from '../i18n';
 import { pathFor, type PageKey } from '../i18n/routes';
-import { company, social } from '../config';
+import { company, social, hours } from '../config';
 
 interface Props {
 	locale: Locale;
@@ -21,9 +21,11 @@ interface Props {
 	canonicalPath?: string;
 	/** Emit LocalBusiness structured data. */
 	localBusiness?: boolean;
+	/** Extra JSON-LD objects (e.g. Service). */
+	extraJsonLd?: object[];
 }
 
-const { locale, title, description, pageKey, noindex = false, ogImage = '/images/maintenance-levage-paca-chantier-marseille.webp', alternates, canonicalPath, localBusiness = false } = Astro.props;
+const { locale, title, description, pageKey, noindex = false, ogImage = '/images/og/home.jpg', alternates, canonicalPath, localBusiness = false, extraJsonLd = [] } = Astro.props;
 const site = Astro.site!;
 const abs = (path: string) => new URL(path, site).href;
 const canonical = canonicalPath ? abs(canonicalPath) : pageKey ? abs(pathFor(pageKey, locale)) : abs(Astro.url.pathname);
@@ -36,13 +38,27 @@ const jsonLd = {
 	url: abs('/'),
 	image: abs('/images/maintenance-levage-paca-chantier-marseille.webp'),
 	logo: abs('/images/logo-dantes.webp'),
+	description: "Maintenance et réparation d'engins de levage, d'élévation et de manutention en PACA. Agent de maintenance JEKKO, SOCAGE et CORMACH.",
 	telephone: '+33765805914',
 	email: company.email,
-	address: { '@type': 'PostalAddress', streetAddress: company.street, postalCode: company.postalCode, addressLocality: company.city, addressCountry: 'FR' },
+	address: { '@type': 'PostalAddress', streetAddress: company.street, postalCode: company.postalCode, addressLocality: company.city, addressRegion: "Provence-Alpes-Côte d'Azur", addressCountry: 'FR' },
 	geo: { '@type': 'GeoCoordinates', latitude: company.geo.lat, longitude: company.geo.lng },
-	areaServed: ['Alpes-Maritimes', 'Var', 'Bouches-du-Rhône', 'Alpes-de-Haute-Provence'].map((name) => ({ '@type': 'AdministrativeArea', name })),
+	openingHoursSpecification: [{ '@type': 'OpeningHoursSpecification', dayOfWeek: hours.days, opens: hours.opens, closes: hours.closes }],
+	hasMap: social.gbp || undefined,
+	areaServed: ['Alpes-Maritimes', 'Var', 'Bouches-du-Rhône', 'Alpes-de-Haute-Provence', 'Monaco'].map((name) => ({ '@type': 'AdministrativeArea', name })),
 	sameAs: Object.values(social).filter(Boolean),
 };
+const breadcrumb =
+	pageKey && pageKey !== 'home'
+		? {
+				'@context': 'https://schema.org',
+				'@type': 'BreadcrumbList',
+				itemListElement: [
+					{ '@type': 'ListItem', position: 1, name: locale === 'fr' ? 'Accueil' : 'Home', item: abs(pathFor('home', locale)) },
+					{ '@type': 'ListItem', position: 2, name: title.split(' | ')[0], item: canonical },
+				],
+			}
+		: undefined;
 ---
 
 <!doctype html>
@@ -76,6 +92,8 @@ const jsonLd = {
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta property="og:locale" content={locale === 'fr' ? 'fr_FR' : 'en_GB'} />
 		{localBusiness && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
+		{breadcrumb && <script type="application/ld+json" set:html={JSON.stringify(breadcrumb)} />}
+		{extraJsonLd.map((o) => <script type="application/ld+json" set:html={JSON.stringify(o)} />)}
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
