@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import CtaBand from '../components/CtaBand.astro';
 import Steps from '../components/Steps.astro';
+import InstagramFeed from '../components/InstagramFeed.astro';
 import Vgp from '../components/Vgp.astro';
 import { useTranslations, data, type Locale } from '../i18n';
 import { pathFor, type PageKey } from '../i18n/routes';
@@ -134,8 +135,8 @@ const brands = data<string[]>(t, 'home.brands').map((name) => ({ name, logo: par
 			<section class="wrap py-14">
 				<h2 class="display text-4xl md:text-5xl">{t('home.instaTitle')}</h2>
 				<p class="mt-3 text-ink/75">{t('home.instaText')}</p>
-				{/* Instagram feed embed goes here (widget code to plug in once the account exists). */}
-				<a href={social.instagram} target="_blank" rel="noopener noreferrer me" class="btn btn-steel mt-6">Instagram</a>
+				<InstagramFeed />
+				<a href={social.instagram} target="_blank" rel="noopener noreferrer me" class="btn btn-steel mt-6">{t('home.instaFollow')}</a>
 			</section>
 		)
 	}
