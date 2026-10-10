@@ -1,1 +1,92 @@
 @import "tailwindcss";
+
+@theme {
+	--color-ink: #0c1624;
+	--color-ink-2: #14243a;
+	--color-steel: #11509f;
+	--color-steel-deep: #0b3a74;
+	--color-sky: #d9e6f5;
+	--color-paper: #f5f7fa;
+	--color-line: #d5dce5;
+	--color-accent: #8dbbf0;
+	--font-sans: "Archivo", system-ui, sans-serif;
+}
+
+@layer base {
+	html {
+		scroll-behavior: smooth;
+		-webkit-text-size-adjust: 100%;
+	}
+	body {
+		font-family: var(--font-sans);
+		color: var(--color-ink);
+		background: #fff;
+		line-height: 1.6;
+	}
+	:focus-visible {
+		outline: 3px solid var(--color-steel);
+		outline-offset: 3px;
+	}
+	@media (prefers-reduced-motion: reduce) {
+		html { scroll-behavior: auto; }
+	}
+}
+
+@layer components {
+	/* Condensed heavy headings: the one typographic voice of the site */
+	.display {
+		font-weight: 800;
+		font-stretch: 72%;
+		line-height: 0.98;
+		letter-spacing: -0.005em;
+	}
+	.wrap { margin-inline: auto; max-width: 72rem; padding-inline: 1.25rem; }
+
+	.btn {
+		display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
+		padding: .85rem 1.4rem; font-weight: 700; font-stretch: 90%;
+		border: 2px solid transparent; transition: background-color .15s, color .15s, border-color .15s;
+		clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 12px 100%, 0 calc(100% - 12px));
+	}
+	.btn-accent { background: var(--color-accent); color: var(--color-ink); }
+	.btn-accent:hover { background: #b3d3f7; }
+	.btn-light { background: #fff; color: var(--color-steel-deep); }
+	.btn-light:hover { background: var(--color-sky); }
+	.btn-steel { background: var(--color-steel); color: #fff; }
+	.btn-steel:hover { background: var(--color-steel-deep); }
+	.btn-ghost { background: transparent; color: #fff; box-shadow: inset 0 0 0 2px rgba(255,255,255,.55); }
+	.btn-ghost:hover { background: rgba(255,255,255,.12); }
+
+	/* Flat-top hexagon, echoes the logo */
+	.hex { clip-path: polygon(25% 3%, 75% 3%, 100% 50%, 75% 97%, 25% 97%, 0 50%); }
+
+	/* Blueprint grid used on dark surfaces */
+	.blueprint {
+		background-color: var(--color-ink);
+		background-image:
+			linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px),
+			linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px);
+		background-size: 44px 44px;
+	}
+	/* Striped stand-in for photos still to be supplied */
+	.photo-ph {
+		background:
+			repeating-linear-gradient(135deg, rgba(17,80,159,.14) 0 12px, rgba(17,80,159,.04) 12px 24px),
+			var(--color-sky);
+	}
+
+	.field {
+		width: 100%; padding: .75rem .9rem; background: #fff;
+		border: 2px solid var(--color-line); border-radius: 0; font: inherit;
+	}
+	.field:focus { border-color: var(--color-steel); outline: none; box-shadow: 0 0 0 3px rgba(17,80,159,.2); }
+	.field:user-invalid { border-color: #b3261e; }
+}
+
+/* The single orchestrated moment: hero hexagons settle into place */
+@keyframes hex-in {
+	from { opacity: 0; transform: translateY(18px) scale(.96); }
+	to { opacity: 1; transform: none; }
+}
+.hex-in { animation: hex-in .8s cubic-bezier(.2,.7,.2,1) both; }
+@media (prefers-reduced-motion: reduce) { .hex-in { animation: none; } }

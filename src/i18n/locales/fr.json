@@ -1,3 +1,178 @@
 {
-	"site": { "title": "Dantes Sud" }
+	"site": { "title": "Dantès", "tagline": "Toujours en mouvement.", "logoAlt": "Dantès" },
+	"ui": {
+		"skip": "Aller au contenu",
+		"menu": "Menu",
+		"call": "Appeler",
+		"quote": "Demander un devis",
+		"photoTodo": "Photo à fournir",
+		"langSwitch": "English version",
+		"langCode": "EN",
+		"mainNav": "Navigation principale"
+	},
+	"nav": {
+		"services": "Services",
+		"onsite": "Maintenance sur site",
+		"workshop": "Restauration en atelier",
+		"sales": "Vente neuf ou occasion",
+		"contact": "Contact"
+	},
+	"footer": {
+		"contact": "Coordonnées",
+		"hours": "Horaires",
+		"hoursTodo": "Horaires à confirmer",
+		"areas": "Zones d'intervention",
+		"pages": "Le site",
+		"rights": "Tous droits réservés.",
+		"depts": ["Alpes-Maritimes (06)", "Alpes-de-Haute-Provence (04)", "Var (83)", "Bouches-du-Rhône (13)"]
+	},
+	"cta": { "contactUs": "Nous contacter" },
+	"meta": {
+		"home": {
+			"title": "Réparation de nacelles et grues à Carros (06) | Dantès",
+			"description": "Dantès répare, restaure et vend nacelles, grues auxiliaires et mini-grues à Carros. Dépannage sur site dans le 06, 04, 83 et 13. Devis rapide."
+		},
+		"onsite": {
+			"title": "Dépannage de matériel de levage sur site en PACA | Dantès",
+			"description": "Intervention rapide pour matériel de levage sur site dans les départements 06, 04, 83, 13. Réparations mécaniques, hydrauliques, électriques. Contactez-nous !"
+		},
+		"workshop": {
+			"title": "Restauration de matériel de levage en atelier (06) | Dantès",
+			"description": "Restaurations complètes en atelier de matériel de levage ancien ou endommagé : diagnostic, réusinage, mécano-hydraulique, électricité, chaudronnerie. Devis clair."
+		},
+		"sales": {
+			"title": "Vente matériel neuf & occasion – Dantès | Levage & élévation",
+			"description": "Matériel de levage neuf ou d'occasion issu de marques réputées (Jekko, Socage, Cormach, CELA). Conseils personnalisés. Demandez un devis dès maintenant !"
+		},
+		"contact": {
+			"title": "Contact et devis | Dantès, matériel de levage à Carros (06)",
+			"description": "Contactez Dantès à Carros pour vos besoins en réparation ou maintenance de véhicules de levage. Réponse rapide par téléphone, email ou formulaire en ligne."
+		},
+		"thanks": {
+			"title": "Message envoyé | Dantès",
+			"description": "Votre demande a bien été transmise à Dantès."
+		},
+		"notFound": {
+			"title": "Page introuvable | Dantès",
+			"description": "Cette page n'existe pas ou a été déplacée."
+		}
+	},
+	"home": {
+		"h1": "Réparation, maintenance et vente de matériel de levage dans les Alpes-Maritimes",
+		"intro": "Dantès dépanne, remet en état et vend du matériel de levage pour les professionnels de la Côte d'Azur et de la région PACA : nacelles, grues auxiliaires, mini-grues. Installés à Carros, nous intervenons sur site avec un fourgon atelier ou accueillons vos machines dans notre atelier.",
+		"servicesTitle": "Trois façons de remettre votre matériel en mouvement",
+		"more": "Voir le détail",
+		"services": [
+			{
+				"key": "onsite",
+				"title": "Maintenance sur site",
+				"text": "Nous disposons d'un fourgon atelier totalement équipé pour toutes interventions de dépannage sur site, couvrant les départements suivants : 06, 04, 83, et 13. Nous mettons tout en œuvre pour vous apporter un service rapide sur site, quel que soit l'accès."
+			},
+			{
+				"key": "sales",
+				"title": "Vente neuf ou occasion",
+				"text": "Nous vous proposons du matériel de levage neuf et d'occasion de qualité, soigneusement sélectionné pour répondre à vos besoins spécifiques. Notre équipe est à votre disposition pour vous conseiller et vous aider à choisir l'équipement le plus adapté à vos projets."
+			},
+			{
+				"key": "workshop",
+				"title": "Restauration en atelier",
+				"text": "Nous sommes en mesure d'accueillir et de remettre en état tout type de matériel dans nos ateliers, quel que soit l'âge du matériel et/ou la nature de la réparation : moteur thermique ou électrique, électricité, hydraulique, chaudronnerie."
+			}
+		],
+		"zoneTitle": "Quatre départements, un seul fourgon atelier",
+		"zoneText": "Depuis Carros, nous couvrons la Côte d'Azur et l'arrière-pays jusqu'à Marseille.",
+		"zones": [
+			{ "code": "06", "name": "Alpes-Maritimes" },
+			{ "code": "04", "name": "Alpes-de-Haute-Provence" },
+			{ "code": "83", "name": "Var" },
+			{ "code": "13", "name": "Bouches-du-Rhône" }
+		],
+		"brandsTitle": "Marques partenaires",
+		"brandsText": "Mini-grues, nacelles, grues auxiliaires : des constructeurs reconnus, neufs comme d'occasion.",
+		"ctaTitle": "Une machine à l'arrêt ?",
+		"ctaText": "Appelez-nous ou décrivez la panne : nous préparons l'intervention avant de partir."
+	},
+	"onsite": {
+		"h1": "Maintenance sur site",
+		"lead": "Dantès propose un service complet de maintenance sur site pour tout type de matériel de levage, permettant une intervention rapide et performante directement là où se trouve le matériel. Grâce à un véhicule atelier entièrement équipé, l'équipe intervient dans les Alpes-Maritimes (06), les Alpes-de-Haute-Provence (04), le Var (83) et les Bouches-du-Rhône (13).",
+		"assetsTitle": "Nos atouts",
+		"assets": [
+			{ "title": "Réactivité", "text": "Interventions rapides assurées par un camion atelier mobile, garantissant une prise en charge efficace sur site." },
+			{ "title": "Polyvalence technique", "text": "Diagnostics et réparations intégrales, couvrant : mécanique (thermique et électrique), systèmes hydrauliques et électriques, chaudronnerie, soudure, pièces détachées." },
+			{ "title": "Accompagnement personnalisé", "text": "Conseils techniques adaptés à chaque besoin, qu'il s'agisse de dépannage, maintenance préventive ou choix de matériel de remplacement." }
+		],
+		"processTitle": "Processus d'intervention",
+		"steps": [
+			{ "title": "Contact initial", "text": "Vous nous appelez ou soumettez une demande via notre site." },
+			{ "title": "Pré-étude à distance", "text": "Analyse des informations, identification du problème pour préparer efficacement l'intervention." },
+			{ "title": "Planification rapide et estimation des coûts", "text": "Une intervention est planifiée selon votre urgence (dépannage immédiat ou planning de maintenance préventive)." },
+			{ "title": "Intervention mobile", "text": "Nos techniciens se déplacent avec un camion atelier équipé pour réaliser diagnostics, réparations ou réglages directement sur site." },
+			{ "title": "Rapport complet", "text": "Vous recevez un compte-rendu avec descriptif des actions réalisées, état du matériel, recommandations d'entretien futur." },
+			{ "title": "Suivi post-intervention", "text": "Option de contrat de maintenance périodique pour anticiper les pannes et optimiser la durée de vie de vos équipements." }
+		],
+		"ctaTitle": "Besoin d'une intervention rapide ou d'un devis ?",
+		"ctaText": "Contactez-nous aujourd'hui pour une assistance technique, adaptée à vos impératifs."
+	},
+	"workshop": {
+		"h1": "Restauration en atelier",
+		"lead": "Chez Dantès, notre atelier est spécialement équipé pour redonner vie à votre matériel de levage et manutention, qu'il soit ancien et/ou soumis à des pannes sévères. Nous intervenons sur tous types d'équipements peu importe l'âge de la machine.",
+		"possibleTitle": "Restauration possible",
+		"possible": [
+			"Diagnostic approfondi",
+			"Démontage complet",
+			"Réusinage ou remplacement de pièces défectueuses",
+			"Restauration mécanique, électrique, hydraulique ou par chaudronnerie"
+		],
+		"possibleText": "Nous nous attachons à restaurer non seulement la fonctionnalité, mais aussi la fiabilité et la longévité du matériel.",
+		"processTitle": "De l'arrivée de la machine à sa remise en service",
+		"steps": [
+			{ "title": "Arrivée du matériel", "text": "Nous prenons en charge la machine à son arrivée à l'atelier, la réceptionnons et consignons son état et les symptômes accentés.", "draft": true },
+			{ "title": "Évaluation technique", "text": "Nous identifions les organes à reprendre ou à remplacer et vous remettons une estimation avant toute intervention lourde.", "draft": true },
+			{ "title": "Restauration complète en atelier", "text": "Démontage, réusinage ou remplacement des pièces, remise en état mécanique, électrique, hydraulique et chaudronnée, puis remontage.", "draft": true },
+			{ "title": "Tests de validation", "text": "Examen fonctionnel complet : charges de levage, fonctionnement précis, sécurité, hydraulique, électrique." },
+			{ "title": "Rapport détaillé", "text": "Compte rendu clair avec les actions réalisées, état des pièces, recommandations et devis pour entretien futur." }
+		],
+		"ctaTitle": "Votre matériel de levage montre des signes de fatigue ?",
+		"ctaText": "Contactez-nous dès maintenant pour une restauration en atelier sur mesure."
+	},
+	"sales": {
+		"h1": "Vente neuf ou occasion",
+		"lead": "Chez Dantès, nous vous proposons une gamme complète de matériel de levage et élévation en neuf ou occasion, sélectionné parmi les marques les plus performantes du marché. Grâce à nos partenariats privilégiés, nous vous offrons des solutions adaptées à toutes les situations et exigences professionnelles.",
+		"brands": [
+			{ "name": "Jekko", "title": "Mini-grues performantes et compactes", "text": "Mini-grues sur chenilles SPX, grues articulées JF, minipickers MPK." },
+			{ "name": "Socage", "title": "Plateformes aériennes innovantes", "text": "Nacelles araignées, camions nacelles articulées." },
+			{ "name": "Cormach", "title": "Grues hydrauliques auxiliaires sur camion", "text": "Grues auxiliaires de la gamme légère à la gamme ultra-lourde." },
+			{ "name": "CELA", "title": "Nacelles élévatrices", "text": "DT Truck (sur camion), DT Crawler (sur chenilles)." }
+		],
+		"ctaTitle": "Besoin de renouveler votre matériel ?",
+		"ctaText": "Contactez-nous pour plus d'informations sur nos matériels et nos partenaires."
+	},
+	"contact": {
+		"h1": "Contact et devis",
+		"lead": "Contactez-nous pour tout ce qui concerne notre entreprise ou nos services. Nous ferons de notre mieux pour vous répondre dans les plus brefs délais.",
+		"coordsTitle": "Nous trouver",
+		"mapTodo": "Plan d'accès à intégrer",
+		"form": {
+			"name": "Nom",
+			"phone": "Téléphone",
+			"email": "Email",
+			"company": "Société",
+			"type": "Type de demande",
+			"types": ["Dépannage", "Devis", "Achat", "Autre"],
+			"message": "Votre message",
+			"optional": "facultatif",
+			"send": "Envoyer la demande",
+			"gdpr": "Les informations saisies servent uniquement à répondre à votre demande. Voir la politique de confidentialité.",
+			"required": "Champ obligatoire"
+		}
+	},
+	"thanks": {
+		"h1": "Demande envoyée",
+		"text": "Merci, nous revenons vers vous rapidement. En cas d'urgence, appelez-nous directement.",
+		"home": "Retour à l'accueil"
+	},
+	"notFound": {
+		"h1": "Page introuvable",
+		"text": "Cette page n'existe pas ou a été déplacée. Reprenez par l'accueil, nos services ou le contact."
+	}
 }

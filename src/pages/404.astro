@@ -1,0 +1,20 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHero from '../components/PageHero.astro';
+import { useTranslations } from '../i18n';
+import { pathFor } from '../i18n/routes';
+
+// Static hosts serve a single 404 file: French, with a link to the English site.
+const locale = 'fr';
+const t = useTranslations(locale);
+---
+
+<Layout locale={locale} noindex title={t('meta.notFound.title')} description={t('meta.notFound.description')}>
+	<PageHero title={t('notFound.h1')} lead={t('notFound.text')}>
+		<div class="mt-8 flex flex-wrap gap-3">
+			<a href={pathFor('home', 'fr')} class="btn btn-accent">{t('thanks.home')}</a>
+			<a href={pathFor('contact', 'fr')} class="btn btn-ghost">{t('nav.contact')}</a>
+			<a href={pathFor('home', 'en')} class="btn btn-ghost" hreflang="en" lang="en">English</a>
+		</div>
+	</PageHero>
+</Layout>

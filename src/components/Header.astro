@@ -1,0 +1,76 @@
+---
+import { useTranslations, type Locale } from '../i18n';
+import { pathFor, type PageKey } from '../i18n/routes';
+import { company } from '../config';
+
+interface Props {
+	locale: Locale;
+	pageKey?: PageKey;
+}
+const { locale, pageKey } = Astro.props;
+const t = useTranslations(locale);
+const other: Locale = locale === 'fr' ? 'en' : 'fr';
+const langHref = pageKey ? pathFor(pageKey, other) : pathFor('home', other);
+
+const services = (['onsite', 'workshop', 'sales'] as const).map((k) => ({
+	href: pathFor(k, locale),
+	label: t(`nav.${k}`),
+	current: pageKey === k,
+}));
+const link = 'px-3 py-2 font-semibold hover:text-steel';
+---
+
+<a
+	href="#main"
+	class="sr-only focus:not-sr-only focus:fixed focus:left-3 focus:top-3 focus:z-50 focus:bg-accent focus:px-4 focus:py-2"
+	>{t('ui.skip')}</a
+>
+<header class="sticky top-0 z-40 border-b border-line bg-white/95 backdrop-blur">
+	<div class="wrap flex h-[4.5rem] items-center justify-between gap-4">
+		<a href={pathFor('home', locale)} class="flex items-center gap-3" aria-label={t('site.title')}>
+			<img src="/logo.svg" alt={t('site.logoAlt')} width="48" height="44" class="h-11 w-auto" />
+			<span class="display hidden text-3xl text-steel sm:block">{t('site.title')}</span>
+		</a>
+
+		<nav aria-label={t('ui.mainNav')} class="hidden items-center md:flex">
+			<div class="group relative">
+				<button type="button" class={`${link} flex items-center gap-1`} aria-haspopup="true">
+					{t('nav.services')}
+					<svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2" /></svg>
+				</button>
+				<ul
+					class="invisible absolute left-0 top-full min-w-64 border border-line bg-white py-2 opacity-0 shadow-lg transition group-focus-within:visible group-focus-within:opacity-100 group-hover:visible group-hover:opacity-100"
+				>
+					{
+						services.map((s) => (
+							<li>
+								<a href={s.href} aria-current={s.current ? 'page' : undefined} class="block px-4 py-2 hover:bg-paper hover:text-steel aria-[current=page]:text-steel aria-[current=page]:font-bold">
+									{s.label}
+								</a>
+							</li>
+						))
+					}
+				</ul>
+			</div>
+			<a href={pathFor('contact', locale)} class={link} aria-current={pageKey === 'contact' ? 'page' : undefined}>
+				{t('nav.contact')}
+			</a>
+			<a href={langHref} hreflang={other} lang={other} class={`${link} ml-2 border-l border-line pl-5`} title={t('ui.langSwitch')}>
+				{t('ui.langCode')}
+			</a>
+			<a href={company.tel} class="btn btn-steel ml-3">{company.phone}</a>
+		</nav>
+
+		<details class="relative md:hidden">
+			<summary class="btn btn-steel cursor-pointer list-none">{t('ui.menu')}</summary>
+			<div class="absolute right-0 top-full mt-3 w-72 border border-line bg-white p-3 shadow-xl">
+				<ul class="flex flex-col">
+					{services.map((s) => <li><a href={s.href} class="block px-3 py-3 font-semibold">{s.label}</a></li>)}
+					<li><a href={pathFor('contact', locale)} class="block px-3 py-3 font-semibold">{t('nav.contact')}</a></li>
+					<li><a href={langHref} hreflang={other} lang={other} class="block px-3 py-3 font-semibold">{t('ui.langSwitch')}</a></li>
+				</ul>
+				<a href={company.tel} class="btn btn-steel mt-2 w-full">{company.phone}</a>
+			</div>
+		</details>
+	</div>
+</header>

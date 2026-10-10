@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHero from '../components/PageHero.astro';
+import { useTranslations, type Locale } from '../i18n';
+import { pathFor } from '../i18n/routes';
+import { company } from '../config';
+
+interface Props {
+	locale: Locale;
+}
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+---
+
+<Layout locale={locale} pageKey="thanks" noindex title={t('meta.thanks.title')} description={t('meta.thanks.description')}>
+	<PageHero title={t('thanks.h1')} lead={t('thanks.text')}>
+		<div class="mt-8 flex flex-wrap gap-3">
+			<a href={company.tel} class="btn btn-accent">{company.phone}</a>
+			<a href={pathFor('home', locale)} class="btn btn-ghost">{t('thanks.home')}</a>
+		</div>
+	</PageHero>
+</Layout>

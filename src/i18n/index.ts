@@ -17,3 +17,8 @@ await instance.init({
 export function useTranslations(locale: string | undefined) {
 	return instance.getFixedT(locales.includes(locale as Locale) ? (locale as Locale) : defaultLocale);
 }
+
+/** Reads an array/object value from the locale files with its type. */
+export function data<T>(t: ReturnType<typeof useTranslations>, key: string): T {
+	return t(key, { returnObjects: true }) as unknown as T;
+}

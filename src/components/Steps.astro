@@ -1,0 +1,35 @@
+---
+// Ordered process: numbering is meaningful because the steps are a real sequence.
+interface Step {
+	title: string;
+	text: string;
+	draft?: boolean;
+}
+interface Props {
+	title: string;
+	steps: Step[];
+}
+const { title, steps } = Astro.props;
+---
+
+<section class="bg-paper">
+	<div class="wrap py-16 md:py-20">
+		<h2 class="display text-4xl md:text-5xl">{title}</h2>
+		<ol class="mt-10 max-w-3xl">
+			{
+				steps.map((s, i) => (
+					<li class="relative grid grid-cols-[3.5rem_1fr] gap-5 pb-9 last:pb-0">
+						{i < steps.length - 1 && <span class="absolute left-[1.75rem] top-14 h-[calc(100%-3rem)] w-px bg-steel/30" aria-hidden="true" />}
+						<span class="hex display relative flex h-14 w-14 items-center justify-center bg-steel text-2xl text-white" aria-hidden="true">
+							{i + 1}
+						</span>
+						<div>
+							<h3 class="text-xl font-bold">{s.title}</h3>
+							<p class="mt-1 max-w-[60ch] text-ink/80">{s.text}</p>
+						</div>
+					</li>
+				))
+			}
+		</ol>
+	</div>
+</section>

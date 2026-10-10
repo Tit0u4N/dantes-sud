@@ -1,0 +1,22 @@
+---
+// Hexagonal photo frame. Shows a striped placeholder until `src` is provided.
+interface Props {
+	src?: string;
+	alt?: string;
+	label: string;
+	class?: string;
+}
+const { src, alt = '', label, class: cls = '' } = Astro.props;
+---
+
+<div class={`hex relative aspect-[1.1/1] ${cls}`} role={src ? undefined : 'img'} aria-label={src ? undefined : label}>
+	{
+		src ? (
+			<img src={src} alt={alt} class="h-full w-full object-cover" loading="lazy" />
+		) : (
+			<div class="photo-ph flex h-full w-full items-center justify-center p-6 text-center text-sm font-semibold text-steel-deep">
+				{label}
+			</div>
+		)
+	}
+</div>

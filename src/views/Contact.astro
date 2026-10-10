@@ -1,0 +1,79 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHero from '../components/PageHero.astro';
+import { useTranslations, data, type Locale } from '../i18n';
+import { pathFor } from '../i18n/routes';
+import { company } from '../config';
+
+interface Props {
+	locale: Locale;
+}
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+const types = data<string[]>(t, 'contact.form.types');
+const thanks = pathFor('thanks', locale);
+---
+
+<Layout locale={locale} pageKey="contact" title={t('meta.contact.title')} description={t('meta.contact.description')}>
+	<PageHero title={t('contact.h1')} lead={t('contact.lead')} />
+	<section class="wrap grid gap-14 py-16 md:grid-cols-[1.4fr_1fr] md:py-20">
+		<!-- TODO: backend. For now the form validates client-side then redirects to the thank-you page. -->
+		<form id="contact-form" data-thanks={thanks} class="grid gap-5 sm:grid-cols-2">
+			<label class="block">
+				<span class="mb-1 block font-semibold">{t('contact.form.name')}</span>
+				<input class="field" name="name" type="text" autocomplete="name" required />
+			</label>
+			<label class="block">
+				<span class="mb-1 block font-semibold">{t('contact.form.phone')}</span>
+				<input class="field" name="phone" type="tel" autocomplete="tel" required />
+			</label>
+			<label class="block">
+				<span class="mb-1 block font-semibold">{t('contact.form.email')}</span>
+				<input class="field" name="email" type="email" autocomplete="email" required />
+			</label>
+			<label class="block">
+				<span class="mb-1 block font-semibold">{t('contact.form.company')} <span class="font-normal text-ink/60">({t('contact.form.optional')})</span></span>
+				<input class="field" name="company" type="text" autocomplete="organization" />
+			</label>
+			<label class="block sm:col-span-2">
+				<span class="mb-1 block font-semibold">{t('contact.form.type')}</span>
+				<select class="field" name="type" required>
+					{types.map((ty) => <option value={ty}>{ty}</option>)}
+				</select>
+			</label>
+			<label class="block sm:col-span-2">
+				<span class="mb-1 block font-semibold">{t('contact.form.message')}</span>
+				<textarea class="field min-h-40" name="message" required></textarea>
+			</label>
+			<div class="sm:col-span-2">
+				<button type="submit" class="btn btn-steel">{t('contact.form.send')}</button>
+				<p class="mt-3 max-w-[60ch] text-sm text-ink/65">{t('contact.form.gdpr')}</p>
+			</div>
+		</form>
+
+		<aside class="space-y-8">
+			<div>
+				<h2 class="display text-3xl text-steel">{t('contact.coordsTitle')}</h2>
+				<address class="mt-3 space-y-1 not-italic">
+					<p>{company.street}</p>
+					<p>{company.postalCode} {company.city}</p>
+					<p><a class="font-bold text-steel hover:underline" href={company.tel}>{company.phone}</a></p>
+					<p><a class="text-steel hover:underline" href={`mailto:${company.email}`}>{company.email}</a></p>
+				</address>
+				<p class="mt-4 text-sm text-ink/60">{t('footer.hoursTodo')}</p>
+			</div>
+			<div class="photo-ph flex aspect-[4/3] items-center justify-center text-sm font-semibold text-steel-deep">
+				{t('contact.mapTodo')}
+			</div>
+		</aside>
+	</section>
+</Layout>
+
+<script>
+	const form = document.getElementById('contact-form') as HTMLFormElement | null;
+	form?.addEventListener('submit', (e) => {
+		e.preventDefault();
+		// TODO: POST to the chosen backend before redirecting.
+		window.location.href = form.dataset.thanks ?? '/';
+	});
+</script>

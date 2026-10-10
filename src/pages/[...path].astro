@@ -1,0 +1,22 @@
+---
+import Home from '../views/Home.astro';
+import OnSite from '../views/OnSite.astro';
+import Workshop from '../views/Workshop.astro';
+import Sales from '../views/Sales.astro';
+import Contact from '../views/Contact.astro';
+import Thanks from '../views/Thanks.astro';
+import { locales } from '../i18n';
+import { pageKeys, routeParam } from '../i18n/routes';
+
+export function getStaticPaths() {
+	return pageKeys.flatMap((key) =>
+		locales.map((locale) => ({ params: { path: routeParam(key, locale) }, props: { key, locale } })),
+	);
+}
+
+const views = { home: Home, onsite: OnSite, workshop: Workshop, sales: Sales, contact: Contact, thanks: Thanks };
+const { key, locale } = Astro.props;
+const View = views[key];
+---
+
+<View locale={locale} />

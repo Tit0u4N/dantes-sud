@@ -1,3 +1,178 @@
 {
-	"site": { "title": "Dantes Sud" }
+	"site": { "title": "Dantès", "tagline": "Always on the move", "logoAlt": "Dantès" },
+	"ui": {
+		"skip": "Skip to content",
+		"menu": "Menu",
+		"call": "Call",
+		"quote": "Request a quote",
+		"photoTodo": "Photo to come",
+		"langSwitch": "Version française",
+		"langCode": "FR",
+		"mainNav": "Main navigation"
+	},
+	"nav": {
+		"services": "Services",
+		"onsite": "On-site maintenance",
+		"workshop": "Workshop refurbishment",
+		"sales": "New & used equipment",
+		"contact": "Contact"
+	},
+	"footer": {
+		"contact": "Contact details",
+		"hours": "Opening hours",
+		"hoursTodo": "Hours to be confirmed",
+		"areas": "Service areas",
+		"pages": "Site",
+		"rights": "All rights reserved.",
+		"depts": ["Alpes-Maritimes (06)", "Alpes-de-Haute-Provence (04)", "Var (83)", "Bouches-du-Rhône (13)"]
+	},
+	"cta": { "contactUs": "Contact us" },
+	"meta": {
+		"home": {
+			"title": "Crane & Aerial Platform Repair, French Riviera | Dantès",
+			"description": "Dantès repairs, refurbishes and sells aerial platforms, truck-mounted cranes and mini cranes near Nice. On-site service across the South of France."
+		},
+		"onsite": {
+			"title": "On-Site Lifting Equipment Repair, South of France | Dantès",
+			"description": "Fast on-site repair of lifting equipment in the Alpes-Maritimes, Var, Bouches-du-Rhône and Alpes-de-Haute-Provence. Mechanical, hydraulic and electrical work."
+		},
+		"workshop": {
+			"title": "Workshop Refurbishment of Lifting Equipment | Dantès",
+			"description": "Full workshop overhaul of old or damaged lifting equipment: diagnosis, machining, hydraulics, electrics and metal fabrication. Clear quote before work starts."
+		},
+		"sales": {
+			"title": "New & Used Lifting Equipment for Sale | Dantès",
+			"description": "New and used lifting equipment from trusted brands (Jekko, Socage, Cormach, CELA). Personal advice. Request a quote today."
+		},
+		"contact": {
+			"title": "Contact & Quotes | Dantès, Lifting Equipment, Carros",
+			"description": "Contact Dantès in Carros for repair or maintenance of lifting equipment. Quick answer by phone, email or online form."
+		},
+		"thanks": {
+			"title": "Message sent | Dantès",
+			"description": "Your request has been sent to Dantès."
+		},
+		"notFound": {
+			"title": "Page not found | Dantès",
+			"description": "This page does not exist or has moved."
+		}
+	},
+	"home": {
+		"h1": "Repair, maintenance and sale of lifting equipment on the French Riviera",
+		"intro": "Dantès repairs, refurbishes and sells lifting equipment for professionals on the French Riviera and across the South of France: aerial work platforms, truck-mounted cranes and mini crawler cranes. Based in Carros, we work on site with a fully equipped workshop van, or take your machines into our workshop.",
+		"servicesTitle": "Three ways to get your equipment moving again",
+		"more": "See details",
+		"services": [
+			{
+				"key": "onsite",
+				"title": "On-site maintenance",
+				"text": "We have a fully equipped workshop van for all on-site repair services, covering Alpes-Maritimes (06), Alpes-de-Haute-Provence (04), Var (83) and Bouches-du-Rhône (13). We make every effort to provide you with prompt on-site service, regardless of access."
+			},
+			{
+				"key": "sales",
+				"title": "New or used equipment sales",
+				"text": "We offer new and high-quality used lifting equipment, carefully selected to meet your specific needs. Our team is at your disposal to advise and assist you in choosing the most suitable equipment for your projects."
+			},
+			{
+				"key": "workshop",
+				"title": "Workshop refurbishment",
+				"text": "We can take in and refurbish all types of equipment in our workshop, regardless of the age of the machine or the nature of the repair: combustion or electric engines, electrics, hydraulics and metal fabrication."
+			}
+		],
+		"zoneTitle": "Four departments, one workshop van",
+		"zoneText": "From Carros, we cover the Riviera and its hinterland as far as Marseille.",
+		"zones": [
+			{ "code": "06", "name": "Alpes-Maritimes" },
+			{ "code": "04", "name": "Alpes-de-Haute-Provence" },
+			{ "code": "83", "name": "Var" },
+			{ "code": "13", "name": "Bouches-du-Rhône" }
+		],
+		"brandsTitle": "Partner brands",
+		"brandsText": "Mini cranes, aerial platforms, truck-mounted cranes: recognised manufacturers, new and used.",
+		"ctaTitle": "Machine out of service?",
+		"ctaText": "Call us or describe the fault: we prepare the job before we set off."
+	},
+	"onsite": {
+		"h1": "On-site maintenance",
+		"lead": "Dantès offers a complete on-site maintenance service for all types of lifting equipment, with a fast and effective intervention right where your machine stands. With a fully equipped workshop vehicle, our team works across Alpes-Maritimes (06), Alpes-de-Haute-Provence (04), Var (83) and Bouches-du-Rhône (13).",
+		"assetsTitle": "Why choose us",
+		"assets": [
+			{ "title": "Responsiveness", "text": "Fast response from a mobile workshop truck, for effective support on site." },
+			{ "title": "Technical versatility", "text": "Full diagnostics and repairs covering: mechanics (combustion and electric), hydraulic and electrical systems, metal fabrication, welding and spare parts." },
+			{ "title": "Personal support", "text": "Technical advice tailored to each need, whether it is a breakdown, preventive maintenance or choosing replacement equipment." }
+		],
+		"processTitle": "How an intervention works",
+		"steps": [
+			{ "title": "First contact", "text": "You call us or send a request through our website." },
+			{ "title": "Remote pre-assessment", "text": "We review the information and identify the problem so the job is prepared efficiently." },
+			{ "title": "Fast scheduling and cost estimate", "text": "The job is scheduled according to your urgency (immediate repair or preventive maintenance planning)." },
+			{ "title": "Mobile intervention", "text": "Our technicians arrive in an equipped workshop truck to carry out diagnostics, repairs or adjustments on site." },
+			{ "title": "Full report", "text": "You receive a report describing the work done, the condition of the equipment and recommendations for future maintenance." },
+			{ "title": "Post-intervention follow-up", "text": "Optional periodic maintenance contract to anticipate breakdowns and extend the life of your equipment." }
+		],
+		"ctaTitle": "Need a fast intervention or a quote?",
+		"ctaText": "Contact us today for technical support that fits your schedule."
+	},
+	"workshop": {
+		"h1": "Workshop refurbishment",
+		"lead": "At Dantès, our workshop is specially equipped to bring your lifting and handling equipment back to life, whether it is old or suffering from severe faults. We work on all types of equipment, whatever the age of the machine.",
+		"possibleTitle": "What we can restore",
+		"possible": [
+			"In-depth diagnosis",
+			"Complete dismantling",
+			"Machining or replacement of defective parts",
+			"Mechanical, electrical, hydraulic or metal fabrication restoration"
+		],
+		"possibleText": "We aim to restore not only function, but also the reliability and lifespan of the equipment.",
+		"processTitle": "From arrival to return to service",
+		"steps": [
+			{ "title": "Equipment arrival", "text": "We receive the machine at the workshop and record its condition and the symptoms reported.", "draft": true },
+			{ "title": "Technical assessment", "text": "We identify the components to rework or replace and give you an estimate before any major work.", "draft": true },
+			{ "title": "Full workshop refurbishment", "text": "Dismantling, machining or replacement of parts, mechanical, electrical, hydraulic and fabrication repairs, then reassembly.", "draft": true },
+			{ "title": "Validation tests", "text": "Complete functional check: lifting loads, precise operation, safety, hydraulics, electrics." },
+			{ "title": "Detailed report", "text": "A clear report with the work done, the condition of parts, recommendations and a quote for future maintenance." }
+		],
+		"ctaTitle": "Is your lifting equipment showing signs of wear?",
+		"ctaText": "Contact us now for a tailored workshop refurbishment."
+	},
+	"sales": {
+		"h1": "New & used equipment",
+		"lead": "At Dantès, we offer a full range of new and used lifting and access equipment from the best-performing brands on the market. Thanks to our close partnerships, we provide solutions for every situation and professional requirement.",
+		"brands": [
+			{ "name": "Jekko", "title": "Powerful, compact mini cranes", "text": "SPX mini crawler cranes, JF articulated cranes, MPK minipickers." },
+			{ "name": "Socage", "title": "Innovative aerial platforms", "text": "Spider lifts and articulated truck-mounted platforms." },
+			{ "name": "Cormach", "title": "Hydraulic truck-mounted cranes", "text": "Loader cranes from the light range to the ultra-heavy range." },
+			{ "name": "CELA", "title": "Aerial work platforms", "text": "DT Truck (truck-mounted), DT Crawler (tracked)." }
+		],
+		"ctaTitle": "Need to renew your equipment?",
+		"ctaText": "Contact us for more information about our equipment and our partners."
+	},
+	"contact": {
+		"h1": "Contact & quotes",
+		"lead": "Contact us about anything concerning our company or our services. We will do our best to reply as quickly as possible.",
+		"coordsTitle": "Find us",
+		"mapTodo": "Map to be embedded",
+		"form": {
+			"name": "Name",
+			"phone": "Phone",
+			"email": "Email",
+			"company": "Company",
+			"type": "Type of request",
+			"types": ["Repair", "Quote", "Purchase", "Other"],
+			"message": "Your message",
+			"optional": "optional",
+			"send": "Send request",
+			"gdpr": "The information you enter is used only to answer your request. See the privacy policy.",
+			"required": "Required field"
+		}
+	},
+	"thanks": {
+		"h1": "Request sent",
+		"text": "Thank you, we will get back to you shortly. For urgent cases, call us directly.",
+		"home": "Back to home"
+	},
+	"notFound": {
+		"h1": "Page not found",
+		"text": "This page does not exist or has moved. Go back to the home page, our services or the contact page."
+	}
 }
