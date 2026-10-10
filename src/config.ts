@@ -12,8 +12,8 @@ export const company = {
 
 /** Empty string = not provided yet: the matching icon / block stays hidden. */
 export const social = {
-	linkedin: '', // URL page LinkedIn entreprise (à fournir)
-	instagram: '', // URL compte Instagram (à fournir)
+	linkedin: 'https://www.linkedin.com/company/dantes/',
+	instagram: 'https://www.instagram.com/dantes_sud06/',
 	gbp: '', // URL fiche Google Business Profile (à fournir)
 };
 
