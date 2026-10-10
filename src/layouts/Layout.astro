@@ -4,6 +4,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { type Locale } from '../i18n';
 import { pathFor, type PageKey } from '../i18n/routes';
+import { company, social } from '../config';
 
 interface Props {
 	locale: Locale;
@@ -12,12 +13,36 @@ interface Props {
 	/** Page id, used for the language switcher and hreflang. Absent on the 404 page. */
 	pageKey?: PageKey;
 	noindex?: boolean;
+	/** Absolute-or-root path of the share image. */
+	ogImage?: string;
+	/** Explicit alternates (articles). Defaults to the page's own fr/en pair. */
+	alternates?: { fr?: string; en?: string };
+	/** Canonical path override (articles). */
+	canonicalPath?: string;
+	/** Emit LocalBusiness structured data. */
+	localBusiness?: boolean;
 }
 
-const { locale, title, description, pageKey, noindex = false } = Astro.props;
+const { locale, title, description, pageKey, noindex = false, ogImage = '/images/maintenance-levage-paca-chantier-marseille.webp', alternates, canonicalPath, localBusiness = false } = Astro.props;
 const site = Astro.site!;
 const abs = (path: string) => new URL(path, site).href;
-const canonical = pageKey ? abs(pathFor(pageKey, locale)) : abs(Astro.url.pathname);
+const canonical = canonicalPath ? abs(canonicalPath) : pageKey ? abs(pathFor(pageKey, locale)) : abs(Astro.url.pathname);
+const alt = alternates ?? (pageKey ? { fr: pathFor(pageKey, 'fr'), en: pathFor(pageKey, 'en') } : undefined);
+const jsonLd = {
+	'@context': 'https://schema.org',
+	'@type': 'LocalBusiness',
+	'@id': abs('/#business'),
+	name: company.name,
+	url: abs('/'),
+	image: abs('/images/maintenance-levage-paca-chantier-marseille.webp'),
+	logo: abs('/images/logo-dantes.webp'),
+	telephone: '+33765805914',
+	email: company.email,
+	address: { '@type': 'PostalAddress', streetAddress: company.street, postalCode: company.postalCode, addressLocality: company.city, addressCountry: 'FR' },
+	geo: { '@type': 'GeoCoordinates', latitude: company.geo.lat, longitude: company.geo.lng },
+	areaServed: ['Alpes-Maritimes', 'Var', 'Bouches-du-Rhône', 'Alpes-de-Haute-Provence'].map((name) => ({ '@type': 'AdministrativeArea', name })),
+	sameAs: Object.values(social).filter(Boolean),
+};
 ---
 
 <!doctype html>
@@ -33,11 +58,11 @@ const canonical = pageKey ? abs(pathFor(pageKey, locale)) : abs(Astro.url.pathna
 		{noindex && <meta name="robots" content="noindex" />}
 		<link rel="canonical" href={canonical} />
 		{
-			pageKey && (
+			alt && (
 				<>
-					<link rel="alternate" hreflang="fr" href={abs(pathFor(pageKey, 'fr'))} />
-					<link rel="alternate" hreflang="en" href={abs(pathFor(pageKey, 'en'))} />
-					<link rel="alternate" hreflang="x-default" href={abs(pathFor(pageKey, 'fr'))} />
+					{alt.fr && <link rel="alternate" hreflang="fr" href={abs(alt.fr)} />}
+					{alt.en && <link rel="alternate" hreflang="en" href={abs(alt.en)} />}
+					<link rel="alternate" hreflang="x-default" href={abs((alt.fr ?? alt.en)!)} />
 				</>
 			)
 		}
@@ -45,7 +70,11 @@ const canonical = pageKey ? abs(pathFor(pageKey, locale)) : abs(Astro.url.pathna
 		<meta property="og:description" content={description} />
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content={canonical} />
+		<meta property="og:image" content={abs(ogImage)} />
+		<meta property="og:site_name" content={company.name} />
+		<meta name="twitter:card" content="summary_large_image" />
 		<meta property="og:locale" content={locale === 'fr' ? 'fr_FR' : 'en_GB'} />
+		{localBusiness && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -54,7 +83,7 @@ const canonical = pageKey ? abs(pathFor(pageKey, locale)) : abs(Astro.url.pathna
 		/>
 	</head>
 	<body class="flex min-h-screen flex-col">
-		<Header locale={locale} pageKey={pageKey} />
+		<Header locale={locale} pageKey={pageKey} altHref={alt && (locale === 'fr' ? alt.en : alt.fr)} />
 		<main id="main" class="flex-1">
 			<slot />
 		</main>

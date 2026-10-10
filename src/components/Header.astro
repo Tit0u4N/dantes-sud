@@ -1,23 +1,23 @@
 ---
+import Socials from './Socials.astro';
 import { useTranslations, type Locale } from '../i18n';
-import { pathFor, type PageKey } from '../i18n/routes';
+import { pathFor, menuKeys, type PageKey } from '../i18n/routes';
 import { company } from '../config';
 
 interface Props {
 	locale: Locale;
 	pageKey?: PageKey;
+	/** Language switch target when the page has no PageKey (articles). */
+	altHref?: string;
 }
-const { locale, pageKey } = Astro.props;
+const { locale, pageKey, altHref } = Astro.props;
 const t = useTranslations(locale);
 const other: Locale = locale === 'fr' ? 'en' : 'fr';
-const langHref = pageKey ? pathFor(pageKey, other) : pathFor('home', other);
+const langHref = altHref ?? (pageKey ? pathFor(pageKey, other) : pathFor('home', other));
+const current = pageKey === 'thanks' ? undefined : pageKey ?? 'news';
 
-const services = (['onsite', 'workshop', 'sales'] as const).map((k) => ({
-	href: pathFor(k, locale),
-	label: t(`nav.${k}`),
-	current: pageKey === k,
-}));
-const link = 'px-3 py-2 font-semibold hover:text-steel';
+const items = menuKeys.map((k) => ({ href: pathFor(k, locale), label: t(`nav.${k}`), current: current === k }));
+const link = 'px-2.5 py-2 font-semibold hover:text-steel aria-[current=page]:text-steel aria-[current=page]:underline aria-[current=page]:decoration-2 aria-[current=page]:underline-offset-8';
 ---
 
 <a
@@ -25,52 +25,38 @@ const link = 'px-3 py-2 font-semibold hover:text-steel';
 	class="sr-only focus:not-sr-only focus:fixed focus:left-3 focus:top-3 focus:z-50 focus:bg-accent focus:px-4 focus:py-2"
 	>{t('ui.skip')}</a
 >
+<div class="bg-ink text-white">
+	<div class="wrap flex h-10 items-center justify-between gap-4 text-sm">
+		<a href={company.tel} class="font-bold hover:text-accent">
+			<span class="sr-only">{t('ui.call')} </span>
+			<svg class="mr-1.5 inline -translate-y-px" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1L6.6 10.8Z" /></svg>{company.phone}
+		</a>
+		<div class="flex items-center gap-4">
+			<Socials locale={locale} />
+			<a href={langHref} hreflang={other} lang={other} title={t('ui.langSwitch')} class="font-semibold hover:text-accent">{t('ui.langCode')}</a>
+		</div>
+	</div>
+</div>
 <header class="sticky top-0 z-40 border-b border-line bg-white/95 backdrop-blur">
-	<div class="wrap flex h-[4.5rem] items-center justify-between gap-4">
-		<a href={pathFor('home', locale)} class="flex items-center gap-3" aria-label={t('site.title')}>
-			<img src="/logo.svg" alt={t('site.logoAlt')} width="48" height="44" class="h-11 w-auto" />
-			<span class="display hidden text-3xl text-steel sm:block">{t('site.title')}</span>
+	<div class="wrap flex h-[4.25rem] items-center justify-between gap-3">
+		<a href={pathFor('home', locale)} class="shrink-0" aria-label={t('site.title')}>
+			<img src="/images/logo-dantes.webp" alt={t('site.logoAlt')} width="1000" height="250" class="h-9 w-auto sm:h-10" />
 		</a>
 
-		<nav aria-label={t('ui.mainNav')} class="hidden items-center md:flex">
-			<div class="group relative">
-				<button type="button" class={`${link} flex items-center gap-1`} aria-haspopup="true">
-					{t('nav.services')}
-					<svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2" /></svg>
-				</button>
-				<ul
-					class="invisible absolute left-0 top-full min-w-64 border border-line bg-white py-2 opacity-0 shadow-lg transition group-focus-within:visible group-focus-within:opacity-100 group-hover:visible group-hover:opacity-100"
-				>
-					{
-						services.map((s) => (
-							<li>
-								<a href={s.href} aria-current={s.current ? 'page' : undefined} class="block px-4 py-2 hover:bg-paper hover:text-steel aria-[current=page]:text-steel aria-[current=page]:font-bold">
-									{s.label}
-								</a>
-							</li>
-						))
-					}
-				</ul>
-			</div>
-			<a href={pathFor('contact', locale)} class={link} aria-current={pageKey === 'contact' ? 'page' : undefined}>
-				{t('nav.contact')}
-			</a>
-			<a href={langHref} hreflang={other} lang={other} class={`${link} ml-2 border-l border-line pl-5`} title={t('ui.langSwitch')}>
-				{t('ui.langCode')}
-			</a>
-			<a href={company.tel} class="btn btn-steel ml-3">{company.phone}</a>
+		<nav aria-label={t('ui.mainNav')} class="hidden items-center lg:flex">
+			{items.map((i) => <a href={i.href} class={link} aria-current={i.current ? 'page' : undefined}>{i.label}</a>)}
 		</nav>
 
-		<details class="relative md:hidden">
-			<summary class="btn btn-steel cursor-pointer list-none">{t('ui.menu')}</summary>
-			<div class="absolute right-0 top-full mt-3 w-72 border border-line bg-white p-3 shadow-xl">
-				<ul class="flex flex-col">
-					{services.map((s) => <li><a href={s.href} class="block px-3 py-3 font-semibold">{s.label}</a></li>)}
-					<li><a href={pathFor('contact', locale)} class="block px-3 py-3 font-semibold">{t('nav.contact')}</a></li>
-					<li><a href={langHref} hreflang={other} lang={other} class="block px-3 py-3 font-semibold">{t('ui.langSwitch')}</a></li>
-				</ul>
-				<a href={company.tel} class="btn btn-steel mt-2 w-full">{company.phone}</a>
-			</div>
-		</details>
+		<div class="flex items-center gap-2">
+			<a href={pathFor('contact', locale)} class="btn btn-steel !px-3.5 !py-2 text-sm sm:!px-5 sm:!py-2.5 sm:text-base">{t('ui.quote')}</a>
+			<details class="relative lg:hidden">
+				<summary class="btn cursor-pointer list-none border-steel !px-3.5 !py-2 text-sm text-steel sm:!px-5 sm:!py-2.5 sm:text-base" style="border-width:2px">{t('ui.menu')}</summary>
+				<div class="absolute right-0 top-full mt-3 w-72 border border-line bg-white p-3 shadow-xl">
+					<ul class="flex flex-col">
+						{items.map((i) => <li><a href={i.href} aria-current={i.current ? 'page' : undefined} class="block px-3 py-3 font-semibold aria-[current=page]:text-steel">{i.label}</a></li>)}
+					</ul>
+				</div>
+			</details>
+		</div>
 	</div>
 </header>

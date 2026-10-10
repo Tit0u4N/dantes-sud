@@ -1,0 +1,16 @@
+---
+import { useTranslations, type Locale } from '../i18n';
+
+interface Props {
+	locale: Locale;
+}
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+---
+
+<section class="bg-sky/50">
+	<div class="wrap grid items-start gap-6 py-12 md:grid-cols-[1fr_2fr] md:gap-12 md:py-14">
+		<h2 class="display text-3xl text-steel-deep md:text-4xl">{t('vgp.title')}</h2>
+		<p class="max-w-[68ch] text-lg text-ink/85">{t('vgp.text')}</p>
+	</div>
+</section>

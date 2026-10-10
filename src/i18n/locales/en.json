@@ -1,22 +1,28 @@
 {
-	"site": { "title": "Dantès", "tagline": "Always on the move", "logoAlt": "Dantès" },
+	"site": { "title": "DANTÈS", "tagline": "Always on the move", "logoAlt": "DANTÈS, industrial equipment maintenance and sales" },
 	"ui": {
 		"skip": "Skip to content",
 		"menu": "Menu",
 		"call": "Call",
 		"quote": "Request a quote",
-		"photoTodo": "Photo to come",
 		"langSwitch": "Version française",
 		"langCode": "FR",
-		"mainNav": "Main navigation"
+		"mainNav": "Main navigation",
+		"followUs": "Follow us",
+		"moreAbout": "See details",
+		"visitSite": "Partner website",
+		"readMore": "Read the article"
 	},
 	"nav": {
-		"services": "Services",
-		"onsite": "On-site maintenance",
-		"workshop": "Workshop refurbishment",
-		"sales": "New & used equipment",
-		"contact": "Contact"
+		"home": "Home",
+		"lifting": "Lifting",
+		"elevation": "Aerial platforms",
+		"handling": "Material handling",
+		"partners": "Our partners",
+		"news": "News",
+		"contact": "Contact us"
 	},
+	"social": { "linkedin": "LinkedIn", "instagram": "Instagram", "gbp": "Google profile" },
 	"footer": {
 		"contact": "Contact details",
 		"hours": "Opening hours",
@@ -26,144 +32,337 @@
 		"rights": "All rights reserved.",
 		"depts": ["Alpes-Maritimes (06)", "Alpes-de-Haute-Provence (04)", "Var (83)", "Bouches-du-Rhône (13)"]
 	},
-	"cta": { "contactUs": "Contact us" },
 	"meta": {
 		"home": {
-			"title": "Crane & Aerial Platform Repair, French Riviera | Dantès",
-			"description": "Dantès repairs, refurbishes and sells aerial platforms, truck-mounted cranes and mini cranes near Nice. On-site service across the South of France."
+			"title": "Lifting & Aerial Platform Maintenance, PACA | DANTÈS",
+			"description": "JEKKO, SOCAGE and Cormach maintenance agent. Repair of mini cranes, aerial platforms and forklifts, on site or in our workshop, South of France."
 		},
-		"onsite": {
-			"title": "On-Site Lifting Equipment Repair, South of France | Dantès",
-			"description": "Fast on-site repair of lifting equipment in the Alpes-Maritimes, Var, Bouches-du-Rhône and Alpes-de-Haute-Provence. Mechanical, hydraulic and electrical work."
+		"lifting": {
+			"title": "JEKKO & Cormach Repair, South of France | DANTÈS",
+			"description": "Servicing, repair and refurbishment of JEKKO mini cranes, Cormach loader cranes and truck-mounted cranes. On site or in our workshop across PACA."
 		},
-		"workshop": {
-			"title": "Workshop Refurbishment of Lifting Equipment | Dantès",
-			"description": "Full workshop overhaul of old or damaged lifting equipment: diagnosis, machining, hydraulics, electrics and metal fabrication. Clear quote before work starts."
+		"elevation": {
+			"title": "SOCAGE & CELA Platform Repair, PACA | DANTÈS",
+			"description": "Maintenance of truck-mounted platforms and spider lifts from SOCAGE, CELA and Multitel. Manufacturer-trained technicians, on-site service in PACA."
 		},
-		"sales": {
-			"title": "New & Used Lifting Equipment for Sale | Dantès",
-			"description": "New and used lifting equipment from trusted brands (Jekko, Socage, Cormach, CELA). Personal advice. Request a quote today."
+		"handling": {
+			"title": "Forklift Repair, All Makes, Alpes-Maritimes | DANTÈS",
+			"description": "Repair and servicing of forklifts of all makes in the Alpes-Maritimes and across PACA. Custom material handling projects."
+		},
+		"partners": {
+			"title": "Partners JEKKO, SOCAGE, Cormach, CELA | DANTÈS",
+			"description": "JEKKO, SOCAGE and Cormach maintenance agent, partner of CELA and DEAL Levage. Technicians trained at each manufacturer."
+		},
+		"news": {
+			"title": "Lifting & Platform News, South of France | DANTÈS",
+			"description": "Repairs, used machines, training: DANTÈS job sites in lifting, aerial platforms and material handling in the South-East of France."
 		},
 		"contact": {
-			"title": "Contact & Quotes | Dantès, Lifting Equipment, Carros",
-			"description": "Contact Dantès in Carros for repair or maintenance of lifting equipment. Quick answer by phone, email or online form."
+			"title": "Contact & Quotes | DANTÈS Carros (06)",
+			"description": "A breakdown, a quote, a periodic inspection? Call DANTÈS on +33 7 65 80 59 14. Workshop in Carros, on-site service in 06, 83, 13 and 04."
 		},
-		"thanks": {
-			"title": "Message sent | Dantès",
-			"description": "Your request has been sent to Dantès."
-		},
-		"notFound": {
-			"title": "Page not found | Dantès",
-			"description": "This page does not exist or has moved."
-		}
+		"thanks": { "title": "Message sent | DANTÈS", "description": "Your request has been sent to DANTÈS." },
+		"notFound": { "title": "Page not found | DANTÈS", "description": "This page does not exist or has moved." }
 	},
 	"home": {
-		"h1": "Repair, maintenance and sale of lifting equipment on the French Riviera",
-		"intro": "Dantès repairs, refurbishes and sells lifting equipment for professionals on the French Riviera and across the South of France: aerial work platforms, truck-mounted cranes and mini crawler cranes. Based in Carros, we work on site with a fully equipped workshop van, or take your machines into our workshop.",
-		"servicesTitle": "Three ways to get your equipment moving again",
-		"more": "See details",
-		"services": [
+		"h1": "Maintenance and repair of lifting, aerial platform and material handling equipment in the South of France",
+		"subtitle": "JEKKO, SOCAGE and Cormach maintenance agent. On-site service or in our Carros workshop, across the Alpes-Maritimes, Var, Bouches-du-Rhône and Alpes-de-Haute-Provence.",
+		"heroAlt": "Spider crane and platform working on a job site overlooking Marseille",
+		"aboutTitle": "On site or in the workshop, we come to you",
+		"about": [
+			"With 3 technicians and 3 fully equipped workshop vans, we come to you, wherever the machine is. Hilltop village, city-centre job site, remote location: distance and access are never a problem for us.",
+			"Every job is carried out with the same standards and professional conscience, from a small repair to a major refurbishment. Our priority: the machine must be safe for those who will use it after we leave.",
+			"Our technicians are trained directly at our partner manufacturers. We stay up to date with French VGP regulations and take care of your periodic inspections and returns to service."
+		],
+		"stats": [
+			{ "value": "3", "label": "manufacturer-trained technicians" },
+			{ "value": "3", "label": "equipped workshop vans" },
+			{ "value": "4", "label": "départements covered (06, 83, 13, 04)" },
+			{ "value": "5 t", "label": "vehicle lift in our Carros workshop" }
+		],
+		"tradesTitle": "Our 3 trades: lifting, aerial platforms, material handling",
+		"trades": [
 			{
-				"key": "onsite",
-				"title": "On-site maintenance",
-				"text": "We have a fully equipped workshop van for all on-site repair services, covering Alpes-Maritimes (06), Alpes-de-Haute-Provence (04), Var (83) and Bouches-du-Rhône (13). We make every effort to provide you with prompt on-site service, regardless of access."
+				"key": "lifting",
+				"title": "Lifting",
+				"text": "JEKKO mini crawler cranes, Cormach loader cranes, truck-mounted cranes: we service, repair and refurbish.",
+				"image": "/images/jekko-spx1040-reparation-mini-grue-paca.webp",
+				"alt": "JEKKO SPX1040 mini crane lifting between two buildings, JEKKO repair in the South of France"
 			},
 			{
-				"key": "sales",
-				"title": "New or used equipment sales",
-				"text": "We offer new and high-quality used lifting equipment, carefully selected to meet your specific needs. Our team is at your disposal to advise and assist you in choosing the most suitable equipment for your projects."
+				"key": "elevation",
+				"title": "Aerial platforms",
+				"text": "SOCAGE and CELA truck-mounted platforms and spider lifts, telescopic platforms: technicians trained at the manufacturers.",
+				"image": "/images/nacelle-araignee-depannage-sur-site-fourgon-atelier.webp",
+				"alt": "Spider lift being repaired on site with the DANTÈS workshop van"
 			},
 			{
-				"key": "workshop",
-				"title": "Workshop refurbishment",
-				"text": "We can take in and refurbish all types of equipment in our workshop, regardless of the age of the machine or the nature of the repair: combustion or electric engines, electrics, hydraulics and metal fabrication."
+				"key": "handling",
+				"title": "Material handling",
+				"text": "Forklifts of all makes and custom projects with DEAL Levage in Marseille.",
+				"image": "/images/fourgon-atelier-dantes-jekko-tlm-carros.webp",
+				"alt": "DANTÈS workshop van open with its tools next to a mini crane"
 			}
 		],
-		"zoneTitle": "Four departments, one workshop van",
-		"zoneText": "From Carros, we cover the Riviera and its hinterland as far as Marseille.",
-		"zones": [
-			{ "code": "06", "name": "Alpes-Maritimes" },
-			{ "code": "04", "name": "Alpes-de-Haute-Provence" },
-			{ "code": "83", "name": "Var" },
-			{ "code": "13", "name": "Bouches-du-Rhône" }
-		],
-		"brandsTitle": "Partner brands",
-		"brandsText": "Mini cranes, aerial platforms, truck-mounted cranes: recognised manufacturers, new and used.",
-		"ctaTitle": "Machine out of service?",
-		"ctaText": "Call us or describe the fault: we prepare the job before we set off."
-	},
-	"onsite": {
-		"h1": "On-site maintenance",
-		"lead": "Dantès offers a complete on-site maintenance service for all types of lifting equipment, with a fast and effective intervention right where your machine stands. With a fully equipped workshop vehicle, our team works across Alpes-Maritimes (06), Alpes-de-Haute-Provence (04), Var (83) and Bouches-du-Rhône (13).",
-		"assetsTitle": "Why choose us",
-		"assets": [
-			{ "title": "Responsiveness", "text": "Fast response from a mobile workshop truck, for effective support on site." },
-			{ "title": "Technical versatility", "text": "Full diagnostics and repairs covering: mechanics (combustion and electric), hydraulic and electrical systems, metal fabrication, welding and spare parts." },
-			{ "title": "Personal support", "text": "Technical advice tailored to each need, whether it is a breakdown, preventive maintenance or choosing replacement equipment." }
-		],
+		"reactivityTitle": "Responsiveness: a workshop van that comes to the machine",
 		"processTitle": "How an intervention works",
 		"steps": [
 			{ "title": "First contact", "text": "You call us or send a request through our website." },
 			{ "title": "Remote pre-assessment", "text": "We review the information and identify the problem so the job is prepared efficiently." },
 			{ "title": "Fast scheduling and cost estimate", "text": "The job is scheduled according to your urgency (immediate repair or preventive maintenance planning)." },
-			{ "title": "Mobile intervention", "text": "Our technicians arrive in an equipped workshop truck to carry out diagnostics, repairs or adjustments on site." },
+			{ "title": "Mobile intervention", "text": "Our technicians arrive in an equipped workshop van to carry out diagnostics, repairs or adjustments on site." },
 			{ "title": "Full report", "text": "You receive a report describing the work done, the condition of the equipment and recommendations for future maintenance." },
 			{ "title": "Post-intervention follow-up", "text": "Optional periodic maintenance contract to anticipate breakdowns and extend the life of your equipment." }
 		],
-		"ctaTitle": "Need a fast intervention or a quote?",
-		"ctaText": "Contact us today for technical support that fits your schedule."
+		"zoneTitle": "4 départements covered from Carros",
+		"zoneText": "Alpes-Maritimes, Var, Bouches-du-Rhône, Alpes-de-Haute-Provence: from Nice to Marseille, from Monaco to Digne-les-Bains.",
+		"zones": [
+			{ "code": "06", "name": "Alpes-Maritimes" },
+			{ "code": "83", "name": "Var" },
+			{ "code": "13", "name": "Bouches-du-Rhône" },
+			{ "code": "04", "name": "Alpes-de-Haute-Provence" }
+		],
+		"brandsTitle": "The brands we work on",
+		"brandsText": "JEKKO, SOCAGE and Cormach maintenance agent, trained at each manufacturer.",
+		"brands": ["JEKKO", "SOCAGE", "Cormach", "CELA"],
+		"proofTitle": "They trust us",
+		"reviewsLink": "Read our Google reviews",
+		"instaTitle": "Our job sites in pictures",
+		"instaText": "Repairs, machines, workshop: follow DANTÈS on Instagram.",
+		"ctaTitle": "A machine out of service?",
+		"ctaText": "Call us or describe the fault: we prepare the job before we leave."
 	},
-	"workshop": {
-		"h1": "Workshop refurbishment",
-		"lead": "At Dantès, our workshop is specially equipped to bring your lifting and handling equipment back to life, whether it is old or suffering from severe faults. We work on all types of equipment, whatever the age of the machine.",
-		"possibleTitle": "What we can restore",
-		"possible": [
-			"In-depth diagnosis",
-			"Complete dismantling",
-			"Machining or replacement of defective parts",
-			"Mechanical, electrical, hydraulic or metal fabrication restoration"
-		],
-		"possibleText": "We aim to restore not only function, but also the reliability and lifespan of the equipment.",
-		"processTitle": "From arrival to return to service",
-		"steps": [
-			{ "title": "Equipment arrival", "text": "We receive the machine at the workshop and record its condition and the symptoms reported.", "draft": true },
-			{ "title": "Technical assessment", "text": "We identify the components to rework or replace and give you an estimate before any major work.", "draft": true },
-			{ "title": "Full workshop refurbishment", "text": "Dismantling, machining or replacement of parts, mechanical, electrical, hydraulic and fabrication repairs, then reassembly.", "draft": true },
-			{ "title": "Validation tests", "text": "Complete functional check: lifting loads, precise operation, safety, hydraulics, electrics." },
-			{ "title": "Detailed report", "text": "A clear report with the work done, the condition of parts, recommendations and a quote for future maintenance." }
-		],
-		"ctaTitle": "Is your lifting equipment showing signs of wear?",
-		"ctaText": "Contact us now for a tailored workshop refurbishment."
+	"vgp": {
+		"title": "Periodic inspections (VGP) and returns to service: we handle it",
+		"text": "Periodic inspections (VGP) and returns to service: we handle it. We schedule the inspection with Bureau Veritas, prepare the machine beforehand, and if the inspection raises a reservation, we clear it straight away. One contact, a compliant machine, a report signed by a recognised body: the best guarantee for you and your operators. And between two inspections, if something goes wrong, we are here."
 	},
-	"sales": {
-		"h1": "New & used equipment",
-		"lead": "At Dantès, we offer a full range of new and used lifting and access equipment from the best-performing brands on the market. Thanks to our close partnerships, we provide solutions for every situation and professional requirement.",
-		"brands": [
-			{ "name": "Jekko", "title": "Powerful, compact mini cranes", "text": "SPX mini crawler cranes, JF articulated cranes, MPK minipickers." },
-			{ "name": "Socage", "title": "Innovative aerial platforms", "text": "Spider lifts and articulated truck-mounted platforms." },
-			{ "name": "Cormach", "title": "Hydraulic truck-mounted cranes", "text": "Loader cranes from the light range to the ultra-heavy range." },
-			{ "name": "CELA", "title": "Aerial work platforms", "text": "DT Truck (truck-mounted), DT Crawler (tracked)." }
+	"trades": {
+		"lifting": {
+			"h1": "Lifting: JEKKO and Cormach repair in the South of France",
+			"lead": "Mini crawler crane, truck-mounted loader crane or crane arm: we service, repair and refurbish all lifting equipment, on site with our workshop vans or in our Carros workshop. Hydraulics, electrics, combustion and electric engines, welding: we work on the machine as a whole.",
+			"sections": [
+				{
+					"id": "jekko",
+					"h2": "JEKKO repair and maintenance in PACA: mini cranes",
+					"badge": "Approved maintenance agent",
+					"paras": [
+						"Italian manufacturer specialised in mini crawler cranes, JEKKO covers the whole range: from the small SPB209 (990 kg) to the JF series articulated crawler cranes such as the JF545 (15.5 t). In between, the SPX telescopic mini cranes (SPX312, SPX424, SPX429, SPX527, SPX532, SPX1040, SPX1275) are the reference for lifting indoors, in city centres and anywhere nothing else fits.",
+						"DANTÈS is a JEKKO maintenance agent. Our technicians were trained at the manufacturer and we work on the whole range, from routine servicing to full refurbishment."
+					],
+					"image": "/images/jekko-mini-grue-levage-chantier-monaco.webp",
+					"alt": "JEKKO mini crane lifting on a job site in Monaco, JEKKO maintenance Alpes-Maritimes",
+					"partner": "jekko"
+				},
+				{
+					"id": "cormach",
+					"h2": "Cormach repair in PACA: loader cranes and crane arms",
+					"badge": "Approved maintenance agent",
+					"paras": [
+						"Italian manufacturer of truck-mounted loader cranes, Cormach makes cranes of all sizes, from compact models for light trucks up to 80 t capacity cranes in the 575000 series. We work the brand with Carrosserie Cornut, which brings its experience of Cormach-equipped trucks. DANTÈS is a Cormach maintenance agent and our technicians were trained there."
+					],
+					"image": "/images/cormach-grue-auxiliaire-camion.webp",
+					"alt": "Cormach loader crane mounted on a truck, Cormach loader crane maintenance",
+					"partner": "cormach"
+				},
+				{
+					"id": "also",
+					"h2": "Truck-mounted crane repair in the Alpes-Maritimes: Fassi, Palfinger, Hoeflon, Spidercrane",
+					"paras": [
+						"We also work on truck-mounted cranes and loader crane arms of all makes (Fassi, Palfinger…), and on Hoeflon and Spidercrane spider mini cranes. Fassi repair in PACA, on-site breakdown service for spider cranes: same standards as on our partner brands."
+					],
+					"image": "/images/fourgon-atelier-dantes-jekko-tlm-carros.webp",
+					"alt": "DANTÈS workshop van open next to a mini crane under repair"
+				},
+				{
+					"id": "sale",
+					"h2": "Buy a used JEKKO in France: new and second-hand",
+					"paras": [
+						"Sales go through us: JEKKO mini cranes and Cormach cranes, new or used. Available machines are posted in our news section."
+					],
+					"link": "news"
+				}
+			],
+			"ctaTitle": "A mini crane or loader crane out of service?",
+			"ctaText": "Call us: we prepare the job before we leave."
+		},
+		"elevation": {
+			"h1": "Aerial platforms: SOCAGE and CELA repair in the South of France",
+			"lead": "Truck-mounted platform, spider lift or telescopic platform: we service, repair and refurbish your work-at-height machines, on site or in the workshop. Our technicians are trained directly at the manufacturers, to work fast and right on machines that carry people.",
+			"sections": [
+				{
+					"id": "socage",
+					"h2": "SOCAGE repair in PACA: truck-mounted platforms and spider lifts",
+					"badge": "Approved maintenance agent",
+					"paras": [
+						"Based near Modena in Italy, SOCAGE has built truck-mounted platforms for over 40 years and sells them worldwide. The range is huge: platforms on vans and 3.5 t chassis for the city, platforms on trucks up to the very high reach of the Forste series, and tracked spider lifts.",
+						"DANTÈS is a SOCAGE maintenance agent and our technicians were trained at the manufacturer in Italy. We work on the whole range: hydraulics, on-board electronics, stabilisation, basket."
+					],
+					"image": "/images/socage-forste-27d-camion-nacelle.webp",
+					"alt": "SOCAGE Forste 27D truck-mounted platform deployed, SOCAGE platform maintenance",
+					"partner": "socage"
+				},
+				{
+					"id": "cela",
+					"h2": "CELA platform repair: DT trucks, Spyder spider lifts, rescue platforms",
+					"paras": [
+						"Founded in 1965 near Brescia, CELA designs platforms you will not find anywhere else: DT range truck-mounted platforms (25 to 60 m), able to work below ground level, with a removable basket that can be replaced by a winch, and Spyder tracked spider lifts. The brand also equips fire services with its rescue platforms.",
+						"Our technicians were trained at CELA on these specific machines, which lets us work where few repairers know how to."
+					],
+					"image": "/images/cela-dt30-spyder-nacelle-araignee.webp",
+					"alt": "CELA DT30 Spyder spider lift used by firefighters",
+					"partner": "cela"
+				},
+				{
+					"id": "also",
+					"h2": "Multitel, Haulotte, JLG, Skyjack maintenance: truck-mounted and telescopic platforms",
+					"paras": [
+						"We also work on Multitel truck-mounted platforms and on Haulotte, JLG and Skyjack platforms. Truck-mounted platform repair in the Alpes-Maritimes, telescopic platform breakdown service in the 06 and across the region: on site or in the workshop."
+					],
+					"image": "/images/nacelle-araignee-depannage-sur-site-fourgon-atelier.webp",
+					"alt": "JLG spider lift being repaired on site, DANTÈS workshop van behind"
+				},
+				{
+					"id": "telecom",
+					"h2": "Telecom platform maintenance in PACA",
+					"paras": [
+						"Telecom operators and their subcontractors work at height, often on hard-to-reach sites, with platforms that cannot stay out of service. We maintain and repair these machines on site: hydraulics, electrics, stabilisation, basket. The goal: a safe platform, available when the crew needs it."
+					],
+					"draft": true
+				},
+				{
+					"id": "cinema",
+					"h2": "Film and TV shoot platforms: repair and maintenance",
+					"paras": [
+						"On a shoot, a broken machine stops a whole crew. We service and repair the platforms used by film and audiovisual production companies, checking safety components before the shoot, with a fast response if a fault appears during the day."
+					],
+					"draft": true
+				},
+				{
+					"id": "sale",
+					"h2": "SOCAGE and CELA platforms for sale: new and used",
+					"paras": [
+						"SOCAGE and CELA platforms, new or used: we advise you on the machine suited to your use. Available machines are posted in our news section."
+					],
+					"link": "news"
+				}
+			],
+			"ctaTitle": "A platform out of service?",
+			"ctaText": "Call us: fast on-site service in 06, 83, 13 and 04."
+		},
+		"handling": {
+			"h1": "Material handling: forklift repair, all makes",
+			"lead": "Forklift, stacker, electric pallet truck or more specific machine: we repair and service material handling equipment of all makes. Engine, hydraulic, electrical, mast or brake faults: we adapt to each machine and situation, on site or in our Carros workshop.",
+			"sections": [
+				{
+					"id": "repair",
+					"h2": "Forklift breakdown service in Nice and across PACA",
+					"paras": [
+						"Combustion or electric, recent or old: our workshop vans come to the machine, from Nice to Marseille. If it has to come to the workshop, our 5 t vehicle lift in Carros lets us handle it."
+					],
+					"image": "/images/fourgon-atelier-dantes-mini-grue-araignee.webp",
+					"alt": "DANTÈS workshop van working on a site, on-site breakdown service"
+				},
+				{
+					"id": "deal",
+					"h2": "Custom material handling in Marseille with DEAL Levage",
+					"paras": [
+						"For lifting and handling operations that are out of the ordinary, we work with DEAL Levage in Marseille. Together, we build custom solutions: heavy handling, specific lifting, design and delivery of projects nobody else wants to take on. A custom lifting project in PACA? Talk to us."
+					],
+					"partner": "deal"
+				},
+				{
+					"id": "sale",
+					"h2": "A machine to replace?",
+					"paras": [
+						"Tell us what you need: we advise you and look with you for the right machine, new or used."
+					],
+					"draft": true
+				}
+			],
+			"ctaTitle": "A forklift out of service?",
+			"ctaText": "Call us or describe the fault: we adapt to each machine."
+		}
+	},
+	"partners": {
+		"h1": "Our partners",
+		"lead": "The manufacturers and partners we work with, and what we do with each of them. Technicians trained at each manufacturer.",
+		"does": "What we do with them",
+		"items": [
+			{
+				"id": "jekko",
+				"name": "JEKKO",
+				"badge": "Approved maintenance agent",
+				"text": "Italian manufacturer specialised in mini crawler cranes: from the SPB209 (990 kg) to the JF545 (15.5 t), including SPX telescopic mini cranes.",
+				"does": "Routine servicing, on-site repair and full refurbishment across the range. Technicians trained at the manufacturer.",
+				"page": "lifting"
+			},
+			{
+				"id": "socage",
+				"name": "SOCAGE",
+				"badge": "Approved maintenance agent",
+				"text": "Based near Modena, SOCAGE has built truck-mounted platforms for over 40 years: vans and 3.5 t chassis, very high reach Forste series, tracked spider lifts.",
+				"does": "Maintenance of the whole range: hydraulics, on-board electronics, stabilisation, basket. Technicians trained at the manufacturer in Italy.",
+				"page": "elevation"
+			},
+			{
+				"id": "cormach",
+				"name": "Cormach, with Carrosserie Cornut",
+				"badge": "Approved maintenance agent",
+				"text": "Italian manufacturer of truck-mounted loader cranes, from compact models up to 80 t cranes in the 575000 series. We work the brand with Carrosserie Cornut, which knows Cormach-equipped trucks well.",
+				"does": "Servicing, repair and refurbishment of loader cranes and crane arms. Technicians trained at the manufacturer.",
+				"page": "lifting"
+			},
+			{
+				"id": "cela",
+				"name": "CELA",
+				"badge": "Manufacturer partner",
+				"text": "Founded in 1965 near Brescia, CELA designs DT truck-mounted platforms (25 to 60 m) able to work below ground level, Spyder spider lifts and rescue platforms for fire services.",
+				"does": "Work on these specific machines, where few repairers can. Technicians trained at CELA.",
+				"page": "elevation"
+			},
+			{
+				"id": "deal",
+				"name": "DEAL Levage",
+				"badge": "Custom projects partner",
+				"text": "Lifting and heavy handling specialist in Marseille.",
+				"does": "Building custom solutions: heavy handling, specific lifting, design and delivery of projects nobody else wants to take on.",
+				"page": "handling"
+			}
 		],
-		"ctaTitle": "Need to renew your equipment?",
-		"ctaText": "Contact us for more information about our equipment and our partners."
+		"ctaTitle": "A machine from one of these brands?",
+		"ctaText": "Call us or describe the fault."
+	},
+	"news": {
+		"h1": "News",
+		"lead": "Job sites, repairs, machines sold, training at manufacturers: what we do in the field, from Nice to Marseille.",
+		"empty": "Our first news items are coming. In the meantime, for a breakdown or a question: call us.",
+		"types": {
+			"intervention": "Repair",
+			"occasion": "Used machine",
+			"formation": "Training",
+			"conseil": "Advice"
+		},
+		"back": "All news",
+		"ctaTitle": "A machine to repair or buy?",
+		"ctaText": "Call us or request a quote."
 	},
 	"contact": {
 		"h1": "Contact & quotes",
-		"lead": "Contact us about anything concerning our company or our services. We will do our best to reply as quickly as possible.",
+		"lead": "A breakdown, a quote, a periodic inspection? Call us or fill in the form: we answer quickly.",
 		"coordsTitle": "Find us",
-		"mapTodo": "Map to be embedded",
+		"mapTitle": "Map to the Carros workshop",
+		"zonesTitle": "Service area",
 		"form": {
 			"name": "Name",
 			"phone": "Phone",
-			"email": "Email",
 			"company": "Company",
-			"type": "Type of request",
-			"types": ["Repair", "Quote", "Purchase", "Other"],
+			"machine": "Machine make and model",
+			"city": "Job location (city)",
 			"message": "Your message",
+			"photo": "Attach a photo",
 			"optional": "optional",
 			"send": "Send request",
-			"gdpr": "The information you enter is used only to answer your request. See the privacy policy.",
-			"required": "Required field"
+			"gdpr": "The information you enter is used only to answer your request."
 		}
 	},
 	"thanks": {
@@ -173,6 +372,6 @@
 	},
 	"notFound": {
 		"h1": "Page not found",
-		"text": "This page does not exist or has moved. Go back to the home page, our services or the contact page."
+		"text": "This page does not exist or has moved. Go back to the home page, our trades or the contact page."
 	}
 }

@@ -1,0 +1,70 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHero from '../components/PageHero.astro';
+import CtaBand from '../components/CtaBand.astro';
+import Vgp from '../components/Vgp.astro';
+import { useTranslations, data, type Locale } from '../i18n';
+import { pathFor, type PageKey } from '../i18n/routes';
+import { partners } from '../config';
+
+interface Props {
+	locale: Locale;
+	kind: 'lifting' | 'elevation' | 'handling';
+}
+interface Section {
+	id: string;
+	h2: string;
+	paras: string[];
+	badge?: string;
+	image?: string;
+	alt?: string;
+	partner?: keyof typeof partners;
+	link?: PageKey;
+}
+const { locale, kind } = Astro.props;
+const t = useTranslations(locale);
+const sections = data<Section[]>(t, `trades.${kind}.sections`);
+---
+
+<Layout locale={locale} pageKey={kind} title={t(`meta.${kind}.title`)} description={t(`meta.${kind}.description`)}>
+	<PageHero title={t(`trades.${kind}.h1`)} lead={t(`trades.${kind}.lead`)}>
+		<div class="mt-8 flex flex-wrap gap-3">
+			<a href={pathFor('contact', locale)} class="btn btn-accent">{t('ui.quote')}</a>
+		</div>
+	</PageHero>
+
+	{
+		sections.map((s, i) => {
+			const p = s.partner ? partners[s.partner] : undefined;
+			return (
+				<section class={i % 2 ? 'bg-paper' : ''} id={s.id}>
+					<div class={`wrap grid gap-8 py-14 md:py-16 ${s.image ? 'md:grid-cols-2 md:items-center' : ''}`}>
+						<div class={s.image && i % 2 ? 'md:order-2' : ''}>
+							<h2 class="display text-3xl text-balance md:text-4xl">{s.h2}</h2>
+							{s.badge && <p class="mt-3 inline-block bg-steel px-3 py-1 text-sm font-bold text-white">{s.badge}</p>}
+							<div class="mt-5 space-y-4 text-ink/85">
+								{s.paras.map((para) => <p class="max-w-[62ch]">{para}</p>)}
+							</div>
+							<div class="mt-6 flex flex-wrap gap-x-6 gap-y-2">
+								{p?.url && (
+									<a href={p.url} target="_blank" rel="noopener noreferrer" class="font-bold text-steel underline decoration-2 underline-offset-4 hover:text-steel-deep">
+										{t('ui.visitSite')}
+									</a>
+								)}
+								{s.link && (
+									<a href={pathFor(s.link, locale)} class="font-bold text-steel underline decoration-2 underline-offset-4 hover:text-steel-deep">
+										{t(`nav.${s.link}`)}
+									</a>
+								)}
+							</div>
+						</div>
+						{s.image && <img src={s.image} alt={s.alt} width="1000" height="750" class="aspect-[4/3] w-full object-cover" loading="lazy" />}
+					</div>
+				</section>
+			);
+		})
+	}
+
+	<Vgp locale={locale} />
+	<CtaBand locale={locale} title={t(`trades.${kind}.ctaTitle`)} text={t(`trades.${kind}.ctaText`)} />
+</Layout>

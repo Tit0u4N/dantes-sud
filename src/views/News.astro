@@ -1,0 +1,44 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHero from '../components/PageHero.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { useTranslations, type Locale } from '../i18n';
+import { articlePath } from '../i18n/routes';
+import { getArticles } from '../i18n/news';
+
+interface Props {
+	locale: Locale;
+}
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+const articles = await getArticles(locale);
+const fmt = new Intl.DateTimeFormat(locale === 'fr' ? 'fr-FR' : 'en-GB', { dateStyle: 'long' });
+---
+
+<Layout locale={locale} pageKey="news" title={t('meta.news.title')} description={t('meta.news.description')}>
+	<PageHero title={t('news.h1')} lead={t('news.lead')} />
+	<section class="wrap py-14 md:py-20">
+		{
+			articles.length === 0 ? (
+				<p class="max-w-[55ch] text-lg text-ink/80">{t('news.empty')}</p>
+			) : (
+				<ul class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+					{articles.map(({ entry, slug }) => (
+						<li class="flex flex-col border border-line">
+							{entry.data.image && <img src={entry.data.image} alt={entry.data.imageAlt ?? ''} width="800" height="600" class="aspect-[4/3] w-full object-cover" loading="lazy" />}
+							<div class="flex flex-1 flex-col p-6">
+								<p class="text-sm font-semibold text-steel">
+									{t(`news.types.${entry.data.type}`)} · <time datetime={entry.data.date.toISOString()}>{fmt.format(entry.data.date)}</time>
+								</p>
+								<h2 class="mt-2 text-xl font-bold"><a href={articlePath(slug, locale)} class="hover:text-steel">{entry.data.title}</a></h2>
+								<p class="mt-2 flex-1 text-ink/80">{entry.data.description}</p>
+								<a href={articlePath(slug, locale)} class="mt-4 font-bold text-steel underline decoration-2 underline-offset-4">{t('ui.readMore')}</a>
+							</div>
+						</li>
+					))}
+				</ul>
+			)
+		}
+	</section>
+	<CtaBand locale={locale} title={t('news.ctaTitle')} text={t('news.ctaText')} />
+</Layout>

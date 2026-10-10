@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import PageHero from '../components/PageHero.astro';
+import Socials from '../components/Socials.astro';
 import { useTranslations, data, type Locale } from '../i18n';
 import { pathFor } from '../i18n/routes';
 import { company } from '../config';
@@ -10,15 +11,18 @@ interface Props {
 }
 const { locale } = Astro.props;
 const t = useTranslations(locale);
-const types = data<string[]>(t, 'contact.form.types');
+const zones = data<{ code: string; name: string }[]>(t, 'home.zones');
 const thanks = pathFor('thanks', locale);
+const mapQuery = encodeURIComponent(`${company.street}, ${company.postalCode} ${company.city}`);
 ---
 
-<Layout locale={locale} pageKey="contact" title={t('meta.contact.title')} description={t('meta.contact.description')}>
-	<PageHero title={t('contact.h1')} lead={t('contact.lead')} />
-	<section class="wrap grid gap-14 py-16 md:grid-cols-[1.4fr_1fr] md:py-20">
+<Layout locale={locale} pageKey="contact" localBusiness title={t('meta.contact.title')} description={t('meta.contact.description')}>
+	<PageHero title={t('contact.h1')} lead={t('contact.lead')}>
+		<a href={company.tel} class="btn btn-accent mt-8">{company.phone}</a>
+	</PageHero>
+	<section class="wrap grid gap-14 py-14 md:grid-cols-[1.4fr_1fr] md:py-20">
 		<!-- TODO: backend. For now the form validates client-side then redirects to the thank-you page. -->
-		<form id="contact-form" data-thanks={thanks} class="grid gap-5 sm:grid-cols-2">
+		<form id="contact-form" data-thanks={thanks} method="post" enctype="multipart/form-data" class="grid gap-5 sm:grid-cols-2">
 			<label class="block">
 				<span class="mb-1 block font-semibold">{t('contact.form.name')}</span>
 				<input class="field" name="name" type="text" autocomplete="name" required />
@@ -28,22 +32,24 @@ const thanks = pathFor('thanks', locale);
 				<input class="field" name="phone" type="tel" autocomplete="tel" required />
 			</label>
 			<label class="block">
-				<span class="mb-1 block font-semibold">{t('contact.form.email')}</span>
-				<input class="field" name="email" type="email" autocomplete="email" required />
-			</label>
-			<label class="block">
 				<span class="mb-1 block font-semibold">{t('contact.form.company')} <span class="font-normal text-ink/60">({t('contact.form.optional')})</span></span>
 				<input class="field" name="company" type="text" autocomplete="organization" />
 			</label>
+			<label class="block">
+				<span class="mb-1 block font-semibold">{t('contact.form.machine')}</span>
+				<input class="field" name="machine" type="text" placeholder="JEKKO SPX532" required />
+			</label>
 			<label class="block sm:col-span-2">
-				<span class="mb-1 block font-semibold">{t('contact.form.type')}</span>
-				<select class="field" name="type" required>
-					{types.map((ty) => <option value={ty}>{ty}</option>)}
-				</select>
+				<span class="mb-1 block font-semibold">{t('contact.form.city')}</span>
+				<input class="field" name="city" type="text" autocomplete="address-level2" required />
 			</label>
 			<label class="block sm:col-span-2">
 				<span class="mb-1 block font-semibold">{t('contact.form.message')}</span>
-				<textarea class="field min-h-40" name="message" required></textarea>
+				<textarea class="field min-h-36" name="message" required></textarea>
+			</label>
+			<label class="block sm:col-span-2">
+				<span class="mb-1 block font-semibold">{t('contact.form.photo')} <span class="font-normal text-ink/60">({t('contact.form.optional')})</span></span>
+				<input class="field" name="photo" type="file" accept="image/*" />
 			</label>
 			<div class="sm:col-span-2">
 				<button type="submit" class="btn btn-steel">{t('contact.form.send')}</button>
@@ -61,9 +67,25 @@ const thanks = pathFor('thanks', locale);
 					<p><a class="text-steel hover:underline" href={`mailto:${company.email}`}>{company.email}</a></p>
 				</address>
 				<p class="mt-4 text-sm text-ink/60">{t('footer.hoursTodo')}</p>
+				<Socials locale={locale} class="mt-3 text-steel" />
 			</div>
-			<div class="photo-ph flex aspect-[4/3] items-center justify-center text-sm font-semibold text-steel-deep">
-				{t('contact.mapTodo')}
+			<iframe
+				title={t('contact.mapTitle')}
+				src={`https://www.google.com/maps?q=${mapQuery}&output=embed`}
+				class="aspect-[4/3] w-full border-0"
+				loading="lazy"
+				referrerpolicy="no-referrer-when-downgrade"
+			></iframe>
+			<div>
+				<h2 class="display text-3xl text-steel">{t('contact.zonesTitle')}</h2>
+				<ul class="mt-3 grid grid-cols-2 gap-3">
+					{zones.map((z) => (
+						<li class="border-t-4 border-steel pt-2">
+							<span class="display block text-5xl text-steel">{z.code}</span>
+							<span class="text-sm font-semibold">{z.name}</span>
+						</li>
+					))}
+				</ul>
 			</div>
 		</aside>
 	</section>
@@ -73,7 +95,7 @@ const thanks = pathFor('thanks', locale);
 	const form = document.getElementById('contact-form') as HTMLFormElement | null;
 	form?.addEventListener('submit', (e) => {
 		e.preventDefault();
-		// TODO: POST to the chosen backend before redirecting.
+		// TODO: POST FormData (incl. photo) to the chosen backend before redirecting.
 		window.location.href = form.dataset.thanks ?? '/';
 	});
 </script>

@@ -54,3 +54,14 @@ Priorité 3 : [ ] P18 Var · [ ] P19 Bouches-du-Rhône · [ ] P20 Alpes-de-Haute
 - [ ] Redirections 301 (§8) : `/contactus`, `/en_GB/*`, `/website/info` — dépend de l'hébergeur
 - [ ] Bandeau cookies si mesure d'audience
 - [ ] Search Console, Google Business Profile, PageSpeed avant/après
+
+## Refonte 2027 (brief prioritaire)
+- [x] Menu 7 entrées, topbar téléphone cliquable + bouton devis + réseaux, footer sans Odoo
+- [x] Accueil (H1/sous-titre/textes du brief, chiffres, VGP, process, zones, marques), Levage, Élévation, Manutention, Partenaires, Actualités (collection Markdown), Contact (formulaire brief + carte)
+- [x] Anciennes pages supprimées + redirections, sitemap FR/EN avec hreflang, robots.txt, JSON-LD LocalBusiness (accueil, contact), images renommées
+- [ ] `[CONFIRMER]` Paragraphes télécom et cinéma (Élévation), bloc « machine à remplacer » (Manutention) : brouillons (`draft`)
+- [ ] Fournir : URL LinkedIn / Instagram / Google Business Profile (`src/config.ts` → `social`), logos JEKKO / SOCAGE / DEAL Levage, lien DEAL, rôle Carrosserie Cornut, accord Bureau Veritas (nom cité en texte, pas de logo), logos clients, avis Google
+- [ ] Coordonnées GPS exactes (config.geo approximatif), horaires, image de partage avec logo
+- [ ] Carte des 4 départements (actuellement tuiles 06/83/13/04), fil Instagram intégré
+- [ ] 2 articles/mois dans `src/content/news/fr/` (titre = marque + ville)
+- [ ] Backend formulaire (photo jointe incluse)

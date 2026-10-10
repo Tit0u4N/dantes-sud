@@ -1,6 +1,7 @@
 ---
+import Socials from './Socials.astro';
 import { useTranslations, data, type Locale } from '../i18n';
-import { pathFor } from '../i18n/routes';
+import { pathFor, menuKeys } from '../i18n/routes';
 import { company } from '../config';
 
 interface Props {
@@ -9,17 +10,17 @@ interface Props {
 const { locale } = Astro.props;
 const t = useTranslations(locale);
 const depts = data<string[]>(t, 'footer.depts');
-const pages = (['onsite', 'workshop', 'sales', 'contact'] as const).map((k) => ({
-	href: pathFor(k, locale),
-	label: t(`nav.${k}`),
-}));
+const pages = menuKeys.map((k) => ({ href: pathFor(k, locale), label: t(`nav.${k}`) }));
 ---
 
 <footer class="blueprint text-white">
 	<div class="wrap grid gap-10 py-14 md:grid-cols-[1.3fr_1fr_1fr_1fr]">
 		<div>
-			<img src="/logo.svg" alt={t('site.logoAlt')} width="56" height="52" class="h-14 w-auto" />
+			<div class="inline-block bg-white px-4 py-3">
+				<img src="/images/logo-dantes.webp" alt={t('site.logoAlt')} width="1000" height="250" class="h-10 w-auto" loading="lazy" />
+			</div>
 			<p class="display mt-4 text-3xl text-accent">{t('site.tagline')}</p>
+			<Socials locale={locale} class="mt-4" />
 		</div>
 		<div>
 			<h2 class="font-bold">{t('footer.contact')}</h2>

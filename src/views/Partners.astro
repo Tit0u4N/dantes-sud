@@ -1,0 +1,56 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHero from '../components/PageHero.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { useTranslations, data, type Locale } from '../i18n';
+import { pathFor, type PageKey } from '../i18n/routes';
+import { partners } from '../config';
+
+interface Props {
+	locale: Locale;
+}
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+const items = data<{ id: keyof typeof partners; name: string; badge: string; text: string; does: string; page: PageKey }[]>(t, 'partners.items');
+const agent = ['jekko', 'socage', 'cormach'];
+---
+
+<Layout locale={locale} pageKey="partners" title={t('meta.partners.title')} description={t('meta.partners.description')}>
+	<PageHero title={t('partners.h1')} lead={t('partners.lead')} />
+	<section class="wrap py-14 md:py-20">
+		<ul class="grid gap-8 md:grid-cols-2">
+			{
+				items.map((p) => {
+					const cfg = partners[p.id];
+					return (
+						<li class="flex flex-col border-2 border-line p-7" id={p.id}>
+							<div class="flex h-20 items-center">
+								{cfg.logo ? (
+									<img src={cfg.logo} alt={`Logo ${p.name}`} height="80" class="h-full w-auto max-w-[14rem] object-contain" loading="lazy" />
+								) : (
+									<span class="display text-5xl text-steel">{p.name.split(',')[0]}</span>
+								)}
+							</div>
+							<h2 class="mt-4 text-2xl font-bold">{p.name}</h2>
+							<p class={`mt-2 inline-block self-start px-3 py-1 text-sm font-bold ${agent.includes(p.id) ? 'bg-steel text-white' : 'bg-sky text-steel-deep'}`}>{p.badge}</p>
+							<p class="mt-4 text-ink/85">{p.text}</p>
+							<h3 class="mt-5 font-bold">{t('partners.does')}</h3>
+							<p class="mt-1 flex-1 text-ink/85">{p.does}</p>
+							<div class="mt-6 flex flex-wrap gap-x-6 gap-y-2">
+								<a href={pathFor(p.page, locale)} class="font-bold text-steel underline decoration-2 underline-offset-4 hover:text-steel-deep">
+									{t(`nav.${p.page}`)}
+								</a>
+								{cfg.url && (
+									<a href={cfg.url} target="_blank" rel="noopener noreferrer" class="font-bold text-steel underline decoration-2 underline-offset-4 hover:text-steel-deep">
+										{t('ui.visitSite')}
+									</a>
+								)}
+							</div>
+						</li>
+					);
+				})
+			}
+		</ul>
+	</section>
+	<CtaBand locale={locale} title={t('partners.ctaTitle')} text={t('partners.ctaText')} />
+</Layout>

@@ -1,8 +1,8 @@
 ---
 import Home from '../views/Home.astro';
-import OnSite from '../views/OnSite.astro';
-import Workshop from '../views/Workshop.astro';
-import Sales from '../views/Sales.astro';
+import Trade from '../views/Trade.astro';
+import Partners from '../views/Partners.astro';
+import News from '../views/News.astro';
 import Contact from '../views/Contact.astro';
 import Thanks from '../views/Thanks.astro';
 import { locales } from '../i18n';
@@ -14,9 +14,12 @@ export function getStaticPaths() {
 	);
 }
 
-const views = { home: Home, onsite: OnSite, workshop: Workshop, sales: Sales, contact: Contact, thanks: Thanks };
 const { key, locale } = Astro.props;
-const View = views[key];
 ---
 
-<View locale={locale} />
+{key === 'home' && <Home locale={locale} />}
+{(key === 'lifting' || key === 'elevation' || key === 'handling') && <Trade locale={locale} kind={key} />}
+{key === 'partners' && <Partners locale={locale} />}
+{key === 'news' && <News locale={locale} />}
+{key === 'contact' && <Contact locale={locale} />}
+{key === 'thanks' && <Thanks locale={locale} />}
