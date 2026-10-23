@@ -9,7 +9,7 @@ Source prioritaire : brief « refonte site DANTÈS 2027 ». [REQUIREMENT.MD](REQ
 - Actualités : collection Markdown `src/content/news/<fr|en>/<slug>.md` ([src/content.config.ts](src/content.config.ts)).
 - Anciennes URLs : vraies 301 via [public/_redirects](public/_redirects) (Cloudflare), `html_handling: drop-trailing-slash` dans [wrangler.jsonc](wrangler.jsonc). Préprod workers.dev noindex via [public/_headers](public/_headers).
 - Style : industriel moderne, bleu `#11509F`, jaune signal pour les CTA, motif hexagone, police Archivo.
-- Formulaire contact : UI + validation + redirection `/merci`, **backend non branché**.
+- Formulaire contact : envoi via [worker/index.ts](worker/index.ts) (`POST /api/contact`) → Resend (`formulaire@contact.dantes-sud.fr` → `contact@dantes-sud.fr`, photo en PJ), honeypot, puis redirection `/merci`. Secret `RESEND_API_KEY`.
 
 ## Fait
 ### Socle
@@ -42,7 +42,7 @@ Source prioritaire : brief « refonte site DANTÈS 2027 ». [REQUIREMENT.MD](REQ
 ## À faire — code
 - [ ] Vérifier visuellement que l'embed carte (requête « DANTÈS, 15e Rue ») pointe la bonne fiche ; sinon basculer sur `q=lat,lng`
 - [ ] Test visuel navigateur (desktop + mobile), audit accessibilité/perf
-- [ ] Backend formulaire (Formspree / Resend / action Astro), envoi de la photo jointe, puis redirection `/merci`
+- [x] Backend formulaire (Worker + Resend), envoi de la photo jointe, puis redirection `/merci`
 - [ ] Vraie carte des 4 départements (actuellement tuiles) + fil Instagram intégré
 - [ ] Après déploiement : vérifier `curl -I` des 301 (`/contactus`, `/levage/`) et `X-Robots-Tag: noindex` sur la préprod
 - [ ] Mise en ligne : `workers_dev = false` pour ne pas garder deux copies du site

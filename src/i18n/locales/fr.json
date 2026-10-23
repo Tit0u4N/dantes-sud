@@ -360,7 +360,11 @@
 			"optional": "facultatif",
 			"send": "Envoyer la demande",
 			"gdpr": "Les informations saisies servent uniquement à répondre à votre demande.",
-			"gdprLink": "Politique de confidentialité"
+			"gdprLink": "Politique de confidentialité",
+			"sending": "Envoi en cours…",
+			"error": "L'envoi a échoué.",
+			"errorCall": "Réessayez ou appelez-nous au",
+			"photoTooBig": "La photo dépasse 8 Mo."
 		}
 	},
 	"legalPages": {

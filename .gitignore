@@ -28,3 +28,6 @@ pnpm-debug.log*
 .wrangler/
 .dev.vars*
 .env*
+
+# wrangler types (bun run cf-typegen)
+worker/worker-configuration.d.ts
