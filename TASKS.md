@@ -45,7 +45,8 @@ Source prioritaire : brief « refonte site DANTÈS 2027 ». [REQUIREMENT.MD](REQ
 - [x] Backend formulaire (Worker + Resend), envoi de la photo jointe, puis redirection `/merci`
 - [ ] Vraie carte des 4 départements (actuellement tuiles) + fil Instagram intégré
 - [ ] Après déploiement : vérifier `curl -I` des 301 (`/contactus`, `/levage/`) et `X-Robots-Tag: noindex` sur la préprod
-- [ ] Mise en ligne : `workers_dev = false` pour ne pas garder deux copies du site
+- [x] Environnements : `main` → Worker prod `dantes-sud`, `develop` → Worker dev `dantes-sud-dev` (CI GitHub Actions, voir CONTRIBUTING.md)
+- [ ] Mise en ligne : zone dantes-sud.fr chez Cloudflare, custom domain sur le Worker prod, puis `workers_dev = false` pour ne pas garder deux copies du site
 - [ ] Remplacer `public/logo.svg` (placeholder) et favicon définitif
 - [ ] Polices auto-hébergées (actuellement Google Fonts)
 - [ ] Bandeau cookies si mesure d'audience

@@ -37,6 +37,7 @@ Manage the background server with `astro dev stop`, `astro dev status`, and `ast
 - Trade pages (levage/élévation/manutention) share `src/views/Trade.astro`; their sections live under `trades.<kind>.sections` in the locale JSON. Social URLs, client logos, partner links: `src/config.ts` (empty = hidden).
 - Old URLs: server 301s in `public/_redirects` (Cloudflare); preprod host noindexed in `public/_headers`. Sitemap: `src/pages/sitemap.xml.ts`. Legal facts in `config.legal`; legal/privacy copy under `legalPages` in the locale JSON.
 - Contact form posts to `/api/contact`, handled by the Worker script `worker/index.ts` (same Worker as the static assets, `run_worker_first: ["/api/*"]`), which sends via Resend. Secret `RESEND_API_KEY` (`wrangler secret put`, local `.dev.vars`); from/to in `wrangler.jsonc` vars. Worker types: `bun run cf-typegen`.
+- Deploy (GitHub Actions): `main` → Worker `dantes-sud` (prod), `develop` → `dantes-sud-dev` (`wrangler --env dev`, workers.dev only, noindex). Never commit directly to `main`; workflow in `CONTRIBUTING.md`. New `vars` must be declared for both root and `env.dev`.
 - Add a page: add slug in `routes.ts`, a view, its entry in `views` map, and meta + copy in both JSON files.
 - Design tokens in `src/styles/global.css` (`@theme`); brand blue `#11509F`. `public/logo.svg` is a placeholder.
 

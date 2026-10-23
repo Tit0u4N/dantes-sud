@@ -1,4 +1,6 @@
 {
+  // Root config = production (branch main). Once the dantes-sud.fr zone is on Cloudflare:
+  // add "routes": [{ "pattern": "www.dantes-sud.fr", "custom_domain": true }, ...] and "workers_dev": false.
   "name": "dantes-sud",
   "compatibility_date": "2026-10-10",
   // Worker script: handles /api/* (contact form → Resend); everything else is static assets.
@@ -12,7 +14,20 @@
   },
   "vars": {
     "MAIL_FROM": "Site Dantès <formulaire@contact.dantes-sud.fr>",
-    "MAIL_TO": "contact@dantes-sud.fr"
+    "MAIL_TO": "contact@dantes-sud.fr",
+    "MAIL_SUBJECT_PREFIX": ""
+  },
+  // Secret: RESEND_API_KEY (`bunx wrangler secret put RESEND_API_KEY [--env dev]`, local: .dev.vars)
+  "env": {
+    // Branch develop → dantes-sud-dev.dantes-1a5.workers.dev only (noindex, see public/_headers).
+    "dev": {
+      "name": "dantes-sud-dev",
+      "workers_dev": true,
+      "vars": {
+        "MAIL_FROM": "Site Dantès (dev) <formulaire@contact.dantes-sud.fr>",
+        "MAIL_TO": "contact@dantes-sud.fr",
+        "MAIL_SUBJECT_PREFIX": "[DEV] "
+      }
+    }
   }
-  // Secret: RESEND_API_KEY (`bunx wrangler secret put RESEND_API_KEY`, local: .dev.vars)
 }

@@ -1,10 +1,12 @@
 name: Deploy to Cloudflare
 
+# main → Worker dantes-sud (prod), develop → Worker dantes-sud-dev (wrangler env "dev").
+# Pull requests only build.
 on:
   push:
-    branches: [main]
+    branches: [main, develop]
   pull_request:
-    branches: [main]
+    branches: [main, develop]
 
 concurrency:
   group: deploy-${{ github.ref }}
@@ -16,6 +18,7 @@ jobs:
     timeout-minutes: 15
     permissions:
       contents: read
+    environment: ${{ github.event_name == 'push' && (github.ref_name == 'main' && 'production' || 'development') || null }}
     steps:
       - uses: actions/checkout@v6
 
@@ -36,4 +39,4 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: deploy
+          command: deploy${{ github.ref_name == 'develop' && ' --env dev' || '' }}

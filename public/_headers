@@ -1,3 +1,6 @@
-# Préprod : ne pas indexer la copie workers.dev
+# Copies workers.dev (prod avant domaine, dev) : ne pas indexer
 https://dantes-sud.dantes-1a5.workers.dev/*
+  X-Robots-Tag: noindex
+
+https://dantes-sud-dev.dantes-1a5.workers.dev/*
   X-Robots-Tag: noindex

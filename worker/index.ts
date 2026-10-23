@@ -5,6 +5,7 @@ interface Env {
 	RESEND_API_KEY: string;
 	MAIL_FROM: string;
 	MAIL_TO: string;
+	MAIL_SUBJECT_PREFIX?: string;
 }
 
 const MAX_PHOTO = 8 * 1024 * 1024;
@@ -75,7 +76,7 @@ async function contact(req: Request, env: Env): Promise<Response> {
 			from: env.MAIL_FROM,
 			to: [env.MAIL_TO],
 			reply_to: values.email || undefined,
-			subject: `Demande de contact – ${values.name} – ${values.machine}`,
+			subject: `${env.MAIL_SUBJECT_PREFIX ?? ''}Demande de contact – ${values.name} – ${values.machine}`,
 			html,
 			text,
 			attachments: attachments.length ? attachments : undefined,
