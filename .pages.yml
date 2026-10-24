@@ -1,0 +1,84 @@
+# Pages CMS (https://pagescms.org) : édition des actualités sans toucher au code.
+# Chaque enregistrement = un commit sur la branche choisie (main) → GitHub Actions rebuild et déploie.
+# Les champs reflètent le schéma de src/content.config.ts : les garder synchronisés.
+
+media:
+  input: public/images/news
+  output: /images/news
+
+content:
+  - name: news-fr
+    label: Actualités (FR)
+    type: collection
+    path: src/content/news/fr
+    filename:
+      template: "{primary}.md"
+      field: create
+    view: &view
+      fields: [title, date, type, draft]
+      primary: title
+      sort: [date, title]
+      default:
+        sort: date
+        order: desc
+    fields: &fields
+      - name: title
+        label: Titre
+        description: Contient la marque et la ville (ex. « Réparation grue Jekko à Nice »).
+        type: string
+        required: true
+      - name: description
+        label: Résumé
+        description: Une ou deux phrases, affichées dans la liste et sur Google.
+        type: text
+        required: true
+      - name: date
+        label: Date
+        type: date
+        required: true
+      - name: type
+        label: Catégorie
+        type: select
+        required: true
+        options:
+          values:
+            - name: intervention
+              label: Intervention
+            - name: occasion
+              label: Occasion
+            - name: formation
+              label: Formation
+            - name: conseil
+              label: Conseil
+      - name: brand
+        label: Marque
+        type: string
+      - name: city
+        label: Ville
+        type: string
+      - name: image
+        label: Photo
+        type: image
+      - name: imageAlt
+        label: Description de la photo
+        description: Ce que montre la photo (accessibilité et référencement).
+        type: string
+      - name: draft
+        label: Brouillon (non publié)
+        type: boolean
+        default: false
+      - name: body
+        label: Article
+        type: rich-text
+        options:
+          format: markdown
+
+  - name: news-en
+    label: News (EN)
+    type: collection
+    path: src/content/news/en
+    filename:
+      template: "{primary}.md"
+      field: create
+    view: *view
+    fields: *fields
