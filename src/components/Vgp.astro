@@ -3,14 +3,16 @@ import { useTranslations, type Locale } from '../i18n';
 
 interface Props {
 	locale: Locale;
+	/** Trade page: shows the short, page-specific version instead of the full one. */
+	kind?: 'lifting' | 'elevation' | 'handling';
 }
-const { locale } = Astro.props;
+const { locale, kind } = Astro.props;
 const t = useTranslations(locale);
 ---
 
 <section class="bg-sky/50">
 	<div class="wrap grid items-start gap-6 py-12 md:grid-cols-[1fr_2fr] md:gap-12 md:py-14">
 		<h2 class="display text-3xl text-steel-deep md:text-4xl">{t('vgp.title')}</h2>
-		<p class="max-w-[68ch] text-lg text-ink/85">{t('vgp.text')}</p>
+		<p class="max-w-[68ch] text-lg text-ink/85">{kind ? t(`vgp.short.${kind}`) : t('vgp.text')}</p>
 	</div>
 </section>

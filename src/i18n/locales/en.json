@@ -62,7 +62,7 @@
 		},
 		"contact": {
 			"title": "Contact & Quotes | DANTÈS Carros (06)",
-			"description": "A breakdown, a quote, a periodic inspection? Call DANTÈS on +33 7 65 80 59 14. Workshop in Carros, on-site service in 06, 83, 13 and 04."
+			"description": "A breakdown, a quote, a periodic inspection? Call DANTÈS on +33 7 65 80 59 14. Workshop in Carros, on-site service in 06, 83, 13, 04 and Monaco."
 		},
 		"legal": { "title": "Legal notice | DANTÈS", "description": "Legal notice for dantes-sud.fr: publisher, SIRET, publication director and host." },
 		"privacy": { "title": "Privacy policy | DANTÈS", "description": "How DANTÈS uses the data entered in the contact form, and your GDPR rights." },
@@ -75,7 +75,7 @@
 		"heroAlt": "Spider crane and platform working on a job site overlooking Marseille",
 		"aboutTitle": "On site or in the workshop, we travel to you",
 		"about": [
-			"With 3 technicians and 3 fully equipped workshop vans, we work wherever the machine is located: hilltop village, city-centre job site or remote location. Distance and access are not obstacles.",
+			"With {{technicians}} technicians and 3 fully equipped workshop vans, we work wherever the machine is located: hilltop village, city-centre job site or remote location. Distance and access are not obstacles.",
 			"Every job is carried out with the same standards and professional rigour, from a minor repair to a complete refurbishment. Our priority: the machine must be safe for those who will use it after we leave.",
 			"Our technicians are trained directly at our partner manufacturers. We stay up to date with French VGP regulations and take care of your periodic inspections and returns to service."
 		],
@@ -135,6 +135,11 @@
 		"ctaText": "Call us or describe the fault: we prepare the job before we leave."
 	},
 	"vgp": {
+		"short": {
+			"lifting": "Your mini cranes and loader cranes are subject to periodic inspection (VGP). We schedule the inspection with BUREAU VERITAS, prepare the machine and resolve any reservation.",
+			"elevation": "A platform carries people, so its periodic inspection (VGP) is essential. We prepare the machine beforehand and promptly resolve the inspector's reservations.",
+			"handling": "Forklifts and handling equipment also need their periodic inspections. We prepare the machine and bring it back into compliance."
+		},
 		"title": "Statutory periodic inspections (VGP) and returns to service: we take care of them",
 		"text": "We take charge of your periodic inspections (VGP) and returns to service. We schedule the inspection with BUREAU VERITAS, prepare the machine beforehand and promptly resolve any reservation raised during the inspection. A single point of contact, a compliant machine, a report signed by a recognised body: the best guarantee for you and your operators. Between two inspections, we remain available in the event of an incident."
 	},
@@ -179,7 +184,7 @@
 				},
 				{
 					"id": "sale",
-					"h2": "Buy a used JEKKO in France: new and second-hand",
+					"h2": "New and used JEKKO mini cranes for sale",
 					"paras": [
 						"We handle sales of JEKKO mini cranes and CORMACH cranes, new or used. Contact us to find out which machines are available."
 					],
@@ -253,7 +258,7 @@
 				}
 			],
 			"ctaTitle": "A platform out of service?",
-			"ctaText": "Call us: fast on-site service in 06, 83, 13 and 04."
+			"ctaText": "Call us: fast on-site service in 06, 83, 13, 04 and Monaco."
 		},
 		"handling": {
 			"h1": "Material handling: forklift repair, all makes",
@@ -267,7 +272,7 @@
 					"paras": [
 						"Internal-combustion or electric, recent or old: our workshop vans come to the machine, from Nice to Marseille. If it has to come to the workshop, our 5 t vehicle lift in Carros lets us handle it."
 					],
-					"image": "/images/fourgon-atelier-dantes-mini-grue-araignee.webp",
+					"image": "/images/fourgon-atelier-dantes-intervention-sur-site.webp",
 					"alt": "DANTÈS workshop van working on a site, on-site breakdown service"
 				},
 				{
