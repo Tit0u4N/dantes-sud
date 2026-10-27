@@ -62,7 +62,7 @@
 		},
 		"contact": {
 			"title": "Contact et devis | DANTÈS Carros (06)",
-			"description": "Une panne, un devis, une VGP ? Appelez DANTÈS au 07 65 80 59 14. Atelier à Carros, intervention dans le 06, 83, 13 et 04."
+			"description": "Une panne, un devis, une VGP ? Appelez DANTÈS au 07 65 80 59 14. Atelier à Carros, intervention dans le 06, 83, 13, 04 et à Monaco."
 		},
 		"legal": { "title": "Mentions légales | DANTÈS", "description": "Mentions légales du site dantes-sud.fr : éditeur, SIRET, directeur de la publication et hébergeur." },
 		"privacy": { "title": "Politique de confidentialité | DANTÈS", "description": "Comment DANTÈS utilise les données saisies dans le formulaire de contact, et vos droits RGPD." },
@@ -75,7 +75,7 @@
 		"heroAlt": "Mini-grue araignée et nacelle en intervention sur un chantier avec vue sur Marseille",
 		"aboutTitle": "Sur site ou à l'atelier, nous nous déplaçons chez vous",
 		"about": [
-			"Avec 3 techniciens et 3 fourgons atelier entièrement équipés, nous intervenons où que se trouve la machine : village de l'arrière-pays, chantier en centre-ville ou site isolé. La distance et l'accès ne sont pas un obstacle.",
+			"Avec {{technicians}} techniciens et 3 fourgons atelier entièrement équipés, nous intervenons où que se trouve la machine : village de l'arrière-pays, chantier en centre-ville ou site isolé. La distance et l'accès ne sont pas un obstacle.",
 			"Chaque intervention est menée avec la même exigence et la même rigueur professionnelle, du dépannage ponctuel à la remise en état complète. Notre priorité : que la machine soit sûre pour ceux qui vont l'utiliser après notre passage.",
 			"Nos techniciens sont formés directement chez les constructeurs partenaires. Nous restons à jour sur la réglementation VGP et prenons en charge vos vérifications périodiques et vos remises en service."
 		],
@@ -135,6 +135,11 @@
 		"ctaText": "Appelez-nous ou décrivez la panne : nous préparons l'intervention avant de partir."
 	},
 	"vgp": {
+		"short": {
+			"lifting": "Vos mini-grues et grues auxiliaires sont soumises à la VGP. Nous planifions le contrôle avec BUREAU VERITAS, préparons la machine et levons les réserves éventuelles.",
+			"elevation": "Une nacelle transporte des personnes : sa VGP est incontournable. Nous préparons la machine avant le contrôle et traitons sans délai les réserves du vérificateur.",
+			"handling": "Chariots et engins de manutention doivent aussi passer leurs vérifications périodiques. Nous préparons la machine et assurons la remise en conformité."
+		},
 		"title": "VGP et remises en service : nous nous en chargeons",
 		"text": "Nous prenons en charge vos VGP et vos remises en service. Nous planifions le contrôle avec BUREAU VERITAS, préparons la machine en amont et levons sans délai toute réserve émise lors du contrôle. Un interlocuteur unique, une machine conforme, un rapport signé par un organisme reconnu : la meilleure garantie pour vous et pour vos opérateurs. Entre deux contrôles, nous restons disponibles en cas d'incident."
 	},
@@ -179,7 +184,7 @@
 				},
 				{
 					"id": "sale",
-					"h2": "Achat JEKKO occasion en France : neuf et occasion",
+					"h2": "Vente de mini-grues JEKKO neuves et d'occasion",
 					"paras": [
 						"Nous assurons la vente de mini-grues JEKKO et de grues CORMACH, neuves ou d'occasion. Contactez-nous pour connaître les machines disponibles."
 					],
@@ -253,7 +258,7 @@
 				}
 			],
 			"ctaTitle": "Une nacelle à l'arrêt ?",
-			"ctaText": "Appelez-nous : intervention rapide sur site dans le 06, 83, 13 et 04."
+			"ctaText": "Appelez-nous : intervention rapide sur site dans le 06, 83, 13, 04 et à Monaco."
 		},
 		"handling": {
 			"h1": "Manutention : réparation de chariots élévateurs toutes marques",
@@ -267,7 +272,7 @@
 					"paras": [
 						"Thermique ou électrique, récent ou ancien : nos fourgons atelier se déplacent jusqu'à la machine, de Nice à Marseille. Si elle doit être prise en charge à l'atelier, notre pont élévateur 5 t à Carros nous permet de la traiter."
 					],
-					"image": "/images/fourgon-atelier-dantes-mini-grue-araignee.webp",
+					"image": "/images/fourgon-atelier-dantes-intervention-sur-site.webp",
 					"alt": "Fourgon atelier DANTÈS en intervention sur un site, dépannage sur site"
 				},
 				{
