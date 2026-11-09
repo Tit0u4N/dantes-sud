@@ -1,6 +1,8 @@
 /** Company facts. Values marked CONFIRMER in REQUIREMENT.MD must be validated by the company. */
 export const company = {
 	name: 'DANTÈS',
+	// Nombre de techniciens affiché sur le site (4 en janvier 2027).
+	technicians: 3,
 	phone: '07 65 80 59 14',
 	tel: 'tel:+33765805914',
 	email: 'contact@dantes-sud.fr',

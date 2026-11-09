@@ -62,7 +62,7 @@
 		},
 		"contact": {
 			"title": "Contact & Quotes | DANTÈS Carros (06)",
-			"description": "A breakdown, a quote, a periodic inspection? Call DANTÈS on +33 7 65 80 59 14. Workshop in Carros, on-site service in 06, 83, 13 and 04."
+			"description": "A breakdown, a quote, a periodic inspection? Call DANTÈS on +33 7 65 80 59 14. Workshop in Carros, on-site service in 06, 83, 13, 04 and Monaco."
 		},
 		"legal": { "title": "Legal notice | DANTÈS", "description": "Legal notice for dantes-sud.fr: publisher, SIRET, publication director and host." },
 		"privacy": { "title": "Privacy policy | DANTÈS", "description": "How DANTÈS uses the data entered in the contact form, and your GDPR rights." },
@@ -75,7 +75,7 @@
 		"heroAlt": "Spider crane and platform working on a job site overlooking Marseille",
 		"aboutTitle": "On site or in the workshop, we travel to you",
 		"about": [
-			"With 3 technicians and 3 fully equipped workshop vans, we work wherever the machine is located: hilltop village, city-centre job site or remote location. Distance and access are not obstacles.",
+			"With {{technicians}} technicians and 3 fully equipped workshop vans, we work wherever the machine is located: hilltop village, city-centre job site or remote location. Distance and access are not obstacles.",
 			"Every job is carried out with the same standards and professional rigour, from a minor repair to a complete refurbishment. Our priority: the machine must be safe for those who will use it after we leave.",
 			"Our technicians are trained directly at our partner manufacturers. We stay up to date with French VGP regulations and take care of your periodic inspections and returns to service."
 		],
@@ -135,6 +135,11 @@
 		"ctaText": "Call us or describe the fault: we prepare the job before we leave."
 	},
 	"vgp": {
+		"short": {
+			"lifting": "Your mini cranes and loader cranes are subject to periodic inspection (VGP). We schedule the inspection with BUREAU VERITAS, prepare the machine and resolve any reservation.",
+			"elevation": "A platform carries people, so its periodic inspection (VGP) is essential. We prepare the machine beforehand and promptly resolve the inspector's reservations.",
+			"handling": "Forklifts and handling equipment also need their periodic inspections. We prepare the machine and bring it back into compliance."
+		},
 		"title": "Statutory periodic inspections (VGP) and returns to service: we take care of them",
 		"text": "We take charge of your periodic inspections (VGP) and returns to service. We schedule the inspection with BUREAU VERITAS, prepare the machine beforehand and promptly resolve any reservation raised during the inspection. A single point of contact, a compliant machine, a report signed by a recognised body: the best guarantee for you and your operators. Between two inspections, we remain available in the event of an incident."
 	},
@@ -150,11 +155,11 @@
 					"h2": "JEKKO repair and maintenance in PACA: mini cranes",
 					"badge": "Approved maintenance agent",
 					"paras": [
-						"Italian manufacturer specialised in mini crawler cranes, JEKKO covers the whole range: from the small SPB209 (990 kg) to the JF series articulated crawler cranes such as the JF545 (15.5 t). In between, the SPX telescopic mini cranes (SPX312, SPX424, SPX429, SPX527, SPX532, SPX1040, SPX1275) are the reference for lifting indoors, in city centres and any location with restricted access.",
+						"Italian manufacturer specialised in mini crawler cranes, JEKKO covers the whole range: from the small SPX328 to the JF series articulated crawler cranes such as the JF545. In between, the SPX telescopic mini cranes (SPX328, SPX532, SPX650, SPX1280) are the reference for lifting indoors, in city centres and any location with restricted access.",
 						"DANTÈS is a JEKKO maintenance agent. Our technicians were trained at the manufacturer and we work on the whole range, from routine servicing to full refurbishment."
 					],
-					"image": "/images/jekko-mini-grue-levage-chantier-monaco.webp",
-					"alt": "JEKKO mini crane lifting on a job site in Monaco, JEKKO maintenance Alpes-Maritimes",
+					"image": "/images/reparation-mini-grue-jekko-spx1275-atelier-dantes-carros.webp",
+					"alt": "JEKKO tracked mini crane with boom extended in front of the workshop, DANTÈS van behind",
 					"partner": "jekko"
 				},
 				{
@@ -174,12 +179,12 @@
 					"paras": [
 						"Beyond our partner brands, we repair and service truck-mounted cranes and loader cranes of all makes: FASSI, PALFINGER, HIAB and others. Hydraulics, electrics, outriggers, load limiter: our technicians work on site in 06, 83, 13, 04 and Monaco or in our Carros workshop, to the same standards as on JEKKO and CORMACH."
 					],
-					"image": "/images/reparation-mini-grue-jekko-spx1275-atelier-dantes-carros.webp",
-					"alt": "JEKKO SPX1275 mini crane stabilised at the workshop site, with the DANTÈS van behind"
+					"image": "/images/camion-grue-fassi-fourgon-atelier-dantes-paca.webp",
+					"alt": "FASSI truck-mounted crane on outriggers next to the DANTÈS workshop van"
 				},
 				{
 					"id": "sale",
-					"h2": "Buy a used JEKKO in France: new and second-hand",
+					"h2": "New and used JEKKO mini cranes for sale",
 					"paras": [
 						"We handle sales of JEKKO mini cranes and CORMACH cranes, new or used. Contact us to find out which machines are available."
 					],
@@ -193,7 +198,7 @@
 			"h1": "Aerial platforms: SOCAGE and CELA repair in the South of France",
 			"heroImage": "/images/camions-nacelles-alignes-elevation-paca.webp",
 			"heroAlt": "Row of truck-mounted platforms with their booms raised under a clear sky",
-			"lead": "Truck-mounted platform, spider lift or telescopic platform: we service, repair and refurbish your work-at-height machines, on site or in the workshop. Our technicians are trained directly at the manufacturers, to work quickly and accurately on machines that carry people.",
+			"lead": "Truck-mounted platform, spider lift or self-propelled platform: we service, repair and refurbish your work-at-height machines, on site or in the workshop. Our technicians are trained directly at the manufacturers, to work quickly and accurately on machines that carry people.",
 			"sections": [
 				{
 					"id": "socage",
@@ -253,7 +258,7 @@
 				}
 			],
 			"ctaTitle": "A platform out of service?",
-			"ctaText": "Call us: fast on-site service in 06, 83, 13 and 04."
+			"ctaText": "Call us: fast on-site service in 06, 83, 13, 04 and Monaco."
 		},
 		"handling": {
 			"h1": "Material handling: forklift repair, all makes",
@@ -265,10 +270,10 @@
 					"id": "repair",
 					"h2": "Forklift breakdown service in Nice and across PACA",
 					"paras": [
-						"Internal-combustion or electric, recent or old: our workshop vans come to the machine, from Nice to Marseille. If it has to come to the workshop, our 5 t vehicle lift in Carros lets us handle it."
+						"Forklifts, telehandlers, stackers, electric pallet trucks: we work on any type of handling equipment, whatever the make (Manitou, Fenwick, Toyota, Linde, Still, Jungheinrich, Merlo…) and whatever the age of the machine. Internal-combustion or electric, recent or old: our workshop vans come to the machine, from Nice to Marseille. If it has to go through the workshop, our 5 t vehicle lift in Carros lets us handle it."
 					],
-					"image": "/images/fourgon-atelier-dantes-mini-grue-araignee.webp",
-					"alt": "DANTÈS workshop van working on a site, on-site breakdown service"
+					"image": "/images/chariot-telescopique-manitou-fourgon-atelier-dantes-paca.webp",
+					"alt": "MANITOU telehandler on outriggers next to the DANTÈS workshop van"
 				},
 				{
 					"id": "sale",
@@ -293,7 +298,7 @@
 				"id": "jekko",
 				"name": "JEKKO",
 				"badge": "Approved maintenance agent",
-				"text": "Italian manufacturer specialised in mini crawler cranes: from the SPB209 (990 kg) to the JF545 (15.5 t), including SPX telescopic mini cranes.",
+				"text": "Italian manufacturer specialised in mini crawler cranes: from the SPX328 to the JF545, including SPX telescopic mini cranes.",
 				"does": "Routine servicing, on-site repair and full refurbishment across the range. Technicians trained at the manufacturer.",
 				"page": "lifting"
 			},

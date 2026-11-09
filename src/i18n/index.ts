@@ -1,6 +1,7 @@
 import i18next from 'i18next';
 import fr from './locales/fr.json';
 import en from './locales/en.json';
+import { company } from '../config';
 
 export const locales = ['fr', 'en'] as const;
 export type Locale = (typeof locales)[number];
@@ -10,7 +11,7 @@ const instance = i18next.createInstance();
 await instance.init({
 	resources: { fr: { translation: fr }, en: { translation: en } },
 	fallbackLng: defaultLocale,
-	interpolation: { escapeValue: false },
+	interpolation: { escapeValue: false, defaultVariables: { technicians: company.technicians } },
 });
 
 /** Returns a `t` function bound to the given locale. */
