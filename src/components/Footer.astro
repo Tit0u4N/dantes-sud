@@ -16,9 +16,7 @@ const pages = menuKeys.map((k) => ({ href: pathFor(k, locale), label: t(`nav.${k
 <footer class="blueprint text-white">
 	<div class="wrap grid gap-10 py-14 md:grid-cols-[1.3fr_1fr_1fr_1fr]">
 		<div>
-			<div class="inline-block bg-white px-4 py-3">
-				<img src="/images/logo-dantes.webp" alt={t('site.logoAlt')} width="1000" height="250" class="h-10 w-auto" loading="lazy" />
-			</div>
+			<img src="/images/logo-dantes-white.webp" alt={t('site.logoAlt')} width="996" height="250" class="h-12 w-auto" loading="lazy" />
 			<p class="display mt-4 text-3xl text-accent">{t('site.tagline')}</p>
 			<Socials locale={locale} class="mt-4" />
 		</div>
