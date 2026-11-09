@@ -155,11 +155,11 @@
 					"h2": "Réparation et maintenance JEKKO en PACA : les mini-grues",
 					"badge": "Agent de maintenance agréé",
 					"paras": [
-						"Constructeur italien spécialiste des mini-grues sur chenilles, JEKKO couvre toute la gamme : de la petite SPB209 (990 kg) aux grues articulées sur chenilles de la série JF comme la JF545 (15,5 t). Entre les deux, les mini-grues télescopiques SPX (SPX312, SPX424, SPX429, SPX527, SPX532, SPX1040, SPX1275) sont la référence pour lever en intérieur, en centre-ville et dans tous les lieux d'accès restreint.",
+						"Constructeur italien spécialiste des mini-grues sur chenilles, JEKKO couvre toute la gamme : de la petite SPX328 aux grues articulées sur chenilles de la série JF comme la JF545. Entre les deux, les mini-grues télescopiques SPX (SPX328, SPX532, SPX650, SPX1280) sont la référence pour lever en intérieur, en centre-ville et dans tous les lieux d'accès restreint.",
 						"DANTÈS est agent de maintenance JEKKO. Nos techniciens ont été formés chez le constructeur et interviennent sur toute la gamme, de l'entretien courant à la remise en état complète."
 					],
-					"image": "/images/jekko-mini-grue-levage-chantier-monaco.webp",
-					"alt": "Mini-grue JEKKO en levage sur un chantier à Monaco, maintenance JEKKO Alpes-Maritimes",
+					"image": "/images/reparation-mini-grue-jekko-spx1275-atelier-dantes-carros.webp",
+					"alt": "Mini-grue JEKKO sur chenilles, flèche déployée, devant l'atelier avec le fourgon DANTÈS à l'arrière",
 					"partner": "jekko"
 				},
 				{
@@ -179,8 +179,8 @@
 					"paras": [
 						"Au-delà de nos marques partenaires, nous réparons et entretenons les camions grues et les grues auxiliaires de toutes marques : FASSI, PALFINGER, HIAB et les autres. Hydraulique, électricité, stabilisateurs, limiteur de charge : nos techniciens interviennent sur site dans le 06, 83, 13, 04 et à Monaco ou dans notre atelier de Carros, avec la même exigence que sur JEKKO et CORMACH."
 					],
-					"image": "/images/reparation-mini-grue-jekko-spx1275-atelier-dantes-carros.webp",
-					"alt": "Mini-grue JEKKO SPX1275 stabilisée sur le site de l'atelier, avec le fourgon DANTÈS à l'arrière"
+					"image": "/images/camion-grue-fassi-fourgon-atelier-dantes-paca.webp",
+					"alt": "Camion grue FASSI sur stabilisateurs à côté du fourgon atelier DANTÈS"
 				},
 				{
 					"id": "sale",
@@ -198,7 +198,7 @@
 			"h1": "Élévation : réparation de nacelles SOCAGE et CELA en PACA",
 			"heroImage": "/images/camions-nacelles-alignes-elevation-paca.webp",
 			"heroAlt": "Camions nacelles alignés avec leurs bras déployés sous un ciel dégagé",
-			"lead": "Camion nacelle, nacelle araignée ou nacelle télescopique : nous assurons l'entretien, le dépannage et la remise en état de vos machines de travail en hauteur, sur site ou en atelier. Nos techniciens sont formés directement chez les constructeurs, pour intervenir rapidement et avec précision sur des machines qui transportent des personnes.",
+			"lead": "Camion nacelle, nacelle araignée ou nacelle automotrice : nous assurons l'entretien, le dépannage et la remise en état de vos machines de travail en hauteur, sur site ou en atelier. Nos techniciens sont formés directement chez les constructeurs, pour intervenir rapidement et avec précision sur des machines qui transportent des personnes.",
 			"sections": [
 				{
 					"id": "socage",
@@ -270,10 +270,10 @@
 					"id": "repair",
 					"h2": "Dépannage chariot élévateur à Nice et en PACA",
 					"paras": [
-						"Thermique ou électrique, récent ou ancien : nos fourgons atelier se déplacent jusqu'à la machine, de Nice à Marseille. Si elle doit être prise en charge à l'atelier, notre pont élévateur 5 t à Carros nous permet de la traiter."
+						"Chariots élévateurs, télescopiques, gerbeurs, transpalettes électriques : on intervient sur tout type de matériel de manutention, quelle que soit la marque (Manitou, Fenwick, Toyota, Linde, Still, Jungheinrich, Merlo…) et quel que soit l’âge de la machine. Thermique ou électrique, récente ou ancienne, nos fourgons atelier se déplacent jusqu’à elle, de Nice à Marseille. Si elle doit passer par l’atelier, notre pont élévateur 5 t à Carros nous permet de la prendre en charge."
 					],
-					"image": "/images/fourgon-atelier-dantes-intervention-sur-site.webp",
-					"alt": "Fourgon atelier DANTÈS en intervention sur un site, dépannage sur site"
+					"image": "/images/chariot-telescopique-manitou-fourgon-atelier-dantes-paca.webp",
+					"alt": "Chariot télescopique MANITOU stabilisé à côté du fourgon atelier DANTÈS"
 				},
 				{
 					"id": "sale",
@@ -298,7 +298,7 @@
 				"id": "jekko",
 				"name": "JEKKO",
 				"badge": "Agent de maintenance agréé",
-				"text": "Constructeur italien spécialiste des mini-grues sur chenilles : de la SPB209 (990 kg) à la JF545 (15,5 t), en passant par les mini-grues télescopiques SPX.",
+				"text": "Constructeur italien spécialiste des mini-grues sur chenilles : de la SPX328 à la JF545, en passant par les mini-grues télescopiques SPX.",
 				"does": "Entretien courant, dépannage sur site et remise en état complète sur toute la gamme. Techniciens formés chez le constructeur.",
 				"page": "lifting"
 			},
