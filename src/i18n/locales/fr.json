@@ -33,7 +33,7 @@
 		"rights": "Tous droits réservés.",
 		"legal": "Mentions légales",
 		"privacy": "Confidentialité",
-		"depts": ["Alpes-Maritimes (06)", "Alpes-de-Haute-Provence (04)", "Var (83)", "Bouches-du-Rhône (13)", "Monaco (MC)"]
+		"depts": ["Alpes-Maritimes (06)", "Var (83)", "Bouches-du-Rhône (13)", "Alpes-de-Haute-Provence (04)", "Monaco (MC)"]
 	},
 	"meta": {
 		"home": {
