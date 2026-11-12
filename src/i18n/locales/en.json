@@ -424,7 +424,7 @@
 				{
 					"h2": "Data controller",
 					"paras": [
-						"The data controller is DANTES, 15e rue, 1re avenue, 06510 Carros, France. Contact: contact@dantes-sud.fr, +33 7 65 80 59 14."
+						"The data controller is DANTES, a French SARL (limited liability company) registered with the Grasse Trade and Companies Register under SIREN 913 965 737, with its registered office at 15e rue, 1re avenue, 06510 Carros, France. Contact: contact@dantes-sud.fr, +33 7 65 80 59 14."
 					]
 				},
 				{
@@ -438,13 +438,15 @@
 					"h2": "Legal basis and retention",
 					"paras": [
 						"Processing is based on pre-contractual measures (your quote request) and on our legitimate interest in answering business enquiries.",
-						"Data is kept for 3 years after the last exchange, then deleted."
+						"Data is kept for 3 years after the last exchange, then deleted. Photos sent with the form are attached to the message and kept for the same period."
 					]
 				},
 				{
 					"h2": "Recipients",
 					"paras": [
-						"Data is accessible to authorised DANTÈS staff and, for message delivery, to our technical providers (hosting and e-mail). It is not passed to third parties for other purposes."
+						"Data is accessible to authorised DANTÈS staff and, for message delivery, to our technical providers. It is not passed to third parties for other purposes.",
+						"Website hosting and form processing: Cloudflare, Inc. (United States). E-mail delivery of the message: Resend, Inc. (United States).",
+						"These providers may process data outside the European Union, in particular in the United States. Such transfers are covered by the safeguards provided for in the GDPR (European Commission standard contractual clauses and, where applicable, the EU–US Data Privacy Framework)."
 					]
 				},
 				{
@@ -458,8 +460,12 @@
 					"h2": "Cookies and third-party services",
 					"paras": [
 						"The site sets no tracking cookies. The location map is provided by Google Maps and loads only after you click “Show the map”: Google may then set cookies and process your IP address under its own policy.",
-						"Fonts are loaded from Google Fonts."
+						"Fonts are hosted on our own server: no data is sent to Google Fonts."
 					]
+				},
+				{
+					"h2": "Updates",
+					"paras": ["This policy was last updated on 12 November 2026."]
 				}
 			]
 		}

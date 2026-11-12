@@ -424,7 +424,7 @@
 				{
 					"h2": "Responsable du traitement",
 					"paras": [
-						"Le responsable du traitement est la société DANTES, 15e rue, 1re avenue, 06510 Carros. Contact : contact@dantes-sud.fr, 07 65 80 59 14."
+						"Le responsable du traitement est la société DANTES, SARL immatriculée au RCS de Grasse sous le numéro SIREN 913 965 737, dont le siège est situé 15e rue, 1re avenue, 06510 Carros. Contact : contact@dantes-sud.fr, 07 65 80 59 14."
 					]
 				},
 				{
@@ -438,13 +438,15 @@
 					"h2": "Base légale et durée de conservation",
 					"paras": [
 						"Le traitement repose sur l'exécution de mesures précontractuelles (votre demande de devis) et sur notre intérêt légitime à répondre aux sollicitations professionnelles.",
-						"Les données sont conservées 3 ans après le dernier échange, puis supprimées."
+						"Les données sont conservées 3 ans après le dernier échange, puis supprimées. Les photos envoyées avec le formulaire sont jointes au message et suivent la même durée de conservation."
 					]
 				},
 				{
 					"h2": "Destinataires",
 					"paras": [
-						"Les données sont accessibles au personnel de DANTÈS habilité et, pour l'acheminement des messages, à nos prestataires techniques (hébergement et messagerie). Elles ne sont pas transférées à des tiers à d'autres fins."
+						"Les données sont accessibles au personnel de DANTÈS habilité et, pour l'acheminement des messages, à nos prestataires techniques. Elles ne sont pas transférées à des tiers à d'autres fins.",
+						"Hébergement du site et traitement du formulaire : Cloudflare, Inc. (États-Unis). Envoi du message par e-mail : Resend, Inc. (États-Unis).",
+						"Ces prestataires peuvent traiter les données hors de l'Union européenne, notamment aux États-Unis. Ces transferts sont encadrés par les garanties prévues par le RGPD (clauses contractuelles types de la Commission européenne et, le cas échéant, Data Privacy Framework UE–États-Unis)."
 					]
 				},
 				{
@@ -458,8 +460,12 @@
 					"h2": "Cookies et services tiers",
 					"paras": [
 						"Le site ne dépose aucun cookie de suivi. La carte d'accès est fournie par Google Maps et ne se charge qu'après votre clic sur « Afficher la carte » : Google peut alors déposer des cookies et traiter votre adresse IP selon sa propre politique.",
-						"Les polices de caractères sont chargées depuis Google Fonts."
+						"Les polices de caractères sont hébergées sur notre propre serveur : aucune donnée n'est transmise à Google Fonts."
 					]
+				},
+				{
+					"h2": "Mise à jour",
+					"paras": ["Dernière mise à jour de cette politique : 12 novembre 2026."]
 				}
 			]
 		}
