@@ -86,7 +86,7 @@
 				"title": "Levage",
 				"text": "Mini-grues sur chenilles JEKKO, grues auxiliaires CORMACH, camions grues : entretien, dépannage et remise en état.",
 				"image": "/images/jekko-spx1040-reparation-mini-grue-paca.webp",
-				"alt": "Mini-grue JEKKO SPX1040 en levage entre deux bâtiments, réparation JEKKO en PACA"
+				"alt": "Mini-grue JEKKO SPX1040 en levage entre deux bâtiments"
 			},
 			{
 				"key": "elevation",
@@ -170,7 +170,7 @@
 						"Constructeur italien de grues auxiliaires pour camions, CORMACH fabrique des grues de toutes tailles, des modèles compacts pour porteurs légers jusqu'aux grues de 80 t de capacité de la série 575000. Nous travaillons cette marque avec la Carrosserie CORNUT, qui apporte son expérience des camions équipés CORMACH. DANTÈS est agent de maintenance CORMACH et nos techniciens y ont été formés."
 					],
 					"image": "/images/cormach-grue-auxiliaire-camion.webp",
-					"alt": "Grue auxiliaire CORMACH montée sur camion, maintenance grue auxiliaire CORMACH",
+					"alt": "Grue auxiliaire CORMACH montée sur camion",
 					"partner": "cormach"
 				},
 				{
@@ -209,7 +209,7 @@
 						"DANTÈS est agent de maintenance SOCAGE et nos techniciens ont été formés chez le constructeur en Italie. Nous intervenons sur toute la gamme : hydraulique, électronique de bord, stabilisation, panier."
 					],
 					"image": "/images/socage-forste-27d-camion-nacelle.webp",
-					"alt": "Camion nacelle SOCAGE Forste 27D déployé, maintenance nacelle SOCAGE",
+					"alt": "Camion nacelle SOCAGE Forste 27D déployé",
 					"partner": "socage"
 				},
 				{
