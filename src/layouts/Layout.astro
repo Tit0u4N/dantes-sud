@@ -94,12 +94,7 @@ const breadcrumb =
 		{localBusiness && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
 		{breadcrumb && <script type="application/ld+json" set:html={JSON.stringify(breadcrumb)} />}
 		{extraJsonLd.map((o) => <script type="application/ld+json" set:html={JSON.stringify(o)} />)}
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap"
-			rel="stylesheet"
-		/>
+		<link rel="preload" href="/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin />
 	</head>
 	<body class="flex min-h-screen flex-col">
 		<Header locale={locale} pageKey={pageKey} altHref={alt && (locale === 'fr' ? alt.en : alt.fr)} />

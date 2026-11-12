@@ -4,3 +4,6 @@ https://dantes-sud.dantes-1a5.workers.dev/*
 
 https://dantes-sud-dev.dantes-1a5.workers.dev/*
   X-Robots-Tag: noindex
+
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
