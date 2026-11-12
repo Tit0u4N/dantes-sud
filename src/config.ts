@@ -35,12 +35,12 @@ export const social = {
 	linkedin: 'https://www.linkedin.com/company/dantes/',
 	instagram: 'https://www.instagram.com/dantes_sud06/',
 	gbp: 'https://share.google/OI4JEnTlMrGNkRknA', // fiche Google Business Profile
-	// Posts Instagram affichés sur l'accueil (photo téléchargée dans public/images/instagram, légende = alt). Vide = bouton profil seul.
+	// Posts Instagram affichés sur l'accueil (photo téléchargée dans public/images/instagram, légende = alt par langue). Vide = bouton profil seul.
 	instagramPosts: [
-		{ url: 'https://www.instagram.com/p/DOtaSxyDP-b/', image: '/images/instagram/DOtaSxyDP-b.webp', alt: 'Intervention sur un Bobcat S185 et une Komatsu PC26' },
-		{ url: 'https://www.instagram.com/p/DOv2jMXjMM3/', image: '/images/instagram/DOv2jMXjMM3.webp', alt: 'Essai de la nouvelle nacelle araignée Socage Raptor 24s' },
-		{ url: 'https://www.instagram.com/p/DU_LKngDB__/', image: '/images/instagram/DU_LKngDB__.webp', alt: "Réception d'un plateau porte-engins pour notre client CVIM" },
-	] as { url: string; image: string; alt: string }[],
+		{ url: 'https://www.instagram.com/p/DOtaSxyDP-b/', image: '/images/instagram/DOtaSxyDP-b.webp', alt: { fr: 'Intervention sur un Bobcat S185 et une Komatsu PC26', en: 'Service work on a Bobcat S185 and a Komatsu PC26' } },
+		{ url: 'https://www.instagram.com/p/DOv2jMXjMM3/', image: '/images/instagram/DOv2jMXjMM3.webp', alt: { fr: 'Essai de la nouvelle nacelle araignée Socage Raptor 24s', en: 'Testing the new Socage Raptor 24s spider lift' } },
+		{ url: 'https://www.instagram.com/p/DU_LKngDB__/', image: '/images/instagram/DU_LKngDB__.webp', alt: { fr: "Réception d'un plateau porte-engins pour notre client CVIM", en: 'Delivery of a plant trailer for our customer CVIM' } },
+	] as { url: string; image: string; alt: { fr: string; en: string } }[],
 };
 
 /** Optional proof blocks, hidden while empty. */
